@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icones/nuvem.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina de cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Olá! Vamos iniciar o seu cadastro para o nosso site</h1>
+    </header>
+    
+    <hr>
+
+    <main>
+        <div class="apresentacao">
+            <fieldset>
+                <h2>Seus dados pessoais</h2>
+                <ul>
+                    <li class="campo"><label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+                    <li class="campo"><label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    <li class="campo"><label for="idade">Idade:</label>
+                        <input type="number" name="idade" id="idade" required>
+                    <li class="campo"><label for="cpf">CPF:</label>
+                        <input type="number" name="cpf" id="cpf" required>
+                </ul>
+            </fieldset>
+        </div>
+        
+        <div class="contatos">
+            <fieldset>
+                <h2>Dados de contatos</h2>
+                
+                <ul>
+                    <li class="campo"><label for="celular"><img src="icones/cel.jpeg" alt=""> Celular:</label>
+                        <input type="number" name="celular" id="celular" required>
+                    
+                    <li class="campo"><label for="telefone"><img src="icones/cel.jpeg" alt=""> Telefone:</label>
+                        <input type="number" name="telefone" id="telefone">
+
+                    <li class="campo"><label for="email" required><img src="icones/email.png" alt=""> E-mail:</label>
+                        <input type="email" name="email" id="email">
+                    
+                    <li class="campo"><label for="linkedin" required><img src="icones/linkedin.png" alt=""> Linkedin:</label>
+                        <input type="text" name="linkedin" id="linkedin">
+                    
+                    <li class="campo"><label for="github" required><img src="icones/git.png" alt=""> Github:</label>
+                        <input type="text" name="github" id="github">
+                </ul>
+
+            </fieldset>
+        </div>
+
+        <div class="conhecimentos">
+            <fieldset>
+                <h3>Quais linguagens e tecnologias você conhece</h3>
+                <div class="checkbox">
+                    <label for="Senioridade"><strong>Selecione as tecnologia que ultiliza</strong></label>
+                    <input type="checkbox" id="tecnologia" name="tecnologia" value="HTML">
+                    <label for="tecnologia">HTML</label>
+    
+                    <input type="checkbox" id="tecnologia" name="tecnologia" value="Python">
+                    <label for="tecnologia">Python</label>
+    
+                    <input type="checkbox" id="tecnologia" name="tecnologia" value="Css">
+                    <label for="tecnologia">Css</label>
+    
+                    <input type="checkbox" id="tecnologia" name="tecnologia" value="Javascript">
+                    <label for="tecnologia">Javascript</label>
+    
+                    <input type="checkbox" id="tecnologia" name="tecnologia" value="Java">
+                    <label for="tecnologia">Java</label>
+
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="sobre"><strong>Fale mais sobre você</strong></label>
+                <textarea rows="6" style="width: 14cm;" id="sobre"></textarea>
+            </fieldset>
+        </div>
+
+        <div class="login">
+            <fieldset>
+                <p>Coloque seu <strong>E-mail</strong>:</p>
+                <p>Crie sua <strong>senha</strong>:</p>
+            </fieldset>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+    </style>
+
+    <title>Hello Word HTML com CSS</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo" style="font-family: Poppins;">Resumos do HTML funcionalidades, tags, emojis e simbolos, estilizado com CSS</h1>
+        <hr>
+        <nav id="menu">
+            <p>
+                <a href="#paragrafo">Paragrafo</a>, 
+                <a href="#imagens">Imagens</a>, 
+                <a href="#imagens2">Imagens Dinamicas</a>, 
+                <a href="#audio">Audio</a>, 
+                <a href="#video">Video</a>, 
+                <a href="#semanticas">Semanticas</a>, 
+                <a href="#formatacao">Formatação</a>, 
+                <a href="#listas">Listas</a>, 
+                <a href="#links">Links</a>, 
+                <a href="#cores">Cores</a>, 
+                <a href="#tipografia">Tipografia</a>, 
+                <a href="#seletores">Seletores</a>, 
+                <a href="#caixas">Caixas</a>.
+            </p>
+        </nav>
+        <hr>
+        <h2 class="subtitulo" style="font-family: 'Playwrite IE Guides';">antes olha o favicon</h2>
+        <hr style="margin-bottom: 0;">
+    </header>
+    <main>
+
+        <fieldset id="paragrafo" class="paragrafo">
+            <div>
+                <h2>Parágrafos e quebras de linhas</h2>
+                <p>Você pode escrever qualquer parágrafo desde que esteja no meio do par &lt;p&gt; &lt;/p&gt;
+                </p>
+                <p>se precisar quebrar o texto <br> use a tag &lt;br&gt; como foi usado
+                </p>
+                <p>Vamos adicionar alguns simbolos especiais:
+                    &reg;
+                    &copy;
+                    &trade;
+                    &euro;
+                    &yen;
+                    &delta;
+                    &Delta; etc... consulte a document
+                </p>
+                <p>vamos adicionar alguns emojis
+                    &#x1F596;
+                    &#x1F60A;
+                    caso queira acessar para pegar o codigo de cada emoji acesse o site <a href="https://emojipedia.org/smiling-face-with-smiling-eyes#technical">emojipedia</a>
+                </p>
+            </div>
+        </fieldset>
+        
+        <fieldset id="imagens" class="imagens">
+            <div>
+                <h2>Imagens</h2>
+                <p>primeiramente tomar cuidado se a imagen não tem coopright olha se pode usar, ou não, ou se tem que ter os créditos para isso tente ascessar o site <a href="https://www.pexels.com/pt-br/">pexels</a></p>
+                <p>agora vamos testar o peso e tamanho de imagens</p>
+                <img src="imagens/aws200.png" alt="sub logo">
+                <br>
+                <img src="imagens/aws.png" alt="logo aws">
+                <br>
+                <img src="imagens/download.jpeg" alt="estudos mais leve">
+                <img src="imagens/dowload_maior.jpeg" alt="estudo de tamanho maior">
+                <br>
+                <img src="imagens/imagn_1000.jpg" alt="paisagem compactada">
+                <img src="imagens/imagn_500.jpg" alt="paisagem bem mais compactada">
+                <img src="imagens/paisagem.full.jpeg" alt="imagem full">
+                <br>
+                <h3>agora vamos estrair imagens externas</h3>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAmVBMVEX2hTb///+dUCX6hzeaTiTMbC6WTCTxgjWxXCjBZiz2gi7Udjm5hm+bShu7ZS/5qHj2fiWVPQD69fP7xqnUeT60fmWYRQzQsaP2giv1fB2dTh+aSBP+9O781L/MqpvRtqvRekT9zLD94dL3lFL6vp2zdFbbw7j4pXLlwK3/6dy+Xhr3jkf4nmf5roL+7ub3llf5tpCYQgD+387HcEYlAAAElUlEQVR4nO3d23aiMBQGYFA7nTJTpdZBolVrtdODPc28/8NNEkBg6oGctqHr33dwA9/6IdlB10oQ0tbidkl8xYD0auNJchZ3r0mvSSkcT5NO76wbxCmlkU44vkw6HSkMgjiiM1IJM18hpDTSCAtfKaQzUgjnW19VyI0BhdG9UIwvnZ1CmhxdC6v5fRZS5OhWOLyq+z4LA+dzh2th56iQG532AD4I3eboh9DlmOOL0J3RH6Ero09CN3OHX0IXOdoVPj7Vj9WF9nO0KRwnz2xzfVM5oyO0PXfYE/L1e++CL2/Zy2x7Tk9otwewJZT9tRAGQRSz17vsrK7QZo52hDw/efsX+e1H7Hz9FpoI7Y05NoTb9e1WyCtl78thaCC0ZTQXluv3mlA8rfFDz0Rox2gqXFTXf3WhqG9mQhtzh6nw12XngPDcWGieo/9C0xzbIDSbO9ohNMmxLUL997E9Qt0c1YXz28Gs7K4phXr9qqqQz++jNGar9dMphDpGNaHoP3sjfo9RygIZJbVQ/VlVEea/j42K9jpmm/X9hFqoOuY0Fy46+e9jo/Ieo/R7j16olmNTYdl/VoVB9zRClR6gqTDZPo1+CJvn2FRYuUdPhE3fxzYLm+XYbmGT+bHtwuPGQ8LxxeZ1+ea78Nizul84nib9Lp/V45fru6HXwsNjzj6h7M/68m6E8t1v4aEcdwuz/0/kQqn0XSh6gGVj4e9J3p+VwsB/ochxtkOzS1isF/YIf/gqDKKHhsKfrRUOIIQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQggtCb/+HpZffx/Sr7+XrDRu9wOO0phtBr4LVfcDznPsRzFjq4/Zjd+7Vuvt6SyNfblhtSyfhbr7ctfLX6HJ3uptEB7ztV14+Plsv/DQ+KIunE58EzbJT0U4/zP1ShinzXzNhdx4mXwSRulphE3zUxOGw3mSVIW8Hdis7yf0wmbvn4aQ15z3q1IYpSwYiF6nWIfQCVXyUxdK44g3qqv1U3ZMLTw+/5kKuXEkwwtPIVT36QjrRSlUfT7bJlQbX9on1MuvPcLm83s7hfr5tUOo+/7ZEi7yXs6V0Cw/G8IwHJfG/4Qxe++ZCU3zsyOsGKvCiDetN+GVidCGz44w+/ZYFUYs+hBt3dBAaMdnS5h/Q86EfM3xkH981heazA/1siWUOQphylbLYXFOV2g+vpRlT8iNyTPrrt8qZ/SE9vITZVMYho9/68c6Qpv5ibIr/L/UhbbGl7L8EtrOT5RPQvv5ifJH6Mbnj9CVzxeh3fmhXj4IXYwvZbkWJkeFLvMT5VZY/hawT+g2P1GuhcX/OnYL3Y0vZbkX1nOsCt3nJ4pCWP0OUAop8hNFIyyNhZDKRycsjJmQzkcpzMYcIXQ9P9SLUii/A5zRjC9l0QrDcHG7JL7iP8aoDl39YJn4AAAAAElFTkSuQmCC" alt="imagem de ec2 da aws">
+            </div>
+        </fieldset>
+
+        <fieldset id="imagens2" class="imagens">
+            <div>
+                <h2>Imagens Dinamicas</h2>
+                <p>as imagens se adaptam com o tamanho da sua tela</p>
+                <picture>
+                    <source media="(max-width: 700px)" srcset="Imagens_em_minhaturas/Pequena.png" type="image/png">
+                    <source media="(max-width: 1000px)" srcset="Imagens_em_minhaturas/Media.png" type="image/png">
+                    <img src="Imagens_em_minhaturas/Grande.png" alt="imagem grande">
+                </picture>
+            </div>
+        </fieldset>
+        
+        <fieldset id="audio" class="audio">
+            <div>
+                <h2>Reproduzindo Audios</h2>
+                <p>Agora iremos trabalhar com Audio dentro do HTML5</p>
+                <!--MP3(mpeg) ogg WAV uma forma um pouco menos recomendavel-->
+                <!--<audio src="Audio/Nightcore - In The End (But it hits different) (Lyrics).mp3" controls autoplay></audio>-->
+                <audio preload="metadata" controls>
+                    <source src="Audio/Nightcore - In The End (But it hits different) (Lyrics).mp3" type="audio/mpeg">
+                    <source src="Audio/Nightcore - In The End (But it hits different) (Lyrics).wav" type="audio/wav">
+                    <p>Infelizmentente seu navegado nao consegue reproduzir audio <a href="Audio/Nightcore - In The End (But it hits different) (Lyrics).mp3" download="Audio/Nightcore - In The End (But it hits different) (Lyrics).mp3">clique aqui para baixar o audio</a></p>
+                </audio>
+                <p>tem varios tipos de audio os navegadores aceitam diferentes tipos, então tente sempre colocar o maximo de tipo de audio</p>
+                <p>Lembre-se que precisa adicionar certos parametros para ativar o audio</p>
+            </div>
+        </fieldset>
+        
+        <fieldset id="video" class="video">
+            <div>
+                <h2>Videos</h2>
+                <p>É possível hospedar videos com HTML5 de diversas formas</p>
+                <h3>videos localmente</h3>
+                <video width="500" poster="imagens/Captura de tela 2024-12-31 173804.png" preload="metadata" controls><!--sempre tenta varios tipos de video para diversos navegador-->
+                    <source src="Videos/videoplayback (2).mp4">
+                    <source src="Videos/videoplayback (2).ogv">
+                    <p>seu navegador nao tem compatilidade com reprodução de videos</p>
+                </video>
+                <p>Essa forma tem um problema de peso e quantidade de trafego, para resolver temos a segunda forma de hospedar os videos</p>
+            </div>
+    
+            <div>
+                <h3>videos hospedados</h3>
+                <p>para video do youtube va em incorporar do compartilhar do youtube</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rK-rb27St20?si=MYI610kbN-ML49L6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>tem a opção como vimeo para que nao tenham acesso publico ao seu video</p>
+            </div>
+        </fieldset>
+        
+        <fieldset id="semanticas" class="semanticas">
+            <div>
+                <h2>Semânticas e hiearquia</h2>
+                <p>Uso do HTML5 serve para marcações, significados e semanticas</p>
+                <h3>um sobre endereços e o uso dos signidicados</h3>
+                <p>para cada destaque que precisar em algo deve ser usado a tag certa para atribuir o significado EX: <address>rua elden 133 - Ring RS</address></p>
+                <p>para ultilizar algo destacado de forma diferente voce deve ultilizar o css, porque muitos dos significados atribuem funcionalidades especificas e diretas</p>
+                <p>toma muito cuidado com as tags obsuletas acesse sempre o site do <a href="https://www.w3.org/" target="_blank" rel="external">W3C</a> </p>
+            </div>
+        </fieldset>
+        
+        <fieldset id="formatacao" class="formatacao">
+            <div>
+                <h2>Formatações</h2>
+                <p>Aqui se usa o negrito usando a tag <strong>strong</strong></p>
+                <p>Aqui se usa o italico usando a tag <em>EM</em></p>
+                <p>Aqui se usa o texto marcado usando a tag <mark>mark</mark></p>
+                <p>Aqui se usa o texto pequeno usando a tag <small>small</small> e um texto grande com o tag <big>big</big></p>
+            
+                <p>Aqui se usa o texto deletado com a tag <del>del</del></p>
+                <p>Aqui se usa o texto incluido com a tag <ins>ins</ins></p>
+                <p>Aqui se usa o texto sobrescrito com a tag <sub>sub</sub>x<sub>20</sub>+3</p>
+                <p>Aqui se usa o texto subrescito com a tag <sup>sup</sup>h<sup>2</sup>o</p>
+                <p>mais algumas formatações como <code>codigo-fonte com a tag code</code>, tambem da para usar a tag pre para estar da forma que esta no código do html, para <q>citações usa a tag q</q></p>
+                <blockquote>
+                    aqui é uma citações pode por as citações do estilo blockquote, usando o cite voce pode por da onde vem a citação
+                </blockquote>
+                <p>aqui da para fazer as abreviações usando a tag abbr ex <abbr title="HyperText Maruo Linguagem">HTML</abbr></p>
+                <p>aqui ja nos estendemos vamos para o proximo</p>
+            </div>
+        </fieldset>
+        
+        <fieldset id="listas" class="listas">
+            <h2>Listas</h2>
+            <div>
+                <h3>listas ordenadas e não ordenadas</h3>
+                <p>aqui criaremos listas primeiramente as ordenadas</p>
+                <ol>
+                    <li>primeiramente coloca a tag ol</li>
+                    <li>depois coloca cada item dentro de uma tag li cada</li>
+                    <li>se divirta &#x1F60A;</li>
+                </ol>
+                <p>aqui nos iremos ver os diferentes tipos de listas ordenadas</p>
+                <ol>
+                    <li>tipo A</li>
+                    <ol type="A">
+                        <li>aqui fizemos para por em listas de cada tipo</li>
+                        <li>aqui vimos o tipo <q>A</q> ordenado</li>
+                    </ol>
+                    <br>
+                    <li>tipo a</li>
+                    <ol type="a">
+                        <li>aqui fizemos para por em listas de cada tipo</li>
+                        <li>aqui vimos o tipo <q>a</q> ordenado</li>
+                    </ol>
+                    <br>
+                    <li>tipo I</li>
+                        <ol type="I">
+                        <li>aqui fizemos para por em listas de cada tipo</li>
+                        <li>aqui vimos o tipo <q>I</q> que é em romanos ordenado</li>
+                    </ol>
+                    </li>
+                    <br>
+                    <li>tipo i</li>
+                    <ol type="i">
+                        <li>aqui fizemos para por em listas de cada tipo</li>
+                        <li>aqui vimos o tipo <q>i</q></li>
+                    </ol>
+                </ol>
+                <p>fica de aviso que pode estar começando quando quiser usando o parametro start ele é numerico então caso queira que ele comece na letra <q>E</q> precisa colocar como 5 no start</p>
+                <br>
+            </div>
+
+            <div>
+                <h3>agora iremos para as listas nao ordenadas</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>node.js</li>
+                    <li>Python</li>
+                    <li>Dart</li>
+                    <li>MySql</li>
+                    <li>oracle</li>
+                    <li>Cypress</li>
+                    <li>Playrwight</li>
+                    <li>Git/GitHub</li>
+                    <li>Postman</li>
+                    <li>AWS</li>
+                    <li>Azure</li>
+                </ul>
+                <p>agora iremos ver diferentes tipos de listas nao ordenadas</p>
+                <ul>
+                    <li>tipo quadrado</li>
+                    <ul type="Square">
+                        <li>aqui é o tipo quadrado</li>
+                        <li>usar o type square</li>
+                    </ul>
+                    <br>
+                    <li>tipo circulo</li>
+                    <ul type="circle">
+                        <li>aqui é o tipo de circulo</li>
+                        <li>usar o type circle</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <p>lembrando usamos uma gambiarra aqui</p>
+
+            <div>
+                <h3>Listas de Definições</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Linguagem de marcação para a criação do conteudo do site</dd>
+                    <dt>CSS</dt>
+                    <dd>Linguagem de Marcação para a criação do design do site</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Linguagem de programação para a criação de interatividade do site</dd>
+                </dl>
+            </div>
+        </fieldset>
+        
+        <fieldset id="links" class="links">
+            <h2>Links e Âcoras em HTML5</h2>
+            <div>
+                <h3>Links externo</h3>
+                <p>voce pode acessar o meu</p>
+                <ul>
+                    <li><img src="Imagens_em_minhaturas/git.png" alt="Logo GitHub"><a href="https://github.com/GelvairJunior" target="_blank" rel="external">repositorio publico do github</a></li>
+                    <li><img src="Imagens_em_minhaturas/linkedin.png" alt="Logo Linkedin"><a href="https://www.linkedin.com/in/gelvair-schumann-moreira-junior-a75927318/" target="_blank" rel="external">meu linkedin</a>,</li>
+                    <li> <img src="Imagens_em_minhaturas/medium.png" alt="logo Medium"><a href="https://medium.com/@gelvair.schumann.jr" target="_blank">minha pagina no Medium</a></li>
+                </ul>
+                <p>aqui é para um site externo onde nao é recomendado voce ir onde nao tenho resposabilidade caso acesse, <a href="https://steamverde.net/" rel="nofollow">steam verde</a></p>
+            </div>
+
+            <div>
+                <h3>segunda pagina</h3>
+                <p>aqui voce esta vendo o meu HTML estilizado com CSS, caso queira ver sem acesse a <a href="index.html" rel="prev">primeira pagina</a></p>
+                <p>Você pode acessar minha pagina de <a href="noticias/page003_noticia.html" target="_self" rel="next">Noticias</a></p>
+                <h3>links para dowload</h3>
+                <p>Aqui vou dar links para dowload de pdfs, antes acesse o site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">Media Types</a> para ver qual tipo de media para baixar</p>
+                <ol>
+                    <li><a href="livros_arquivos/SPRINT -04 APRESENTAÇÃO FINAL.pdf" download="livros_arquivos/SPRINT -04 APRESENTAÇÃO FINAL.pdf" target="_blank" rel="external">apresentação do TCC</a></li>
+                    <li><a href="livros_arquivos/Livro - O Corpo Fala (Pierre Weil).pdf" target="_blank" rel="external">Livro o corpo fala</a></li>
+                    <li><a href="livros_arquivos/SPRINT -04 APRESENTAÇÃO FINAL.zip">apresentação do TCC compactado zip</a></li>
+                    <li><a href="livros_arquivos/Livro - O Corpo Fala (Pierre Weil).zip" download="livros_arquivos/Livro - O Corpo Fala (Pierre Weil).zip">livro o corpo fala compactado em zip</a></li>
+                </ol>
+            </div>
+        </fieldset>
+        
+        <fieldset id="cores" class="cores">
+            <div>
+                <h2>Testando as cores e degrade nesta Div e explicando algumas CSS</h2>
+                <p>Vamos explicar algumas regras das css</p>
+                <ul>
+                    <li><p class="class" style="text-align: justify;">para voce criar uma CSS você tem 3 opções fazer na prorpia tag, fazer no head as estilização e o mais recomendado fazer em um arquivo separado e só fazer um link para o HTML</p></li>
+                    <li><p class="class" style="text-align: justify;">primeiro quando selecionar alguma tag para estiliza ira estilizar todas com aquela tag</p></li>
+                    <li><p class="class" style="text-align: justify;">caso queira voce pode adicionar uma class para a tag para modificar apenas aqueles com a class</p></li>
+                    <li><p class="class" style="text-align: justify;">caso queira modificar a cor de fundo use o background color e caso for so a letra o color</p></li>
+                    <li><p class="class" style="text-align: justify;">Voce pode fazer degrade usando o background-image: linear-gradient depois escolha em que direção vai ser o degrade e por fim as cores</p></li>
+                    <li><p class="class" style="text-align: left;">defina a fonte usando o font family e o tamanho da fonte com font size e defina o tamanho de acordo com o que preferir, ex: 5px</p></li>
+                    <li><p class="class" style="text-align: left;">se quiser deixar centralizado ultilize just content: center, e caso quiser da direita para esquerda, troque o center por right</p></li>
+                    <li><p class="class" style="text-align: left;">com o margin você define a distancia que deve ficar cada item</p></li>
+                    <li><p class="class" style="text-align: left;">o * e para dizer que tudo sera alterado de acordo com a regra que voce definir aqui</p></li>
+                </ul>
+            </div>
+        </fieldset>
+
+        <fieldset id="tipografia" class="tipografia">
+            <h2>Tipografia</h2>
+            <div class="fontes">
+                <h2 id="h2tipo">Trabalhando com fontes</h2>
+                <p id="ptipo1"><q>Este paragrafo lorem esta em qualquer fonte que seja monoespaçada.</q> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veniam? Accusamus fugit accusantium reiciendis? Fuga harum vero praesentium, laboriosam dolore sapiente quo doloribus, culpa eius quibusdam, illo consequuntur sed! Fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dicta at atque deleniti explicabo vel, officiis reiciendis porro, omnis eos maxime assumenda. Asperiores, dolorem velit perferendis vero eaque in magnam.</p>
+                <p id="ptipo2"><q>Este paragrafo lorem esta em uma fonte qualquer que seja sem serif, sans-serif</q> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis sit quae, fuga aperiam facere dolore recusandae nostrum soluta nobis iure! Deserunt distinctio voluptatum voluptatem unde quaerat suscipit temporibus dolorem deleniti.</p>
+                <h3 id="h3tipo">subtitulo</h3>
+                <p id="ptipo3"><q>este paragrafo lorem esta em qualquer fonte que seja seirfada, serif</q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum culpa alias possimus vero earum veniam esse natus cupiditate consequatur blanditiis, neque expedita assumenda, magnam quas distinctio obcaecati maiores molestiae aperiam.</p>
+            </div>
+
+            <div class="fonttamanho">
+                    <h3>Recomendações</h3>
+                    <ul style="font-family: 'Poppins';">
+                        <li id="tamanhoPpx"><p>sempre tente seguir a combinação de fontes para que caso a tela nao consiga ler uma font possa estar lendo outra. detalhe esse é 8px</p></li>
+                        <li id="tamanhoMpx"><p>primeiro tente pesquisar no google <strong>css web safe font compnations</strong> ou acesse o cide da <a href="https://www.w3schools.com/cssref/css_websafe_fonts.php">w3schools</a>. detalhe esse é 16px</p></li>
+                        <li id="tamanhoGpx"><p>Tenta sempre seguir as recomendações do W3C. detalhe esse é 32px</p></li>
+                        <li id="tamanhoPem"><p>existe 2 tipos de tamnhos de fontes a recomendação é usar ou o PX ou o EM. Detalhe esse é 0,5em</p></li>
+                        <li id="tamanhoMem" ><p>as medidas relativas que são: em, ex, rem, vw, vh, %. Detalhe esse é 1em</p></li>
+                        <li id="tamanhoGem"><p>as medidas absolutas que são: cm, mm, in, px, pt e pc. Detalhe esse é 2em</p></li>
+                        <li><p>tente sempre usar o em por que ultilize em porcentagem 1 em é igual a 16 px</p></li>
+                        <li><p>a ordem é essa ai font style > font weight > font size > font family</p></li>
+                    </ul>
+                    <p>tudo acima tem um cada tipo de fontes e tamanho.</p>
+
+                    <p>no weight tem 4 tipos tem o lighter, normal, bold e bolder, ainda tem o formato de 100 ate 900 <br> weight(é peso), width(é largura) height(é tamanho) pra dizer vai funcionar depede da fonte</p>
+            </div>
+
+            <div class="fontpeso">
+                    <h3>Agora vamos para o peso e tipos de letras</h3>
+                    <p id="L" style="font-family: 'Poppins';">aqui esta em italico e leve</p>
+                    <p id="N" style="font-family: 'Poppins';">aqui esta em italico e normal</p>
+                    <p id="P" style="font-family: 'Poppins';">aqui esta em italico e pesado ou negrito e tambem esta sublinhado</p>
+                    <p style="font-family: 'Playwrite IE Guides', serif;">Ainda é possivel pegar fonte externas como as fontes acima, usando o <a href="https://fonts.google.com/specimen" target="_blank" rel="external">Google fontes</a></p>
+            </div>
+
+            <div class="fontbaixada">
+                    <h3 style="font-family: 'valentine';">Aqui vamos usar fontes externas baixada</h3>
+                    <p style="font-family: 'lovely';">Aqui estamos usando fontes externas do site <a href="dafont.com">dafonte</a> a fonte esta baixado na propria pasta, tambem caso precise pegar fontes de sites use a extensao fonte ninja, e caso queira pegar fontes de imagens use o site <a href="https://www.whatfontis.com/">What Font ls</a> ele é o melhor para pegar fontes de imagens</p>
+            </div>
+
+            <div class="alinhamento">
+                    <h3 id="ali">Aqui vamos testar o alinhamento de textos com o CSS</h3>
+                    <p id="la">Esse texto esta alinha a esquerda</p>
+                    <p id="al">Esse texto esta alinhado a direita</p>
+                    <p class="lor">Esse texto está justificado, significa que esta alinha a esquerda e direita, e colocamos um espaço no inicio do paragrafo, para textar vamos colocar um texto lorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident blanditiis suscipit temporibus placeat reiciendis delectus ex itaque distinctio enim, dolor numquam voluptatem qui eos repellat neque! Nostrum, laborum hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsum recusandae dolor beatae quos, amet at incidunt perspiciatis! Possimus, corrupti asperiores mollitia veritatis aspernatur repellat quas accusantium ratione ad sint.</p>
+                    <p class="lor">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quis optio distinctio! Voluptates magnam debitis sit laudantium! Repudiandae sed quae iure nostrum rerum aspernatur mollitia doloremque alias, saepe reprehenderit quis?</p>
+            </div>
+
+            
+        </fieldset>
+
+        <fieldset id="seletores" class="seletores">
+            <h2 id="h2s">Seletores personalizados</h2>
+            <div id="id">
+                <h3 id="h3s">Aqui iremos usar o "id"</h3>
+                <p>voce pode ultilizar o id para poder colocar estilização na mesma tag com diferentes estilizações, so usaremos um id em todo o html se quisermos usar a mesma estilização em outra tag use o class, ele é definido pelo #"seuid" ex: #seletor</p>
+            </div>
+
+            <div class="class fonttamanho">
+                <h3 class="class">aqui iremos ultilizar o "class"</h3>
+                <p class="class">Nos iremos ultilizar a class para usar a mesma estilização em diferentes tags mas ainda separar do resto, para identificar o class no css usaremos o .suaclass ex: .class</p>
+                <p class="class" id="id">Também voce consegue usar 2 class, voce ira dar um espaço dentro da class, tambem consegue usar um class e um id na mesma tag porem o id ira sobrepor</p>
+            </div>
+
+            <div id="pseudoclass">
+                <h3>Agora iremos ver as Pseudo-classes</h3>
+                <label id="youare">passe o mouse aqui</label>
+                <p>aqui vimos que quando voce passa o mouse em cima fca amarelo, as pseudo-classes são para um elemento, class ou id, fassam algo caso aconteça algo, sao focadas no estado do elemento, são identificados pela tag e depois 2 pontos. ex: p:hover </p>
+                <div id="houver">
+                    <p>voce pode ver que é possivel mudar algo dentro de elemento usando alguma o faz uma div > p e voce pode mudar algo da tag p que esteja dentro dessa div</p>
+                    <h4 style="font-family: 'Tiny5', serif;"><img src="Imagens_em_minhaturas/ovo-de-pascoa-com-desenho-horizontal-de-linhas-brancas-e-pontilhadas.png" alt="ovo de pascoa" width="15px"> OI! você encontrou um ester-egg <img src="Imagens_em_minhaturas/ovo-de-pascoa-com-desenho-horizontal-de-linhas-brancas-e-pontilhadas.png" alt="ovo de pascoa" width="15px"></h4>
+                </div>
+                <p>já passou o mouse na div a cima?</p>
+
+                <p>vamos fazer uma lista das pseudo-classes</p>
+                <ul>
+                    <li>Hover: quando passar o mouse algo acontece</li>
+                    <li>Visited: quando ja tiver visitado algo aconteçe</li>
+                    <li>active: quando clicar algo acontece</li>
+                </ul>
+            </div>
+
+            <div id="elementos">
+                <h3>Pseudo-Elementos</h3>
+                <p>voce consegue adicionar coisas depois ou antes das tags html sem mexer nelas, são identicados por 4 pontos. ex: p::after</p>
+                <label id="especial">olha o coração ao lado </label>
+            </div>
+
+            <ul>
+                <li> #  =  id</li>
+                <li> .  =  class</li>
+                <li> :  =  pseudo-classes</li>
+                <li> :: =  pseudo-elementos</li>
+                <li> >  =  childrem "filho"</li>
+            </ul>
+
+        </fieldset>
+
+        <fieldset id="caixas" class="caixas">
+            <h2>Modelos de Caixas</h2>
+            <div>
+                <h3>Box-level</h3>
+
+                <p>Paragrafo e h1 - h6 são exemplo de uma caixa Box-level.</p> 
+
+                <p>O box level sempre ocupa a proxima linha, o box Level ocupa 100% da largura da tela, e depois ele pula para a linha de <br>
+                (DIV) (h1-h6)(main)(herder)(form)(video)</p>
+                
+                <p>as box-level podem ficar na mesmas linhas se forem colocada como display inline-block ai configurem da forma que preferir</p>
+                
+                <div>
+                    <h5 id="testecaixa">Brinque aqui com o dev-tool - Box-level</h5>
+                    <p id="testebox">Brinque com o dev-tool para ver exatamente como funciona e faça testes para ver o visual, nao se preocupe nao ira alterar no arquivo. <br> Para acessar o dev-tool clique com o botão direito do mouse, e clique em "Inspecionar"</p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Inline-level</h3>
+
+                <p>tags que ficam no meio do p como o <a href="#" id="testeinlinecaixa">links são exemplos de caixas Inline-level</a></p>
+                <p>exemplos: (span) (a)(code)(lavel)(button)(input)(select)</p>
+            </div>
+
+            <div id="sombras">
+                <h3>Sombras</h3>
+                <p>Recomendo que brinque aqui com a sombras</p>
+                <p>voce pode criar a própria sombra indo em Inspecionar e ir no style e ir no passar mouse nos 3 pontos da "div, nat fieldset etc.." e coloca no add-box-shadow</p>
+
+                <h3>Verticies Arrendondadas</h3>
+
+                <p>é possivel configurar as verticies com o com border-radius</p>
+                <p>você pode brincar como fez nas box e sombras aqui como o border-radius</p>
+            </div>
+
+            <div id="bordas_decorativas">
+                <h3>Bordas decoradas/personalizadas</h3>
+
+                <p>Aqui iremos ter uma borda decorada</p>
+                <p>Tenta brincar com o dev tool para deixar essa borad</p>
+            </div>
+
+        </fieldset>
+
+    </main>
+
+    <footer>
+        <div id="creditos">
+            <p>Estudos: </p>
+            <ul>
+                <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/" target="_blank" rel="external">Curso em video</a></li>
+                <li><a href="https://www.youtube.com/@rafaellaballerini" target="_blank" rel="external">Rafaela Ballerini</a></li>
+                <li><a href="https://www.youtube.com/watch?v=hRoIcc6qlyM" target="_blank" rel="external">DevMedia</a></li>
+            </ul>
+
+            
+        </div>
+
+        <div id="image">
+            <img src="imagens/techconsult_500.png">
+        </div>
+
+        <div id="criador">
+            <p>Criado por Gelvair Junior</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

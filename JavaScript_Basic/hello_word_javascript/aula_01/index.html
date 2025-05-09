@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello Word JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Hello Word! JavaScript</h1>
+        <hr>
+        <p>Aqui iremos aprender JavaScript basico</p>
+        <hr>
+    </header>
+
+    <main>
+        <fieldset>
+            <h2>Esse é o meu primeiro JavaScript</h2>
+
+            <p><strong>Olá Mundo!</strong> JavaScript</p>
+
+            <p>já me livrei da maldição</p>
+            <script src="javascript.js"></script>
+
+        </fieldset>
+
+        <fieldset>
+
+            <h2>Regras e dicas de Javascript</h2>
+            <div>
+                <h3>Regras:</h3>
+                <p>Existe 6 regras para escolher um nome para a variavel no JavaScript</p>
+                <ul>
+                    <li><p>Podem começar com Letra, $ e _</p></li>
+                    <li><p>Não podem começar com numeros</p></li>
+                    <li><p>É possivel usar letras ou numeros</p></li>
+                    <li><p>É possível usar acentos e símbolos</p></li>
+                    <li><p>Não podem conter espaços</p></li>
+                    <li><p>Não podem ser palavras reservadas</p></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>Dicas:</h3>
+                <p>agora algumas dicas</p>
+                <ul>
+                    <li><p>Maiusculas e minusculas fazem diferença</p></li>
+                    <li><p>Tente escolher nomes coerentes para as variaveis</p></li>
+                    <li><p>evite se tornar um 'PROGRAMADOR ALFABETO' ou um 'PROGRAMADOR CONTADOR'</p></li>
+                </ul>
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <h2>Variaves do JavaScript</h2>
+                <p>Uma variavel é um valor dentro de algo, no JavaScript temos 4 tipos de variaveis "geralmente é quase todas as linguagens tem isso de variaveis" que são:</p>
+                <ul>
+                    <li><p>String: que são variaveis de textos</p></li>
+                    <li><p>Booleano: que são verdadeiro ou falso</p></li>
+                    <li><p>Number: o number ele tem dois valores, o Decimal e o Rel. Real é 5,3 e o Decimal é 5, geralmente ele se comporta altomaticamente, porem em algumas situações voce deverá definir cada um</p></li>
+                </ul>
+                
+                <p>Uma variavel no JavaScript é escrita assim <code>var x = valor_da_variavel</code></p>
+                <p>o "var" é para definir que o que esta por vir será uma variavel. O "x" é nome da variavel. O "=" no JavaScript é considerado que recebe um valor exemplo de cima o "x" esta recebendo o valor_da_variavel. E por ultimo o "valor_da_variavel" que é o valor em si pode ser um numero um booleano ou uma string</p>
+
+                <p>No JavaScript você geralmente tem que transformar as variaveis</p>
+                <p>para transformar uma string em number, você irá digitar number antes do valor da variavel, ex: number(2)</p>
+                <p>para transformar um number em string, você só digita str antes do varor ex: str(2)</p>
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <h2>Operadores do JavaScript</h2>
+
+                <p>O JavaScript tem diversas familias de Operadores, o que iremos ver por enquanto serão:</p>
+                <ul>
+                    <li><p>Aritiméticos</p></li>
+                    <li><p>Atribuição</p></li>
+                    <li><p>Relacionais</p></li>
+                    <li><p>Lógicos</p></li>
+                    <li><p>Ternário</p></li>
+                </ul>
+
+                <h3>Aritiméticos</h3>
+
+                <p>Os Aritiméticos são operadores matematicos que são:</p>
+                <ul>
+                    <li><p>+ = soma: </p></li>
+                    <li><p>- = diminuição: </p></li>
+                    <li><p>* = multiplicação: </p></li>
+                    <li><p>/ = divisão real: </p></li>
+                    <li><p>% = resto da divisão inteira: </p></li>
+                    <li><p>** = potencia: </p></li>
+                </ul>
+                <p>Lembre-se de suas aulas de matematica tem ordem de precedencias</p>
+            </div>
+
+            <div>
+                <h3>Atribuição</h3>
+
+                <p>usando o que tem a cima você pode alterar o valores ex: <code>var n = 3.</code> <code>n = n + 5 (8).</code> <code>n+=4 (12).</code> </p>
+                
+                <p>incremento quando voce quiser adicionar ou diminuir apenas 1 você pode usar <code> var n = 5.</code> <code>n++ . n--</code></p>
+            </div>
+
+            <div>
+                <h3>Operadores de atribuição</h3>
+                <ul>
+                    <li>= = a por uma informação (recebe)</li>
+                    <li>n+= 4 = significa que é o valor de n mais 4</li>
+                    <li>n-= 4 = significa que é o valor de n menor 4</li>
+                    <li>n*= 4 = significa que é o valor de n multiplica por 4</li>
+                    <li>n/4 = 4 = significa que é o valor de n divide 4</li>
+                    <li>n**= 4 = significa que é o valor de n potencia 4</li>
+                    <li>n%= 4 = significa que é o valor de n resto 4</li>
+                    <li>n++ = adiciona n mais 1</li>
+                    <li>n-- = diminui n menos 1</li>
+                    <li>${} = poder colocar variavel no meio do texto sem usar concatenação</li>
+                    <li>'"" = para poder usar junto do ${}</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Operadors relacionais</h3>
+                <ul>
+                    <li>> = maior que</li>
+                    <li> < = menor que </li>
+                    <li>>= = maior ou igual</li>
+                    <li> <= = menor ou igual</li>
+                    <li>== = igual à </li>
+                    <li>!= = diferente de</li>
+                    <li>=== = se é identico </li>
+                </ul>
+                <p>os resultados desses operadores sempre volta um booleano</p>
+            </div>
+
+            <div>
+                <h3>Operadores lógicos</h3>
+                <ul>
+                    <li>! = negação</li>
+                    <li>&& = conjunção (e logico) (se não der as duas verdadeiras é falso)(e)</li>
+                    <li>|| = disjunção (ou lógico) (Basta um ser verdadeiro estou satisfeito ai da verdadeiro)(ou)</li>
+                </ul>
+
+                <h3>Operadores Ternário</h3>
+                <p>teste ? true : false </p>
+                <p>média >=7 ? "aprovado" : "reprovado"</p>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <h2>Iniciando estudos DOM</h2>
+
+                <p id="textcomplex">Modelo Hierarca da Arvore DOM, Tudo dentro do JavaScript esta dentro de um window, dentro de window, tem location, document, history, dentro de document tem o html, dentro do html tem o head e o body e por ai vai </p>
+
+                <p>Lembrando, pense como se fosse navegar nas pastas linux <br></p>
+
+                <p>Aqui vai o resultado</p>
+                <p>Aprendendo usar o <strong>DOM</strong> em JS</p>
+                <script>
+                    var p1 = document.getElementsByTagName("p")[43]
+                    var textcomplex = window.document.querySelector('p#textcomplex')
+
+                    window.document.write("Esta escrito assim " + p1.innerHTML)
+                    textcomplex.style.background = 'green'
+                    window.document.write(window.document.URL)
+
+
+                </script>
+
+                <p>No Dom temos diversas formas de chamar partes do HTML são elas: </p>
+                <ul>
+                    <li>Marca</li>
+                    <ul>
+                        <li>getElementsByTagName</li>
+                        <li>São por tags do html</li>
+                    </ul>
+
+                    <li>Id</li>
+                    <ul>
+                        <li>getElementByid()</li>
+                        <li>são por id do html</li>
+                    </ul>
+
+                    <li>Name</li>
+                    <ul>
+                        <li>getElementByName()</li>
+                        <li>são por nome do objeto</li>
+                    </ul>
+
+                    <li>Classe</li>
+                    <ul>
+                        <li>getElementsByClassName()</li>
+                        <li>selecionar pela classe</li>
+                    </ul>
+
+                    <li>Seletor</li>
+                    <ul>
+                        <li>querySelector()</li>
+                        <li>quertSelectorAll()</li>
+                    </ul>
+                </ul>
+
+                <p>Todos funcionam quase igual</p>
+                <p>lembrando aqueles que tem elements com o s no final tem que estar especificando qual deles é dentro de [] sendo o primeiro o 0 </p>
+
+            </div>
+
+            <div>
+                <h3>Eventos DOM</h3>
+
+                <p>Funções</p>
+
+                <div id="clica" >
+                    <p>Vem</p>
+                </div>
+
+                <p>aqui nós interagimos bastante</p>
+                <p>caso nao funcione algo entre no dev tools e la diz o que nao conseguiu ler</p>
+
+                <script>
+                    var click = window.document.querySelector('div#clica')
+                    click.addEventListener('click', clicar)
+                    click.addEventListener('mouseenter', entrar)
+                    click.addEventListener('mouseout', sair)
+
+                    function clicar() {
+                        click.innerText = 'clicou'
+                        click.style.background = 'red'
+                    }
+
+                    function entrar() {
+                        
+                        click.innerText = 'Entrou'
+                    }
+
+                    function sair() {
+                        click.innerText = 'saiu'
+                        click.style.background = 'rgb(10, 167, 10)'
+                    }
+                </script>
+
+                <div>
+                    <h3>Somando valores</h3>
+
+                    <input type="number" name="txtn1" id="txtn1">
+                    <input type="number" name="txtn2" id="txtn2">
+                    <input type="button" value="somar" onclick="somar()">
+
+                    <div  id="res"><p>Resultado: </p></div>
+                    <script>
+                        function somar() {
+                            var tn1 = window.document.querySelector('input#txtn1')
+
+                            var tn2 = window.document.querySelector('input#txtn2')
+
+                            var res = window.document.querySelector('div#res')
+
+                            var n1 = Number(tn1.value) 
+
+                            var n2 = Number(tn2.value) 
+
+                            var somar = n1 + n2
+
+                            res.innerHTML = `A soma entre ${n1} e ${n2} é ${somar}`
+
+                        }
+                    </script>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <h3>Condições</h3>
+
+            <p>Aqui vamos testar condições if</p>
+            <p>você estava a quantos KMs/h?<input type="number" name="velocidade" id="velocidade"></p>
+            <input type="button" value="verificar" onclick="calcular()">
+            <div id="res2">
+
+            </div>
+
+            <script>
+                function calcular() {
+                    var velocidades = window.document.querySelector('input#velocidade')
+
+                    var res2 = window.document.querySelector('div#res2')
+
+                    var vel = Number(velocidades.value)
+
+                    if (vel > 80) {
+                        res2.innerHTML += `Sua velocidade esta a cima da permitida você será mutado `
+                    }
+
+                    res2.innerHTML += `sua velocdade estava em ${vel}Km/h. `
+                }
+                
+            </script>
+
+            <p>Vamos fazer uma condição nova aqui</p>
+            <input type="text" name="nacionalidade" id="nacionalidade">
+            <input type="button" value="ver" onclick="nacao()">
+            <div id="res3"></div>
+            <script>
+                var nacionalidade = window.document.querySelector("#nacionalidade").value
+                
+                function nacao() {
+                    
+
+                    if (nacionalidade !== "Brasil") {
+                        res3.innerHTML = `Você é Brasileiros`
+                    } else {
+                        res3.innerHTML = `Você é Estrangeiro`
+                    }
+                }
+
+            </script>
+        </fieldset>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'valentine';
+    src: url(fontes/Be\ My\ Valentine.otf) format(opentype), url(fontes/Be\ My\ Valentine.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+
+    /*
+        tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - svg
+        -truetype-ast (Apple Advanced Typegraphy)
+    */
+}
+@font-face {
+    font-family: 'lovely';
+    src: url(fontes/Lovely\ Valentine\ Sans.otf) format(opentype), url(fontes/Lovely\ Valentine\ Sans.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+
+*{/*configurações globais das css*/
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+body{
+    background-image: linear-gradient(to right, #02735E, #038C3E, #0CF25D);
+    margin: 0;
+}
+
+header{
+    background-color: #141F2E;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+}
+
+main{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.966);
+    padding: 10px;
+    margin-top: 0;
+    margin: auto ;
+    width: 750px;
+    
+}
+
+footer{
+    background-color: #141F2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: bold 16px serif;
+}
+
+nav{
+    box-shadow: 5px 5px 5px black;
+}
+
+fieldset{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+h2{
+    text-align: center;
+    font: bold 22px;
+    text-shadow: 1px 1px 2px #025951;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: hsl(141, 92%, 37%);
+}
+
+p{
+    text-align: justify;
+    text-indent: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* aqui se divide tags para pseudo-classes */
+
+a:visited {
+    color: blueviolet;
+}
+a:hover{
+    text-decoration: underline;
+}
+#youare:hover {
+    background-color: yellow;
+}
+
+/*aqui se divide pseudo-classe para pseudo-elementos*/
+
+#especial::after {
+    content: '\002764';
+}
+#especial::before {
+    content: '\002764';
+}
+
+/*aqui se divide pseudo-elementos para o id*/
+
+#criador{
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 10px; 
+}
+
+#creditos{
+    text-align: left;
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+
+#id{
+    text-align: left;
+}
+
+#titulo {
+    margin: 0;
+}
+
+/*aqui se divide id e class*/
+
+.lor{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.class{
+    font-family: 'Playwrite IE Guides', serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+.paragrafo{
+    background-color: black;
+    color: white;
+}
+
+.imagens{
+    color: white;
+    background-color: black;
+}
+
+.audio{
+    color: white;
+    background-color: black;
+}
+
+.video{
+    color: white;
+    background-color: black;
+}
+
+.cores{ 
+    background-image: linear-gradient(to right, #319EE2, #605Fc0, #B93590, #E33F5F);
+    line-height: 2;
+    text-align: justify;
+    color: white;
+}
+
+.alinhamento{
+    font: normal 1em arial, verdana, serif;
+}
+
+.seletores{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtitulo{
+    margin: 0;
+}
+
+/*aqui se divide class para childrem*/
+
+div > #houver {
+    width: 500px;
+    height: 120px;
+    display: inline-block;
+    border: 2px solid black;
+}
+div > h4{
+    display: none;
+}
+div > #houver:hover > h4{
+    display: block;
+    color: black;
+    background-color: red;
+    margin-left: 100px;
+    text-indent: 10px;
+    width: 300px;
+}
+
+footer > div{
+    display: flex;
+}
+
+nav > p {
+    text-align: center;
+}
+nav > p > a:active{
+    color: red;
+}
+nav > p > a:visited{
+    color: #09D354;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* aqui esta os testes */
+#h2tipo{
+    font-family: 'Courier New', Courier, monospace;
+}
+#h3tipo{
+    font-family: 'Times New Roman', Times, serif;
+}
+#ptipo1{
+    font-family: monospace;
+}
+#ptipo2{
+    font-family: sans-serif;
+    
+}
+#ptipo3{
+    font-family: serif;
+}
+#tamanhoPpx{
+    font-family: 'Poppins';
+    font-size: 8px;
+}
+#tamanhoMpx{
+    font-family: 'poppins';
+    font-size: 16px;
+}
+#tamanhoGpx{
+    font-family: 'poppins';
+    font-size: 32px;
+}
+#tamanhoPem{
+    font-size: 0.5em;
+}
+#tamanhoMem{
+    font-size: 1em;
+}
+#tamanhoGem{
+    font-size: 2em;
+}
+#L{
+    font: italic lighter 1em sans-serif;
+}
+#N{
+    /*recomendado*/
+    font: italic normal 1em sans-serif;
+}
+#P{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+#ali{
+    text-align: center;
+    font: bold 20px arial, verdana, serif;
+}
+#la{
+    text-align: left;
+}
+#al{
+    text-align: right;
+}
+#h2s{
+    color: #163320;
+    font-family: 'Courier New', Courier, monospace;
+}
+#h3s{
+    color: #40634C;
+    text-align: right;
+}
+#testebox{
+    background-color: aquamarine;
+    display: inline;
+    margin: auto;
+}
+#testecaixa{
+    background-color: rgb(116, 136, 136);
+    width: 200px;
+    height: 100px;
+
+    /*color: black;
+    font-size: 18px;*/
+    font: bold 18px 'Courier New', Courier, monospace, sans-serif black;
+
+    /*
+    border-width: 10px;
+    border-style: solid;
+    border-color: #319EE2;*/
+    border: 10px solid #319EE2;
+
+    /*
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding: 10px 15px;*/
+    padding: 10px 15px 10px 15px;
+
+    /*
+    outline: 5px;
+    outline-style: dashed;
+    outline-color: salmon;*/
+    outline: 5px dashed salmon;
+
+
+    /*
+    margin-top: 10px; 
+    margin-left: auto; 
+    margin-bottom: 10px; 
+    margin-right: auto; 
+    margin: 10px auto;*/
+    margin: 10px auto 10px auto;
+
+}
+
+#testeinlinecaixa{
+    display: inline-block;
+    background-color: aqua;
+
+    /*border-top-width: 5px;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+    border-right-width: 5px;
+    border-style: double;
+    border-color: #e23131;*/
+    border: 5px double #e23131;
+   
+    padding: 5px;
+    
+    margin: 5px;
+}
+
+#sombras{
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px 0px;
+}
+
+#bordas_decorativas{
+    border: 20px solid transparent;
+    padding: 10px;
+    
+    border-image: url(Imagens_em_minhaturas/borda.png) 27 repeat;
+    /*border-image: url(Imagens_em_minhaturas/borda.png);
+    border-image-slice: 27;
+    border-image-repeat: repeat;*/
+}
