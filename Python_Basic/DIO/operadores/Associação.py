@@ -11,3 +11,10 @@ if 20 not in seq:
     print('Você não acertou minha idade de quando eu escrevi o codigo, hehehe')
 else:
     print('acertou em cheio')
+
+texto = input('Agora digite um texto: ')
+VOGAIS = "AEIOU"
+
+for letra in texto:
+    if letra.upper() in VOGAIS:
+        print(letra + "")
