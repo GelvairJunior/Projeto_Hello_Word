@@ -37,6 +37,8 @@ public class SpanishDNIVerification {
 		return false;
 	}
 	
+	
+	
 	public static boolean concatValidation(String numberLetter) {
 		
 		try {
