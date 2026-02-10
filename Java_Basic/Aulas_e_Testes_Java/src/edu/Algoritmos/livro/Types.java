@@ -1,5 +1,8 @@
 package edu.Algoritmos.livro;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Types {
 	public static void main(String[] args) {
 		int i = 5;
@@ -14,15 +17,22 @@ public class Types {
 		char[] vC = {'N', 'i', 'k', 'l', 'a', 'u', 's'};  // Estrutura de Vetor
 		char[][] mC = {{'A','l','g','o','r','t','m','o','s'},{'E','s','t','r','u','t','u','r','a','s'}};  // Estrutura de Matriz
 	
-		Forma forma = new Forma();
-		Cor cor = new Cor();
-		Veiculo veiculo = new Veiculo();
 		
+		
+		types();
 		//potenciaNegativa(); // utilização de vetores
-		registerVariavel(); // utilização de Record/Registros
-		
+		//registerVariavel(); // utilização de Record/Registros
+		conjuntosVariavel(); // utilização de Conjuntos
 	}
-	
+
+	//Utilizando os Tipos
+	public static void types() {
+		enum Forma {Triangulo, Quadrado, Losangulo, Circulo, Retangulo};//Aqui trabalhando tipos 
+		enum Cor {Amarelo, Verde, Azul, Vermelho, Preto, Branco, Lilas, Roxo, Rosa, Laranja};//Aqui trabalhando tipos 
+		enum Veiculo {Carro, Moto, Caminhão, Motocicleta, Carroça};//Aqui trabalhando tipos 
+		enum Dias {SEG, TER, QUA, QUI, SEX, SAB, DOM}; //Aqui trabalhando com tipos fixos
+		System.out.println(Forma.Circulo);
+	}
 
 	//Utilizalção de vetores
 	public static void potenciaNegativa() {
@@ -46,21 +56,71 @@ public class Types {
 	
 	//Aqui estamos fazendo o uso do Record
 	public static void registerVariavel() {
-		REGISTER_Pessoa[] familia = registerFamilia();
+		REGISTER_Pessoa2[] familia = registerFamilia2();
 		int contador = 0;
 		
 		for(int i = 0; i < familia.length; i++) {
-			if ((familia[i].sex.sexo.equals("Feminino")) && (familia[i].estadoCivil.equals("Solteira"))) {
+			if ((familia[i].sexo.sex.equals("Feminino")) && (familia[i].estadoCivil.equals("Solteira"))) {
 				contador++;
 				System.out.println(familia[i].nome);
+				System.out.println(familia[i].nascimento.ano + "/" + familia[i].nascimento.mes + "/" + familia[i].nascimento.dia);
+				System.out.println();
 			}
 		}
 		System.out.print(contador);
 		
 	}
 	
+	//Aqui estamos fazendo o uso do tipo Conjunto
+	public static void conjuntosVariavel() {
+		Set<Integer> A = new HashSet<>();
+        Set<Integer> B = new HashSet<>();
+
+        A.add(1);
+        A.add(2);
+        A.add(3);
+        B.add(3);
+        B.add(4);
+        B.add(5);
+
+        // União
+        Set<Integer> uniao = new HashSet<>(A);
+        uniao.addAll(B);
+
+        // Interseção
+        Set<Integer> intersecao = new HashSet<>(A);
+        intersecao.retainAll(B);
+
+        // Diferença
+        Set<Integer> diferenca = new HashSet<>(A);
+        diferenca.removeAll(B);
+
+        System.out.println("A: " + A);
+        System.out.println("B: " + B);
+        System.out.println("União: " + uniao);
+        System.out.println("Interseção: " + intersecao);
+        System.out.println("Diferença: " + diferenca);
+	}
 	
-	//Maneira certa de utilizar registros em java
+	//Estrutura de record(Registro)
+	record REGISTER_Pessoa2(String nome, Data2 nascimento, String estadoCivil, Sex2 sexo) { } // Estrutura de record(Registro)
+	record Data2 (int ano, int mes, int dia) { }// Estrutura de record(Registro)
+	record Sex2 (String sex) { }// Estrutura de record(Registro)
+	
+	// Obtendo dados do tipo Estruturado de dados do tipo Registro/Record 
+	public static REGISTER_Pessoa2[] registerFamilia2() {
+		REGISTER_Pessoa2[] familia = new REGISTER_Pessoa2[5];
+		
+		familia[0] = new REGISTER_Pessoa2("Juliana", new Data2(2004, 6, 12), "Solteira", new Sex2("Feminino"));
+		familia[1] = new REGISTER_Pessoa2("Serana", new Data2(2000, 9, 22), "Solteira", new Sex2("Feminino") );
+		familia[2] = new REGISTER_Pessoa2("Gabriel", new Data2(1999, 12, 22), "Namorando", new Sex2("Masculino"));
+		familia[3] = new REGISTER_Pessoa2("Dom", new Data2(1990, 5, 22), "Divorciado", new Sex2("Masculino") );
+		familia[4] = new REGISTER_Pessoa2("Carol", new Data2(1990, 4, 11), "Casada", new Sex2("Feminino") );
+		
+		return familia;
+	}
+	
+	//Maneira de utilizar OBJETOS não registros
 	public static REGISTER_Pessoa[] registerFamilia() {
 		REGISTER_Pessoa[] familia = new REGISTER_Pessoa[5];
 		
@@ -95,7 +155,7 @@ public class Types {
 		familia[3].nascimento.setDay(22);
 		familia[3].estadoCivil = "Divorciado";
 		familia[3].sex.setSexo('M');
-
+		
 		familia[4] = new REGISTER_Pessoa();
 		familia[4].nome = "Carol";
 		familia[4].nascimento.setAno(1990);
@@ -106,22 +166,5 @@ public class Types {
 		
 		return familia;
 	}
-	
-	
-	public record REGISTER_Pessoa2(String nome, Data2 nascimento, String estadoCivil, Sex2 sexo) { } // Estrutura de record(Registro)
-	public record Data2 (int ano, int mes, int dia) { }// Estrutura de record(Registro)
-	public record Sex2 (String sex) { }// Estrutura de record(Registro)
-	
-	// Utilizando o tipo Registro/Record
-	public static REGISTER_Pessoa2[] registerFamilia2() {
-		REGISTER_Pessoa2[] familia = new REGISTER_Pessoa2[5];
-		
-		familia[0] = new REGISTER_Pessoa2("Juliana", new Data2(2004, 6, 12), "Solteira", new Sex2("Feminino"));
-		familia[1] = new REGISTER_Pessoa2("Serana", new Data2(2000, 9, 22), "Solteira", new Sex2("Feminino") );
-		familia[2] = new REGISTER_Pessoa2("Gabriel", new Data2(1999, 12, 22), "Namorando", new Sex2("Masculino"));
-		familia[3] = new REGISTER_Pessoa2("Dom", new Data2(1990, 5, 22), "Divorciado", new Sex2("Masculino") );
-		familia[4] = new REGISTER_Pessoa2("Carol", new Data2(1990, 4, 11), "Casada", new Sex2("Feminino") );
-		
-		return familia;
-	}
 }
+
