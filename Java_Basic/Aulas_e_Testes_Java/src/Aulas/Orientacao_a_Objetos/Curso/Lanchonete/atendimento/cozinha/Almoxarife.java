@@ -1,20 +1,20 @@
 package Aulas.Orientacao_a_Objetos.Curso.Lanchonete.atendimento.cozinha;
 
 public class Almoxarife {
-	public void controlarEntrada() {
+	void controlarEntrada() {
 		System.out.println("Controlando a Entrada dos Itens");
 	}
 	
-	public void controlarSaida() {
+	private void controlarSaida() {
 		System.out.println("Controlando a Saida dos Itens");
 	}
 	
-	public void entregarIngredientes() {
+	void entregarIngredientes() {
 		System.out.println("Entregando Ingredientes");
-		//...?
+		controlarSaida();
 	}
 	
-	public void trocarGas() {
+	void trocarGas() {
 		System.out.println("Almoxarife Trocando o Gas");
 	}
 }

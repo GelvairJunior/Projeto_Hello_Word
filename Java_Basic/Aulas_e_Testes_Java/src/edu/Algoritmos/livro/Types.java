@@ -2,6 +2,8 @@ package edu.Algoritmos.livro;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Types {
 	public static void main(String[] args) {
@@ -16,17 +18,17 @@ public class Types {
 		
 		char[] vC = {'N', 'i', 'k', 'l', 'a', 'u', 's'};  // Estrutura de Vetor
 		char[][] mC = {{'A','l','g','o','r','t','m','o','s'},{'E','s','t','r','u','t','u','r','a','s'}};  // Estrutura de Matriz
-	
 		
 		
-		types();
+		//types();
 		//potenciaNegativa(); // utilização de vetores
 		//registerVariavel(); // utilização de Record/Registros
-		conjuntosVariavel(); // utilização de Conjuntos
+		//conjuntosVariavel(); // utilização de Conjuntos
+		sequencial(); // utilização sequencia
 	}
 
 	//Utilizando os Tipos
-	public static void types() {
+	static void types() {
 		enum Forma {Triangulo, Quadrado, Losangulo, Circulo, Retangulo};//Aqui trabalhando tipos 
 		enum Cor {Amarelo, Verde, Azul, Vermelho, Preto, Branco, Lilas, Roxo, Rosa, Laranja};//Aqui trabalhando tipos 
 		enum Veiculo {Carro, Moto, Caminhão, Motocicleta, Carroça};//Aqui trabalhando tipos 
@@ -35,7 +37,7 @@ public class Types {
 	}
 
 	//Utilizalção de vetores
-	public static void potenciaNegativa() {
+	static void potenciaNegativa() {
 		int i, k, r;
 		int[] d = {1,2,3,4,5,6,7,8,9,10};
 		
@@ -55,7 +57,7 @@ public class Types {
 	}
 	
 	//Aqui estamos fazendo o uso do Record
-	public static void registerVariavel() {
+	static void registerVariavel() {
 		REGISTER_Pessoa2[] familia = registerFamilia2();
 		int contador = 0;
 		
@@ -72,7 +74,7 @@ public class Types {
 	}
 	
 	//Aqui estamos fazendo o uso do tipo Conjunto
-	public static void conjuntosVariavel() {
+	static void conjuntosVariavel() {
 		Set<Integer> A = new HashSet<>();
         Set<Integer> B = new HashSet<>();
 
@@ -102,13 +104,30 @@ public class Types {
         System.out.println("Diferença: " + diferenca);
 	}
 	
+	//Aqui estamos utilizando o tipo Sequencial
+	static void sequencial() {// s = list
+		int maxLength = 50; // Não limita, se precisar vai deixar aumentar
+		ArrayList list = new ArrayList(maxLength);// Mas evita custo de realocação na memória interna
+		list.clear();// limpa (Open(s))
+		list.add("Junior");// Aqui adiciona um elemento no fim da lista(Write(s, x))
+		list.addFirst("Serana");// Aqui adiciona um elemento no inicio da lista (Reset(s))
+		list.add(0, "Prof: Lucy");// Aqui escreve o onde na posição i onde 0<=i<=s.length(Read(s, x))avança os próximos elementos
+		
+		System.out.println(list);
+		
+		FileSystem sequenciaEX = new FileSystem();
+		sequenciaEX.main(null);
+	}
+	
 	//Estrutura de record(Registro)
 	record REGISTER_Pessoa2(String nome, Data2 nascimento, String estadoCivil, Sex2 sexo) { } // Estrutura de record(Registro)
 	record Data2 (int ano, int mes, int dia) { }// Estrutura de record(Registro)
+
+	
 	record Sex2 (String sex) { }// Estrutura de record(Registro)
 	
 	// Obtendo dados do tipo Estruturado de dados do tipo Registro/Record 
-	public static REGISTER_Pessoa2[] registerFamilia2() {
+	static REGISTER_Pessoa2[] registerFamilia2() {
 		REGISTER_Pessoa2[] familia = new REGISTER_Pessoa2[5];
 		
 		familia[0] = new REGISTER_Pessoa2("Juliana", new Data2(2004, 6, 12), "Solteira", new Sex2("Feminino"));
@@ -121,7 +140,7 @@ public class Types {
 	}
 	
 	//Maneira de utilizar OBJETOS não registros
-	public static REGISTER_Pessoa[] registerFamilia() {
+	static REGISTER_Pessoa[] registerFamilia() {
 		REGISTER_Pessoa[] familia = new REGISTER_Pessoa[5];
 		
 		familia[0] = new REGISTER_Pessoa();
@@ -166,5 +185,5 @@ public class Types {
 		
 		return familia;
 	}
+	
 }
-
