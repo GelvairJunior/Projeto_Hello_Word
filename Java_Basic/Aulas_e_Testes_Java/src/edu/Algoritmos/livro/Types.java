@@ -2,6 +2,9 @@ package edu.Algoritmos.livro;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import edu.Algoritmos.livro.objetos.REGISTER_Pessoa;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -24,7 +27,9 @@ public class Types {
 		//potenciaNegativa(); // utilização de vetores
 		//registerVariavel(); // utilização de Record/Registros
 		//conjuntosVariavel(); // utilização de Conjuntos
-		sequencial(); // utilização sequencia
+		//sequencial(); // utilização sequencia
+		//buffer();
+		inout();
 	}
 
 	//Utilizando os Tipos
@@ -106,17 +111,17 @@ public class Types {
 	
 	//Aqui estamos utilizando o tipo Sequencial
 	static void sequencial() {// s = list
-		int maxLength = 50; // Não limita, se precisar vai deixar aumentar
-		ArrayList list = new ArrayList(maxLength);// Mas evita custo de realocação na memória interna
-		list.clear();// limpa (Open(s))
-		list.add("Junior");// Aqui adiciona um elemento no fim da lista(Write(s, x))
-		list.addFirst("Serana");// Aqui adiciona um elemento no inicio da lista (Reset(s))
-		list.add(0, "Prof: Lucy");// Aqui escreve o onde na posição i onde 0<=i<=s.length(Read(s, x))avança os próximos elementos
+		FileSystem sequencia = new FileSystem();
+		sequencia.main(null);
+	}
+	
+	static void buffer() {
+		Buffer_correct buffer = new Buffer_correct();
+		buffer.main(null);
+	}
+	
+	static void inout() {
 		
-		System.out.println(list);
-		
-		FileSystem sequenciaEX = new FileSystem();
-		sequenciaEX.main(null);
 	}
 	
 	//Estrutura de record(Registro)

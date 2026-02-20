@@ -1,15 +1,15 @@
-package edu.Algoritmos.livro;
+package edu.Algoritmos.livro.objetos;
 
 public class REGISTER_Data {
-	int ano;
-	int mes;
-	int dia;
+	public int ano;
+	public int mes;
+	public int dia;
 	
-	void setAno(int year) {
+	public void setAno(int year) {
 		ano = year;
 	}
 	
-	void setMes(int mouth) {
+	public void setMes(int mouth) {
 		if ((mouth > 0) && (mouth < 13)) {
 			mes = mouth;
 		}else {
@@ -17,7 +17,7 @@ public class REGISTER_Data {
 		}
 	}
 	
-	void setDay(int day) {
+	public void setDay(int day) {
 		if ((day > 0) && (day < 32) ) {
 			dia = day;
 		} else {

@@ -1,9 +1,9 @@
-package edu.Algoritmos.livro;
+package edu.Algoritmos.livro.objetos;
 
 public class REGISTER_Sexo {
-	String sexo;
+	public String sexo;
 	
-	void setSexo(char sex) {
+	public void setSexo(char sex) {
 		if (sex == 'F') {
 			sexo = "Feminino";
 		}else {
