@@ -8,4 +8,3 @@ public class CepFormatation {
           //simulando um cep formatado
           return "23.765-064";
     }
-}

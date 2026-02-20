@@ -2,6 +2,7 @@ package edu.desafios;
 
 public class MineFinder {
 	public static void main(String[] args) {
+
 		int[][] field = { {0, 0, 0}, {0, 1, 0} };
 		
 		int[] ret = new int[2];
