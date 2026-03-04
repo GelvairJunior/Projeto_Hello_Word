@@ -73,7 +73,7 @@ public class Buffer_correct {
     }
     
     // === Demonstração ===
-    public static void main(String[] args) {
+    public void teste() {
         Thread produtor = new Thread(() -> {
             try {
                 for (int b = 0; b < 10; b++) {

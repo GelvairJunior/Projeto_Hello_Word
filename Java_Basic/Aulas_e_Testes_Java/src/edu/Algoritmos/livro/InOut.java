@@ -8,8 +8,8 @@ public class InOut {
 		Scanner ch = new Scanner(System.in);
 		int x = 0;
 		ch.next();
-		while(("0" <= ch) & (ch <= "9")) {
+		//while(("0" <= ch) & (ch <= "9")) {
 			
-		}
+		//}
 	}
 }

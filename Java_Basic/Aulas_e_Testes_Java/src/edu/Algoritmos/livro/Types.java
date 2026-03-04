@@ -7,29 +7,43 @@ import edu.Algoritmos.livro.objetos.REGISTER_Pessoa;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Types {
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
 		int i = 5;
 		char c = 'A';
 		double r = 4.5;
 		boolean b = true;
 		String S = "Junior";
 		
-		int[] v = {3,5,7,9};
+		int[] v = {3,5,7,9,10,12,14,15,16,18};
 		int[][] m = { {0,2,4,6,8}, {1,3,5,7,9} };
 		
-		char[] vC = {'N', 'i', 'k', 'l', 'a', 'u', 's'};  // Estrutura de Vetor
+		char[] vC = {'N', 'i', 'k', 'l', 'a', 'a', 'u', 's'};  // Estrutura de Vetor
 		char[][] mC = {{'A','l','g','o','r','t','m','o','s'},{'E','s','t','r','u','t','u','r','a','s'}};  // Estrutura de Matriz
 		
 		
+		String x = scan.next();
+		char[] xc = x.toCharArray();
+		
 		//types();
+		
 		//potenciaNegativa(); // utilização de vetores
 		//registerVariavel(); // utilização de Record/Registros
 		//conjuntosVariavel(); // utilização de Conjuntos
+		
 		//sequencial(); // utilização sequencia
 		//buffer();
-		inout();
+		//inout();
+		
+		//buscaSequencial(v, 10);
+		//buscaBinaria(v, 10);
+		//buscaTabela(vC, x);
+		//buscaDiretaTabela(vC, x);
+		knuth_Morris_Pratt(vC, xc);
 	}
 
 	//Utilizando os Tipos
@@ -112,25 +126,137 @@ public class Types {
 	//Aqui estamos utilizando o tipo Sequencial
 	static void sequencial() {// s = list
 		FileSystem sequencia = new FileSystem();
-		sequencia.main(null);
+		sequencia.teste();
 	}
 	
 	static void buffer() {
 		Buffer_correct buffer = new Buffer_correct();
-		buffer.main(null);
+		buffer.teste();
 	}
 	
 	static void inout() {
 		
 	}
 	
+	// Aqui é feito a busca sequencial
+	static void buscaSequencial(int[] a, int x) {
+		a[a.length-1] = x;
+		int i = 0;
+		while (a[i] != x) {
+			System.out.println("Procura: " + i);
+			i++;
+		}
+		System.out.println(i);
+	}
+	
+	//Aqui é feito a busca binaria(mais rapido e eficiente, o peso é a o log(N), porem precisa estar ordenado o vetor
+	static void buscaBinaria(int[] a, int x) {
+		int L = 0;
+		int R = a.length;
+		int m = 0;
+		int i = 0;
+		while (L < R) {
+			System.out.println("Procura: " + i++);
+			m = (L + R)/2;
+			if (a[m] < x) {
+				L = m + 1;
+			}else {
+				R = m;
+			}
+			if(a[m] == x) {break;}
+		}
+		System.out.println(m);
+	}
+	
+	//Aqui é feito a busca em tabela
+	static void buscaTabela(char[] y, String x) {
+		char[] xc = x.toCharArray();
+		int i = 0;
+		
+		while ((xc[i] != '0')&&(xc[i] == y[i])) {
+			i++;
+		}
+		
+		String yc = y.toString();
+		
+		System.out.println(i);
+		
+        int resultado = x.compareTo(yc);
+
+        if (resultado < 0)
+            System.out.println(x + " < " + yc);
+        else if (resultado > 0)
+            System.out.println(x + " > " + yc);
+        else
+            System.out.println(x + " = " + yc);
+    }
+
+	//Aqui é feito a busca direto em tabela
+	static void buscaDiretaTabela(char[] y, String x) {
+		char[] xc = x.toCharArray();
+		int i=0;
+		
+		while ((i != y.length)&&(i != xc.length)&&(xc[i] != y[i])) {
+			i++;
+		}
+		if((i == xc.length)||(i == y.length)) {
+			System.out.println("Deu não tem o caractere");
+		}else{System.out.println(i);}
+		
+	}
+	
+	//Método de Knuth-Morris-Pratt para busca em cadeias
+	static void knuth_Morris_Pratt(char[] s, char[] p){
+		
+		int j = 0;
+		int k = -1;
+		int N = s.length;
+		int M = p.length;
+		int[] d = new int[M];
+		
+		d[0] = -1;
+		// --- Etapa 1: construir vetor de prefixos (failure function) ---
+		while (j < M-1) {
+			while (k >= 0 && p[j] != p[k]) {
+				k = d[k];
+			}
+			
+			j++;
+			k++;
+			
+			if(p[j] == p[k]) {
+				d[j] = d[k];
+			}else {
+				d[j] = k;
+			}
+		}
+
+		// Segunda etapa do código
+		int i = 0; // posições do texto 
+		j=0; // posição do padrao
+		
+		while (i < N) {
+			while (k <= i) {
+				System.out.println(s[k]);
+				k++;
+				j = d[j];
+			}
+			i++;
+			j++;
+			
+			if (j == M) {
+				System.out.println("Padrão encontrado na posição: " + (i - M));
+				j = d[j -1]; //Reinicia busca para multiplas ocorrencia
+			}
+		}
+		
+	}
+	
 	//Estrutura de record(Registro)
 	record REGISTER_Pessoa2(String nome, Data2 nascimento, String estadoCivil, Sex2 sexo) { } // Estrutura de record(Registro)
 	record Data2 (int ano, int mes, int dia) { }// Estrutura de record(Registro)
-
-	
 	record Sex2 (String sex) { }// Estrutura de record(Registro)
-	
+
 	// Obtendo dados do tipo Estruturado de dados do tipo Registro/Record 
 	static REGISTER_Pessoa2[] registerFamilia2() {
 		REGISTER_Pessoa2[] familia = new REGISTER_Pessoa2[5];

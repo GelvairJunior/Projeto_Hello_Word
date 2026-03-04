@@ -14,6 +14,7 @@ public class Excecoes {
 		String funcao;
 		String cep;
 		
+		
 		Scanner scanner = new Scanner(System.in);
 		boolean cadastro = false;
 		while (cadastro == false) {
@@ -49,7 +50,7 @@ public class Excecoes {
 				cadastro = false;
 				continue;
 			
-			} catch(CepExceptionInvalid e) {
+			} catch(Exception e) {
 				System.out.println("Cep não encontrado, digite novamente: ");
 				cadastro = false;
 				continue;

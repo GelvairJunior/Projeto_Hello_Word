@@ -4,10 +4,10 @@ import java.util.List;
 
 public class FileSystem {
     // Constante máxima (limite teórico de dados)
-    public static final int MAX_LENGTH = 4096;
+	private static final int MAX_LENGTH = 4096;
 
     // Tipo Sequence (registro)
-    public static class Sequence {
+    private static class Sequence {
         int pos;           // posição atual
         int length;        // tamanho da sequência
         boolean eof;       // flag de fim
@@ -22,7 +22,7 @@ public class FileSystem {
     }
 
     // Abre / inicializa uma nova sequência
-    public static void open(Sequence f) {
+    private static void open(Sequence f) {
         f.a.clear();
         f.pos = 0;
         f.length = 0;
@@ -30,7 +30,7 @@ public class FileSystem {
     }
 
     // Escreve uma "palavra" (WORD) na sequência
-    public static void writeWord(Sequence f, int w) {
+    private static void writeWord(Sequence f, int w) {
         if (f.length >= MAX_LENGTH) {
             throw new RuntimeException("Capacidade máxima atingida");
         }
@@ -46,13 +46,13 @@ public class FileSystem {
     }
 
     // Reinicia o cursor de leitura
-    public static void reset(Sequence f) {
+    private static void reset(Sequence f) {
         f.pos = 0;
         f.eof = false;
     }
 
     // Lê uma "palavra" (WORD) da sequência
-    public static int readWord(Sequence f) {
+    private static int readWord(Sequence f) {
         if (f.pos >= f.length) {
             f.eof = true;
             throw new RuntimeException("End of File (EOF)");
@@ -65,7 +65,7 @@ public class FileSystem {
     }
 
     // Fecha a sequência (aqui, só limpa)
-    public static void close(Sequence f) {
+    private static void close(Sequence f) {
         f.a.clear();
         f.pos = 0;
         f.length = 0;
@@ -73,7 +73,7 @@ public class FileSystem {
     }
 
     // --- Exemplo de uso ---
-    public static void main(String[] args) {
+    public void teste() {
         Sequence seq = new Sequence();
 
         open(seq);
