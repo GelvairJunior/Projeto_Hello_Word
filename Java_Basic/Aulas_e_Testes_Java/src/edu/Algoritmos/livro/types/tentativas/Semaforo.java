@@ -1,4 +1,4 @@
-package edu.Algoritmos.livro.tentativas;
+package edu.Algoritmos.livro.types.tentativas;
 import java.util.concurrent.Semaphore;
 
 public class Semaforo {

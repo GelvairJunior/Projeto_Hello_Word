@@ -1,4 +1,4 @@
-package edu.Algoritmos.livro;
+package edu.Algoritmos.livro.types;
 
 import java.util.concurrent.Semaphore;
 

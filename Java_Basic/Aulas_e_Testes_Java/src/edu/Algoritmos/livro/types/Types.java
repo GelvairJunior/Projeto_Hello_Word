@@ -1,9 +1,9 @@
-package edu.Algoritmos.livro;
+package edu.Algoritmos.livro.types;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import edu.Algoritmos.livro.objetos.REGISTER_Pessoa;
+import edu.Algoritmos.livro.types.objetos.REGISTER_Pessoa;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -29,21 +29,22 @@ public class Types {
 		String x = scan.next();
 		char[] xc = x.toCharArray();
 		
-		//types();
+		types();
 		
-		//potenciaNegativa(); // utilização de vetores
-		//registerVariavel(); // utilização de Record/Registros
-		//conjuntosVariavel(); // utilização de Conjuntos
+		potenciaNegativa(); // utilização de vetores
+		registerVariavel(); // utilização de Record/Registros
+		conjuntosVariavel(); // utilização de Conjuntos
 		
-		//sequencial(); // utilização sequencia
-		//buffer();
-		//inout();
+		sequencial(); // utilização sequencia
+		buffer();
+		inout();
 		
-		//buscaSequencial(v, 10);
-		//buscaBinaria(v, 10);
-		//buscaTabela(vC, x);
-		//buscaDiretaTabela(vC, x);
-		knuth_Morris_Pratt(vC, xc);
+		buscaSequencial(v, 10);
+		buscaBinaria(v, 10);
+		buscaTabela(vC, x);
+		buscaDiretaTabela(vC, x);
+		knuth_Morris_Pratt(xc, vC);
+		boyer_More(xc, vC);
 	}
 
 	//Utilizando os Tipos
@@ -208,49 +209,102 @@ public class Types {
 	//Método de Knuth-Morris-Pratt para busca em cadeias
 	static void knuth_Morris_Pratt(char[] s, char[] p){
 		
-		int j = 0;
-		int k = -1;
-		int N = s.length;
-		int M = p.length;
-		int[] d = new int[M];
-		
-		d[0] = -1;
-		// --- Etapa 1: construir vetor de prefixos (failure function) ---
-		while (j < M-1) {
-			while (k >= 0 && p[j] != p[k]) {
-				k = d[k];
-			}
-			
-			j++;
-			k++;
-			
-			if(p[j] == p[k]) {
-				d[j] = d[k];
-			}else {
-				d[j] = k;
-			}
-		}
+        int N = s.length;   // tamanho do texto (o que se mexe)
+        int M = p.length;   // tamanho do padrão (o que fica fixo)
 
-		// Segunda etapa do código
-		int i = 0; // posições do texto 
-		j=0; // posição do padrao
-		
-		while (i < N) {
-			while (k <= i) {
-				System.out.println(s[k]);
-				k++;
-				j = d[j];
-			}
-			i++;
-			j++;
-			
-			if (j == M) {
-				System.out.println("Padrão encontrado na posição: " + (i - M));
-				j = d[j -1]; //Reinicia busca para multiplas ocorrencia
-			}
-		}
+        int[] d = new int[M];
+        
+        for(int i = 0; i < M; i++) {
+        	d[i] = i;
+        }
+
+        int i = 0;
+        int j = 0;
+        int k = -1;
+
+        // ---------- construção da tabela d ----------
+        d[0] = -1;
+
+        while (j < M - 1) {
+        	
+            while (k > 0 && p[j] != p[k]) {
+                k = d[k];
+            }
+            
+            j++;
+            k++;
+            
+            if (p[j] == p[k]) {
+                d[j] = d[k];
+                System.out.println("oi");
+            } else {
+                d[j] = k;
+            }
+        }
+
+        // ---------- busca ----------
+        i = 0;
+        j = 0;
+
+        while (i < N && j < M) {
+            
+            while (j >= 0 && s[i] != p[j]) {
+                j = d[j];
+            }
+
+            i++;
+            j++;
+        }
+
+        if (j == M) {
+            System.out.println("Encontrado na posição: " + (i - M));
+        } else {
+            System.out.println("Não encontrado");
+        }
 		
 	}
+	
+	//Método de Boyer-More para busca em cadeias
+	static void boyer_More(char[] s, char[] p) {
+
+
+        int N = s.length;
+        int M = p.length;
+
+        int[] bad = buildBadCharTable(p);
+
+        int shift = 0;
+
+        while (shift <= N - M) {
+
+            int j = M - 1;
+
+            while (j >= 0 && p[j] == s[shift + j])
+                j--;
+
+            if (j < 0) {
+                System.out.println("Encontrado na posição " + shift);
+                shift += (shift + M < N) ? M - bad[s[shift + M]] : 1;
+            } else {
+                shift += Math.max(1, j - bad[s[shift + j]]);
+            }
+        }
+    }
+	
+	
+	//Tabela numérica de alphabetos, nao vai funcionar em alguns casos
+	static int[] buildBadCharTable(char[] p) {
+        int ALPHABET = 256;
+        int[] table = new int[ALPHABET];
+
+        for (int i = 0; i < ALPHABET; i++)
+            table[i] = -1;
+
+        for (int i = 0; i < p.length; i++)
+            table[p[i]] = i;
+
+        return table;
+    }
 	
 	//Estrutura de record(Registro)
 	record REGISTER_Pessoa2(String nome, Data2 nascimento, String estadoCivil, Sex2 sexo) { } // Estrutura de record(Registro)

@@ -1,8 +1,9 @@
-package edu.Algoritmos.livro.tentativas;
+package edu.Algoritmos.livro.types.tentativas;
 
 import java.util.ArrayList;
 import java.util.List;
-import edu.Algoritmos.livro.FileSystem;
+
+import edu.Algoritmos.livro.types.FileSystem;
 
 public class buffer2 {
 	public static final int N = 1024;

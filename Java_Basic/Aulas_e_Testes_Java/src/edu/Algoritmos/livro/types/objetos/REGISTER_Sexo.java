@@ -1,4 +1,4 @@
-package edu.Algoritmos.livro.objetos;
+package edu.Algoritmos.livro.types.objetos;
 
 public class REGISTER_Sexo {
 	public String sexo;

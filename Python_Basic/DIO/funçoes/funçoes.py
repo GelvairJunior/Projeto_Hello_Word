@@ -61,9 +61,9 @@ print(resultado(10, 10, multiplicar))
 
 x = somar(10, 10)
 
-def pegar_global(s):
+def pegar_global(s,x):
     x = x + 12
     return s + x
 
-print(pegar_global(10))
+print(pegar_global(10,x))
 print(x)
