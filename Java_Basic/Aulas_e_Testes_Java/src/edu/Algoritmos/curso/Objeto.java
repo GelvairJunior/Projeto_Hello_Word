@@ -4,7 +4,7 @@ public class Objeto {
 	Integer num;
 	String fala;
 	
-	public void Objeto(int num) {
+	Objeto(int num) {
 		this.num = num;
 		this.fala = "oi"; 
 	}
