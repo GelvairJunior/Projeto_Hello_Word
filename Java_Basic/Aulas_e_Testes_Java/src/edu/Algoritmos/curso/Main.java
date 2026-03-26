@@ -5,6 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 import edu.Algoritmos.curso.lista.Fifo;
+import edu.Algoritmos.curso.lista.ListaDuplamenteEncadeadas;
 import edu.Algoritmos.curso.lista.ListaEncadeada;
 import edu.Algoritmos.curso.lista.No;
 import edu.Algoritmos.curso.lista.Pilha;
@@ -96,9 +97,32 @@ public class Main {
 		lista.add("teste 3");
 		lista.add("teste 4");
 		
-		System.out.println(lista.get(3));
-		System.out.println(lista.remove(2));
-		System.out.println(lista.size());
 		System.out.println(lista);
+		System.out.println("Pegando "+lista.get(3));
+		System.out.println("Removendo "+ lista.remove(2));
+		System.out.println("Lista de tamanho: "+lista.size());
+		System.out.println(lista);
+		
+		System.out.println("---------------------------------------------------------");
+		
+		System.out.println("Lista Duplamente Encadeadas");
+		
+		ListaDuplamenteEncadeadas<String> listas_Duplas = new ListaDuplamenteEncadeadas<String>();
+		
+		listas_Duplas.add("Teste 1");
+		listas_Duplas.add("Teste 2");
+		listas_Duplas.add("Teste 3");
+		listas_Duplas.add("Teste 4");
+		listas_Duplas.add("Teste 5");
+		
+		System.out.println(listas_Duplas);
+		
+		listas_Duplas.add(3, "Teste 3.5");
+		
+		System.out.println(listas_Duplas);
+		
+		System.out.println(listas_Duplas.remove(2));;
+		
+		System.out.println(listas_Duplas);
 	}
 }

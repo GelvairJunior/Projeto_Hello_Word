@@ -4,6 +4,8 @@ public class No<T>{
 	
 	private T object;
 	private No refNo;
+	private No<T> noProximo;
+	private No<T> noPrevio;
 	
 	public No(T obj, No proximoNo) {
 		super();
@@ -22,7 +24,27 @@ public class No<T>{
 		this.refNo = null;
 	}
 	
-
+	
+	
+	public No<T> getNoProximo() {
+		return noProximo;
+	}
+	
+	public No<T> getNoPrevio() {
+		return noPrevio;
+	}
+	
+	
+	public void setNoPrevio(No<T> noPrevio) {
+		this.noPrevio = noPrevio;
+	}
+	
+	public void setNoProximo(No<T> noProximo) {
+		this.noProximo = noProximo;
+	}
+	
+	
+	
 	@Override
 	public String toString() {
 		return "No [object=" + object + "]";
@@ -52,6 +74,15 @@ public class No<T>{
 		}else {
 			str += "->null";
 		}
+		
+		return str;
+		
+	}
+	
+	public String toStringEncadeadoDuplo() {
+		String str = "No [object=" + object + "]";
+		
+		
 		
 		return str;
 		
