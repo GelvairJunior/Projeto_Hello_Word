@@ -1,10 +1,10 @@
 package edu.Algoritmos.curso.lista;
 
-public class Fifo<T>{
+public class Fila<T>{
 
 	private No<T> refNoEntradaFila;
 	
-	public Fifo(){
+	public Fila(){
 		No refNoEntradaFila = null;
 	}
 	

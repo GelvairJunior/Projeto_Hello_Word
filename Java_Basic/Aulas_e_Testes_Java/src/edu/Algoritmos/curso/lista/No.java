@@ -3,11 +3,11 @@ package edu.Algoritmos.curso.lista;
 public class No<T>{
 	
 	private T object;
-	private No refNo;
+	private No<T> refNo;
 	private No<T> noProximo;
 	private No<T> noPrevio;
 	
-	public No(T obj, No proximoNo) {
+	public No(T obj, No<T> proximoNo) {
 		super();
 		this.object = obj;
 		this.refNo = proximoNo;
@@ -58,11 +58,11 @@ public class No<T>{
 		this.object = obj;
 	}
 
-	public No getRefNo() {
+	public No<T> getRefNo() {
 		return refNo;
 	}
 
-	public void setRefNo(No refNo) {
+	public void setRefNo(No<T> refNo) {
 		this.refNo = refNo;
 	}
 	
@@ -81,7 +81,6 @@ public class No<T>{
 	
 	public String toStringEncadeadoDuplo() {
 		String str = "No [object=" + object + "]";
-		
 		
 		
 		return str;

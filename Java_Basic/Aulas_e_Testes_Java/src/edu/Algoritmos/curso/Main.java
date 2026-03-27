@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-import edu.Algoritmos.curso.lista.Fifo;
+import edu.Algoritmos.curso.lista.Fila;
+import edu.Algoritmos.curso.lista.ListaCircular;
 import edu.Algoritmos.curso.lista.ListaDuplamenteEncadeadas;
 import edu.Algoritmos.curso.lista.ListaEncadeada;
-import edu.Algoritmos.curso.lista.No;
 import edu.Algoritmos.curso.lista.Pilha;
 
 
@@ -19,15 +19,15 @@ public class Main {
 		System.out.println("--------------------------");
 		System.out.println("Nós e Encadeamento de Nós com Generics de java");
 		
-		Nós<String> no1 = new Nós( "Conteudo no1");
+		Nós<String> no1 = new Nós<>( "Conteudo no1");
 		
-		Nós<String> no2 = new Nós("Conteudo no2");
+		Nós<String> no2 = new Nós<>("Conteudo no2");
 		no1.setProximoNo(no2);
 		
-		Nós<String> no3 = new Nós("Conteudo no3");
+		Nós<String> no3 = new Nós<>("Conteudo no3");
 		no2.setProximoNo(no3);
 		
-		Nós<Integer> no4 = new Nós(1);
+		Nós<Integer> no4 = new Nós<>(1);
 		no3.setProximoNo(no4);
 		
 		//no1->no2->no3->no4->null
@@ -72,7 +72,7 @@ public class Main {
 		
 		System.out.println("Fila/FIFO");
 		
-		Fifo<String> minhaFila = new Fifo<String>();
+		Fila<String> minhaFila = new Fila<String>();
 		
 		minhaFila.enqueue("primeiro");
 		minhaFila.enqueue("");
@@ -124,5 +124,28 @@ public class Main {
 		System.out.println(listas_Duplas.remove(2));;
 		
 		System.out.println(listas_Duplas);
+	
+		System.out.println("---------------------------------------------------------");
+		
+		System.out.println("Lista Circular");
+		
+		ListaCircular<String> lista_Circular = new ListaCircular<>();
+		lista_Circular.add("Teste 1");
+		lista_Circular.add("Teste 2");
+		lista_Circular.add("Teste 3");
+		lista_Circular.add("Teste 4");
+		
+		System.out.println(lista_Circular);
+		
+		lista_Circular.remove(3);
+		
+		System.out.println(lista_Circular);
+		
+		System.out.println(lista_Circular.size());
+		
+		System.out.println(lista_Circular.get(0));
+		
+		
+		
 	}
 }
