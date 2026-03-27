@@ -1,7 +1,7 @@
 package edu.Algoritmos.livro.ordenacao;
 
 public class Ordenacao_De_Vetores_Direta {
-	Item[] ordInsercao(Item[] a){
+	Item[] ordInsercao(Item[] a){//insercao
 		int index;
 		int i, j;
 		Item x;
@@ -24,7 +24,7 @@ public class Ordenacao_De_Vetores_Direta {
 		return a;
 	}
 	
-	Item[] ordInsercaoBinaria(Item[] a){
+	Item[] ordInsercaoBinaria(Item[] a){//insercao  modificado
 		int i, m, j, R, L;
 		Item x;
 		int n = a.length;
@@ -50,7 +50,7 @@ public class Ordenacao_De_Vetores_Direta {
 		return a;
 	}
 	
-	Item[] ordSelecao(Item[] a) {
+	Item[] ordSelecao(Item[] a) {// seleçao
 		int j, k;
 		Item x;
 		
@@ -67,7 +67,7 @@ public class Ordenacao_De_Vetores_Direta {
 		return a;
 	}
 	
-	Item[] ordBubbleSort(Item[] a) {
+	Item[] ordBubbleSort(Item[] a) {//permutação
 		int i, j;
 		Item x;
 		
@@ -82,7 +82,7 @@ public class Ordenacao_De_Vetores_Direta {
 		return a;
 	}
 	
-	Item[] ordShakerSort(Item[] a) {
+	Item[] ordShakerSort(Item[] a) {//permutação modificado
 		int j, k;
 		Item x;
 		int L, R;
@@ -109,7 +109,7 @@ public class Ordenacao_De_Vetores_Direta {
 		return a;
 	}
 	
-	Item[] ordInsecaoSofisticado(Item[] a) {
+	Item[] ordInsecaoSofisticado(Item[] a) {//inserção sofisticado
 		int i, j, s, k;
 		int m;
 		Item x;
@@ -138,8 +138,8 @@ public class Ordenacao_De_Vetores_Direta {
 		return a;
 	}
 	
-	Item[] ordHeap(Item[] a) {
-		//versão mlr da seleção
+	Item[] ordHeap(Item[] a) {//selecao sofisticado
+
 		Item x;
 		int L, R;
 		int n = a.length -1;
@@ -159,7 +159,7 @@ public class Ordenacao_De_Vetores_Direta {
 		return a;
 	}
 	
-	private void escorrega_Sift(Item[] a, int L, int R) {
+	private void escorrega_Sift(Item[] a, int L, int R) {//Arvore construção
 		int i, j;
 		Item x;
 		
@@ -172,5 +172,104 @@ public class Ordenacao_De_Vetores_Direta {
 		}
 		a[i] = x;
 		
+	}
+	
+	private Item[] ordPartition(Item[] a) {//codigo morto
+		Item x = a[22];
+		Item w;
+		int i = 1;
+		int j = a.length - 1;
+		do {
+			while(a[i].key < x.key) {
+				i++;
+			}
+			while(x.key < a[j].key) {
+				j--;
+			}
+			if(i <= j) {
+				System.out.println(a[i]+" "+ a[j]);
+				w = a[i]; a[i] = a[j]; a[j] = w; i++; j--;
+			}
+		}while (i < j);
+		
+		return a;
+	}
+	
+	private Item mediana(Item[] a) { //Calculo para mediana
+		Item x = a[14];
+		
+		return x;
+		
+	}
+	
+	Item[] ordQuick(Item[] a, int L, int R) {//permutacao sofisticado mlr
+		Item x;
+		Item w;
+		int i = L; int j = R;
+		
+		x = a[(L+R)/2];
+		do {
+			while (a[i].key < x.key) {i++;}
+			while (x.key < a[j].key) {j--;}
+			
+			if(i <= j) {
+				System.out.println(a[i]+" "+ a[j]);
+				w = a[i]; a[i] = a[j]; a[j] = w; i++; j--;
+			}
+			
+		}while(i < j);
+		
+		if(L < j) {ordQuick(a, L, j);}
+		if(i < R) {ordQuick(a, i, R);}
+		
+		
+		return a;
+	}
+	
+	record Stack(int L, int R){}
+	
+	Item[] ordNonRecursiveQuick(Item[] a) {//permutacao sofisticado mlr
+		int M = 12;
+		Item x, w;
+		int i, j, L, R;
+		int s;
+		int n = a.length - 1;
+		Stack[] stack = new Stack[M];
+		
+		s = 1; stack[1] = new Stack(0, n);
+		do {
+			L = stack[s].L; R = stack[s].R; s--;
+			do {
+				i = L; j = R; x = a[(L+R)/2];
+				do {
+					while(a[i].key < x.key) {i++;}
+					while(x.key < a[j].key) {j--;}
+					if (i <= j) {
+						System.out.println(a[i]+" "+a[j]);
+						w = a[i]; a[i] = a[j]; a[j] = w; i++; j--;
+					}
+				}while(i < j);
+				System.out.println(s);
+				if(j - L < R - i) {
+					if(i < R) {
+						s++; stack[s] = new Stack(i, R);
+						System.out.println("s++");
+					}
+					R = j;
+				}else{
+					if(L < j) {
+						s++; stack[s] = new Stack(L, j);
+						System.out.println("s++");
+					}
+					L = i;
+					System.out.println(s);
+				}
+				System.out.println("utilização do L >= R");
+			}while(L < R);
+			System.out.println("utilização do s == 0");
+			System.out.println(s);
+		}while(s > 0);
+		
+		return a;
 	}
 }

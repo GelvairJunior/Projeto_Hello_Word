@@ -20,7 +20,10 @@ public class OrdenacaoPrincipal {
 		//tabela = ordV.ordBubbleSort(tabela);
 		//tabela = ordV.ordShakerSort(tabela);
 		//tabela = ordV.ordInsecaoSofisticado(tabela);
-		tabela = ordV.ordHeap(tabela);
+		//tabela = ordV.ordHeap(tabela);
+		//tabela = ordV.ordQuick(tabela, 0, tabela.length-1);
+		//tabela = ordV.ordNonRecursiveQuick(tabela);
+		
 		System.out.println("-------------------------");
 		
 		for(int i = 0; i < tabela.length; i++) {
