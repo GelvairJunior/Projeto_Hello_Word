@@ -23,8 +23,9 @@ public class OrdenacaoPrincipal {
 		//tabela = ordV.ordHeap(tabela);
 		//tabela = ordV.ordQuick(tabela, 0, tabela.length-1);
 		//tabela = ordV.ordNonRecursiveQuick(tabela);
+		System.out.println(ordV.findMediana(tabela));
 		
-		System.out.println("-------------------------");
+		System.out.println("--------------------------------------------");
 		
 		for(int i = 0; i < tabela.length; i++) {
 			System.out.println(tabela[i]);

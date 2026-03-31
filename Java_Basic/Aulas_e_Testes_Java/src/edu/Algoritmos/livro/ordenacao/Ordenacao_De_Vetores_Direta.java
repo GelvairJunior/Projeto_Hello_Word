@@ -272,4 +272,26 @@ public class Ordenacao_De_Vetores_Direta {
 		
 		return a;
 	}
+	
+	Item findMediana(Item[] a) {
+		System.out.println("--------------------------------------------");
+		int i,j,L,R,k;
+		Item x, w;
+		k = (a.length-1)/2;
+		L = 0; R = a.length - 1;
+		while(L < R) {
+			x = a[(L + R) / 2]; i = L; j = R;
+			do {
+				while (a[i].key < x.key) {i++;}
+				while (x.key < a[j].key) {j--;}
+				if (i <= j) {
+					w = a[i]; a[i] = a[j]; a[j] = w; i++; j--;
+				}
+			}while(i <= j);
+			if(j < k) {L = i;}
+			if(k < i) {R = j;}
+		}
+		
+		return a[k];
+	}
 }
