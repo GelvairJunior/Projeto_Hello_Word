@@ -1,66 +1,82 @@
 package edu.Algoritmos.livro.ordenacao;
 
-public class Ordenacao_Sequencial {
+import edu.Algoritmos.livro.ordenacao.Item;
+import edu.Algoritmos.livro.ordenacao.Sequencia;
 
-	Item[] ordenacaoPorFusaoVetores(Item[] b){
-		int n = b.length;
-		Item[] a = new Item[n * 2];
+public class Ordenacao_Sequencial{
+	
+	Sequencia<Item> ordNaturalMerge(Sequencia<Item> a) {
+	    Sequencia<Item> b = new Sequencia<Item>();
+	    Sequencia<Item> c = new Sequencia<Item>();
+	    
+	    b.OpenSeq();
+	    c.OpenSeq();
+	    
+	    int runs;
+	    
+	    do {
+	        runs = 0;
 
-		for (int i = 0; i < n; i++) {
-		    a[i] = b[i];
-		    a[i + n] = b[i];
-		}
-		
-		int i, j, k, l, t, h, m, p, q, r;
-		boolean up;
-		
-		
-		up = true; p = 1;
-		
-		
-		do { h = 1; m = n;
-			if(up) {
-				i = 0; j = n - 1; k = n; l = n*2 - 1;
-			}else {
-				k = 0; l = n - 1; i = n; j = n*2 - 1;
-			}
-			
-			do {
-				if(m >= p) { q = p;} else {q = m;}
-				m = m-q;
-				
-				if(m >= p) {r = p; }else {r = m;}
-				
-				while(q != 0 && r != 0) {
-					System.out.println(a[i] + " < Confere < " + a[j]);
-					if (a[i].key < a[j].key) {
-						System.out.println(a[k] + " Trocando " + a[i]);
-						a[k] = a[i]; k = k+h; i++; q--;
-					}else {
-						System.out.println(a[k] + " Trocando " + a[j]);
-						a[k] = a[j]; k = k+h; j--; r--;
-					}
-				}
-				
-				while (r > 0) {
-					a[k] = a[j]; k = k+h; j--; r--;
-				}
-				
-				while (q > 0) {
-					a[k] = a[i]; k = k+h; i++; q--;
-				}
-				
-				h = -h; t = k; k = l; l = t;
+	        a.startRead();
+	        b.startWrite();
+	        c.startWrite();
 
-			}while(m > 0);
-			
-			up = !up; p = p*2;
-		}while(p <= n);
-		if(!up) {
-			for(i = 0; i < n; i++) {
-				a[i] = a[i+n];
-			}
-		}
-		return a;
+	        while (a.first != null) {
+	            copyRun(a, b);
+	            runs++;
+	            
+	            if(a.first == null) {break;}
+	            
+	            copyRun(a, c);
+                runs++;
+	        }
+	        
+	        a.startWrite();
+	        b.startRead();
+	        c.startRead();
+	        
+	        while(!b.eof && !c.eof) {
+	        	if(c.first.key <= b.first.key) {
+	        		a.copy(c);
+	        		c.read();
+	        	} else {
+	        		a.copy(b);
+	        		b.read();
+	        	}
+	        }
+	        
+	        while(!b.eof) {
+	        	a.copy(b);
+	        	b.read();
+	        }
+	        
+	        while(!c.eof) {
+	        	a.copy(c);
+	        	c.read();
+	        }
+	        
+	        
+	    } while (runs > 1);
+	    
+	    return a;
 	}
+
+	private void copyRun(Sequencia<Item> a, Sequencia<Item> b) {
+		Item last = (Item) a.first;
+		b.f.writeWord(last);
+		
+	    while (!a.eof && a.first.key >= last.key) {
+	    	a.read();
+	    	if (a.eof) break;
+	        if (a.first.key < last.key) break;
+	        last = (Item) a.first;
+	        b.f.writeWord(last);
+	    }
+	
+	}
+	
+	public void ordBalancedMerge() {
+		
+	}
+	
 }

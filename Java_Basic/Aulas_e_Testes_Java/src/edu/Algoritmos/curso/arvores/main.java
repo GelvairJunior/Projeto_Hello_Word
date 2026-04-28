@@ -1,15 +1,22 @@
 package edu.Algoritmos.curso.arvores;
 
 import edu.Algoritmos.curso.arvores.models.Obj;
+import java.util.Random;
 
 public class main {
 
 	public static void main(String[] args) {
 		ArvoreBinaria<Obj> arvore = new ArvoreBinaria<>();
-
+		Random random = new Random();
+		
 		System.out.println("Aqui estamos utilizando a Estrutura de Dadps de Arvore Binaria");
 		System.out.println("Vamos utilizar com valores numericos");
+		
 		Obj[] obj = new Obj[10];
+		
+		//for(int i = 0; i < obj.length - 1; i++) {
+		//	obj[i] = new Obj(random.nextInt(50));
+		//}
 		
 		arvore.inserir(obj[0] = new Obj(13));
 		arvore.inserir(obj[1] = new Obj(10));
@@ -29,10 +36,10 @@ public class main {
 		
 		arvore.exibirInOrdem();
 		
-		arvore.remover(obj[7]);
-		arvore.remover(obj[6]);
+		arvore.remover(obj[1]);
+		//arvore.remover(obj[6]);
 		// os que dao problema são 6, 2, 1 e o 0 (só da erro quando tem Filhos a direita)
-		arvore.exibirPreOrdem();
+		arvore.exibirInOrdem();
 		System.out.println("");
 		
 		

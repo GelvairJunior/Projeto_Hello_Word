@@ -1,7 +1,7 @@
 package edu.Algoritmos.livro.ordenacao;
 
-class Item {
-    int key;
+public class Item {
+    public int key;
     String nome;
 
     Item(int key, String nome){
