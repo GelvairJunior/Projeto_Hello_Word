@@ -2,19 +2,19 @@ package edu.Algoritmos.livro.ordenacao;
 
 import edu.Algoritmos.livro.ordenacao.Sequencia;
 
-public class Sequencia<Object>{   
-    boolean eof;
-    FileSystem<Object> f;
-    Object first;        // lista dinâmica (sequência de itens)
+public class Sequencia<T>{   
+    boolean eof, eor;
+    FileSystem<T> f;
+    T first;        // lista dinâmica (sequência de itens)
     
     void OpenSeq(){
-    	this.f = new FileSystem<Object>();
-        f.open(this.f);
+    	this.f = new FileSystem<T>();
+        f.open();
     }
     
     void startRead() {
         f.reset();
-        first = f.readWord();
+        first =  f.readWord();
         eof = f.eof;
     }
     
@@ -40,13 +40,32 @@ public class Sequencia<Object>{
     	
     }
     
-    void copy(Sequencia<Object> x) {
+    void copy(Sequencia<T> x) {
     	f.writeWord(x.first);
     }
 
     void read() {
-        first = f.readWord();   // 🔥 lê próximo item
-        eof = f.eof;
+    	Item prev;
+    	Item atual;
+    	
+    	// pensar como arrimar essa gambiarra
+        prev = (Item) first;
+
+        first = (T) f.readWord();
+        
+        atual = (Item) first;
+        
+        if (first == null) {
+            eof = true;
+            eor = true;
+            return;
+        }
+
+        if (prev != null && atual.key < prev.key) {
+            eor = true;
+        } else {
+            eor = false;
+        }
+        
     }
-    
 }

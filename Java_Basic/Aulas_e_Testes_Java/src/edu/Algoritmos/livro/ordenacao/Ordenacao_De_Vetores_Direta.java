@@ -6,8 +6,6 @@ public class Ordenacao_De_Vetores_Direta {
 		int i, j;
 		Item x;
 		int n = a.length;
-		
-		
 		for(i = 1; i < n; i++){
 
 	        x = a[i]; // chave inicial

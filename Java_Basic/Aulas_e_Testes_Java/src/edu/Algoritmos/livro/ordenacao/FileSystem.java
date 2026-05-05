@@ -1,31 +1,29 @@
 package edu.Algoritmos.livro.ordenacao;
 
-public class FileSystem<Object> {
+public class FileSystem<T> {
     // Constante máxima (limite teórico de dados)
 	final int MAX_LENGTH = 4096;
 	
 	boolean eof = false;
 	int pos;
 	int length;
-	Object[] data;
+	T[] data;
 
     // Abre / inicializa uma nova sequência
-    void open(FileSystem<Object> f) {
-        f.pos = 0;
-        f.length = 0;
-        f.eof = false;
+    void open() {
+        this.pos = 0;
+        this.length = 0;
+        this.eof = false;
+        this.data = (T[]) new Object[10];
     }
 
     // Escreve uma "palavra" (WORD) na sequência
-    void writeWord(Object w) {
-        if (length >= MAX_LENGTH) {
-        	throw new RuntimeException("FileSystem cheio");
-        }
-
+    void writeWord(T w) {
+        
         if (pos >= length) {
             data = java.util.Arrays.copyOf(data, data.length + 10);
         }
-           
+        
         data[pos] = w;
         
         pos++;
@@ -39,13 +37,13 @@ public class FileSystem<Object> {
     }
 
     // Lê uma "palavra" (WORD) da sequência
-    Object readWord() {
+    T readWord() {
     	if (pos >= length) {
             eof = true;
             return null;
         }
 
-    	Object w = (Object) data[pos];
+    	T w = (T) data[pos];
         pos++;
         return w;
     }
