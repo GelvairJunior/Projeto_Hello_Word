@@ -1,8 +1,39 @@
 package edu.Algoritmos.livro.ordenacao;
 
 public class Ordenacao_Sequencial{
+	int N = 6;
+	int d[] = new int[N];
+	int a[] = new int[N];
+	int j, z, level;
 	
-	Sequencia<Item> ordNaturalMerge(Sequencia<Item> a) {
+	private void select() {
+		if(d[j] < d[j+1]) {j++;}
+		else {
+			if(d[j] == 0) {
+				level++; z = a[1];
+				for(int i = 0; i < N-1; i++) {
+					d[i] = z + a[i+1] - a[i]; a[i] = z + a[i+1];
+				}
+			}
+			j = 0;
+		}
+		d[j] = d[j] - 1;
+		
+	}
+	
+	private void copyRun(Sequencia<Item> f0, Sequencia<Item> b) {
+		Item last = (Item) f0.first;
+	    b.f.writeWord(last);
+	    f0.read();
+	    
+	    while (!f0.eof && !f0.eor) {
+	        last = (Item) f0.first;
+	        b.f.writeWord(last);
+	        f0.read();
+	    }
+	}
+	
+	public Sequencia<Item> ordNaturalMerge(Sequencia<Item> f0) {
 	    Sequencia<Item> b = new Sequencia<Item>();
 	    Sequencia<Item> c = new Sequencia<Item>();
 	    b.OpenSeq();
@@ -13,65 +44,52 @@ public class Ordenacao_Sequencial{
 	    do {
 	        runs = 0;
 
-	        a.startRead();
+	        f0.startRead();
 	        b.startWrite();
 	        c.startWrite();
 
-	        while (a.first != null) {
-	            copyRun(a, b);
+	        while (f0.first != null) {
+	            copyRun(f0, b);
 	            runs++;
 	            
-	            if(a.first == null) {break;}
+	            if(f0.first == null) {break;}
 	            
-	            copyRun(a, c);
+	            copyRun(f0, c);
                 runs++;
 	        }
 	        
-	        a.startWrite();
+	        f0.startWrite();
 	        b.startRead();
 	        c.startRead();
 	        
 	        while(!b.eof && !c.eof) {
 	        	if(c.first.key <= b.first.key) {
-	        		a.copy(c);
+	        		f0.copy(c);
 	        		c.read();
 	        	} else {
-	        		a.copy(b);
+	        		f0.copy(b);
 	        		b.read();
 	        	}
 	        }
 	        
 	        while(!b.eof) {
-	        	a.copy(b);
+	        	f0.copy(b);
 	        	b.read();
 	        }
 	        
 	        while(!c.eof) {
-	        	a.copy(c);
+	        	f0.copy(c);
 	        	c.read();
 	        }
 	        
 	        
 	    } while (runs > 1);
 	    
-	    return a;
-	}
-
-	private void copyRun(Sequencia<Item> a, Sequencia<Item> b) {
-	    Item last = (Item) a.first;
-	    b.f.writeWord(last);
-	    a.read();
-
-	    while (!a.eof && !a.eor) {
-	        last = (Item) a.first;
-	        b.f.writeWord(last);
-	        a.read();
-	    }
+	    return f0;
 	}
 	
-	public Sequencia ordBalancedMerge(Sequencia<Item> f0) {
+	public Sequencia<Item> ordBalancedMerge(Sequencia<Item> f0) {
 		// bloco 1------------------------------------------------------
-		int N = 6; // numero maximo de sequencias
 		int nh = N/2; // Sequencia dividido no meio entrada e saida
 		int s = 0; // cordoes 
 		int j = 0, i = 0, L = 0; // indices
@@ -191,4 +209,143 @@ public class Ordenacao_Sequencial{
 		
 		// fim bloco 5----------------------------------------------------------------------------
 	}
+
+	public Sequencia<Item> ordPolifase(Sequencia<Item> f0) {
+		// bloco 1--------------------------------------------------------------------------------
+		
+		int t[] = new int[N]; int ta[] = new int[N];
+		
+		Sequencia<Item> f[] = new Sequencia[N];
+		Item x, min;
+		int i, mx, tn, k, dn;
+		int n = N - 1;
+		
+		for(i = 0; i < N; i++) {
+			f[i] = new Sequencia<Item>();
+			f[i].OpenSeq();
+			
+		}
+		
+		for(i = 0; i < N-1; i++) {
+			f[i].startRead();
+			a[i] = 1;
+			d[i] = 1;
+		}
+		
+		level = 1; j = 0; 
+		a[n] = 0; d[n] = 0; 
+		f0.startRead();
+		i = 0;
+		dn = 0;
+		// fim bloco 1----------------------------------------------------------------------------
+		
+		// teste
+		
+		// Bloco 2--------------------------------------------------------------------------------
+		do {
+			select();
+			copyRun(f0, f[j]);
+		}while(!f0.eof && !(j == n));
+		
+		while(!f0.eof) {
+			select();
+			if(f[j].first.key <= f0.first.key) {
+				copyRun(f0, f[j]);
+				if(f0.eof) {
+					d[j] = d[j]+1;
+				}else {
+					copyRun(f0, f[j]);
+				}
+			}else {
+				copyRun(f0, f[j]);
+			}
+			
+		}
+		
+		for(i = 0; i < n; i++) {
+			t[i] = i;
+			f[i].startRead();
+		}
+		t[n] = n;
+		// fim bloco 2---------------------------------------------------------------------------
+		
+		// teste---------------------------------------------------------------------------------
+		//for(i = 0; i < N; i++) {
+		//	System.out.println(i + "------------------------------");
+		//	f[i].listSequencia();
+		//}
+		
+		// Bloco 3------------------------------------------------------------------------------
+		do { //obter um cordão t[n] a partir da fusão de t[0]... t[n-1] para t[n]
+			z = a[n-1]; 
+			d[n] = 0; 
+			f[t[n]].startWrite();
+			
+		
+			do { // fusão de um cordão
+				
+				k = 0;
+				for(i = 0; i < n; i++) {
+					if(d[i] > 0) {d[i]--;}
+					else {ta[k] = t[i]; k++;}
+				}
+				if(k == 0) {d[n]++;}
+				
+				else { // obter um cordao t[n] a partir de t[0], ..., t[k] para t[n]
+					
+					do {
+						mx = 0; min = f[ta[0]].first;
+						for(i = 1; i < k; i++) {   // vai até k inclusive
+							
+							x = f[ta[i]].first;
+						    if(x != null && x.key < min.key) { min = x; mx = i; }
+						}
+						
+						f[t[n]].copy(f[ta[mx]]);
+						f[ta[mx]].read();
+						
+						if(f[ta[mx]].eof || f[ta[mx]].eor) {ta[mx] = ta[k - 1]; k--;}// abandonar fonte
+					
+					}while(k > 0);
+				}
+				z--;
+			}while(z > 0);
+		// fim bloco 3--------------------------------------------------------------------------
+			
+			//teste
+			//System.out.println("Entrada");
+			//for(i = 0; i < n; i++) {
+			//	System.out.println("Sequencia " + t[i] + "------------------------------");
+			//	f[t[i]].listSequencia();
+			//}
+			//System.out.println("------------------------------");
+			//System.out.println("Saida sequencia " + t[n]);
+			//f[t[n]].listSequencia();
+			//i = 0;
+			
+		// Bloco 4-----------------------------------------------------------------------------
+			f[t[n]].startRead(); // fazer a rotação das sequencias
+			tn = t[n]; dn = dn + d[n]; z = a[n-1];
+			
+			for(i = n-1; i > 0; i--) {
+				t[i+1] = t[i]; 
+				d[i+1] = d[i]; 
+				a[i+1] = a[i]-z;
+			}
+			
+			t[1] = tn; d[0] = dn; a[1] = z;
+			
+			f[t[n]].startWrite(); level--;
+			
+		}while(level > 0);
+		// fim bloco 4-------------------------------------------------------------------------
+		
+		// teste
+		//System.out.println("resultado");
+		//f[t[1]].listSequencia();
+		
+		return f[t[1]];
+		
+	}
+	
 }

@@ -1,20 +1,20 @@
 package edu.Algoritmos.livro.ordenacao;
 
-public class FileSystem<T> {
+public class FileSystem<T extends ComparableKey> {
     // Constante máxima (limite teórico de dados)
 	final int MAX_LENGTH = 4096;
 	
 	boolean eof = false;
 	int pos;
 	int length;
-	T[] data;
+	Object[] data;
 
     // Abre / inicializa uma nova sequência
-    void open() {
+	void open() {
         this.pos = 0;
         this.length = 0;
         this.eof = false;
-        this.data = (T[]) new Object[10];
+        this.data = new Object[10];
     }
 
     // Escreve uma "palavra" (WORD) na sequência

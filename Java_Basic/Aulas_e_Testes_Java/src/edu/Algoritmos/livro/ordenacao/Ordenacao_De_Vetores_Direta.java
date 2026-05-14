@@ -146,7 +146,7 @@ public class Ordenacao_De_Vetores_Direta {
 		R = n;
 		while (L > 0) {
 			L--; 
-			escorrega_Sift(a, L, R);
+			this.escorrega_Sift(a, L, R);
 		}
 		while(R>0) {
 			x = a[0]; a[0] = a[R]; a[R] = x;

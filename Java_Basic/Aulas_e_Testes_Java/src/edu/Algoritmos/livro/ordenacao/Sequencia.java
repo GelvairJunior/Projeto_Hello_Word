@@ -2,7 +2,7 @@ package edu.Algoritmos.livro.ordenacao;
 
 import edu.Algoritmos.livro.ordenacao.Sequencia;
 
-public class Sequencia<T>{   
+public class Sequencia<T extends ComparableKey>{
     boolean eof, eor;
     FileSystem<T> f;
     T first;        // lista dinâmica (sequência de itens)
@@ -14,7 +14,7 @@ public class Sequencia<T>{
     
     void startRead() {
         f.reset();
-        first =  f.readWord();
+        first = f.readWord();
         eof = f.eof;
     }
     
@@ -41,19 +41,19 @@ public class Sequencia<T>{
     }
     
     void copy(Sequencia<T> x) {
-    	f.writeWord(x.first);
+    	f.writeWord((T) x.first);
     }
 
     void read() {
-    	Item prev;
-    	Item atual;
+    	T prev;
+    	T atual;
     	
     	// pensar como arrimar essa gambiarra
-        prev = (Item) first;
+        prev = first;
 
-        first = (T) f.readWord();
+        first = f.readWord();
         
-        atual = (Item) first;
+        atual = first;
         
         if (first == null) {
             eof = true;
@@ -61,7 +61,7 @@ public class Sequencia<T>{
             return;
         }
 
-        if (prev != null && atual.key < prev.key) {
+        if (prev != null && atual.getKey() < prev.getKey()) {
             eor = true;
         } else {
             eor = false;

@@ -1,6 +1,6 @@
 package edu.Algoritmos.livro.ordenacao;
 
-public class Item {
+public class Item implements ComparableKey{
     public int key;
     String nome;
 
@@ -16,7 +16,12 @@ public class Item {
 	public void setKey(int key) {
 		this.key = key;
 	}
-
+	
+	public void setKey(String nome) {
+		key = nome.codePointAt(key);
+		
+	}
+	
 	public String getNome() {
 		return nome;
 	}
