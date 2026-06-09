@@ -1,4 +1,5 @@
 import math
+from time import time
 
 segundos = 42
 minutos = 42
@@ -71,4 +72,34 @@ def bottle(bott):
         print("Chega de garrafas de cerveja na parede, chega de garrafas de cerveja.")
         print("Vá à loja e compre mais, 99 garrafas de cerveja na parede.")
 
-bottle(99)
+bottle(1)
+
+now = time()
+
+segundos = (now//60)
+minutos = (segundos//60)
+horas = (minutos//60)
+dias = (horas//24)
+
+horas = (minutos%24)
+minutos = (segundos%60)
+segundos = (now%60)
+
+dias = round(dias)
+horas = round(horas)
+minutos = round(minutos)
+segundos = round(segundos)
+
+print(dias, horas, ":", minutos, ":", segundos)
+print(now)
+
+def is_triangule(lado1, lado2, lado3):
+    maior_lado = (max(lado1, lado2, lado3))
+    lados = (lado1 + lado2 + lado3 - maior_lado)
+
+    if lados > maior_lado:
+        return "yes"
+    return "no"
+
+print(is_triangule(5,10,9))
+

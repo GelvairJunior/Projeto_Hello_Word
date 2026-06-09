@@ -1,0 +1,9 @@
+texto.txt
+/skils-lock.json
+/.idea
+/.venv
+/*.pyc
+/Livros/desafios/__pycache__
+/Livros/desafios/texto_modify.txt
+/Livros/desafios/texto
+/DIO/operadores/__pycache__
