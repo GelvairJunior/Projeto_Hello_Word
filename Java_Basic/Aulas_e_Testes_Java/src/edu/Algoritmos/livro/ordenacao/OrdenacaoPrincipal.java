@@ -24,19 +24,16 @@ public class OrdenacaoPrincipal {
 		System.out.println("Area de teste-----------------------------------");
 		
 		//tabela2 = ordV.ordInsercao(tabela2);
+		//tabela2 = ordV.ordInsercaoBinaria(tabela2);
 		//tabela2 = ordV.ordSelecao(tabela2);
 		//tabela2 = ordV.ordBubbleSort(tabela2);
 		//tabela2 = ordV.ordShakerSort(tabela2);
 		//tabela2 = ordV.ordInsecaoSofisticado(tabela2);
-		tabela2 = ordV.ordHeap(tabela2);
-		//tabela2 = ordV.ordQuick(tabela2, 0, tabela2.length-1);
+		//tabela2 = ordV.ordHeap(tabela2);
+		tabela2 = ordV.ordQuick(tabela2, 0, tabela2.length-1);
 		//tabela2  = ordV.ordNonRecursiveQuick(tabela2);
 		//System.out.println(ordV.findMediana(tabela2));
-		
-		
-		
-		//tabela = ordV.ordenacaoPorFusaoVetores(tabela);
-		
+		//tabela2 = ordV.ordFusaoDireta(tabela2);
 		
 		
 		Sequencia<Item> sequencia = new Sequencia<Item>(); 
@@ -58,7 +55,7 @@ public class OrdenacaoPrincipal {
 		
 		System.out.println("Aqui é ordenação de vetores");
 		for(int i = 0; i < tabela2.length; i++) {
-			System.out.println(tabela2[i]);
+		//	System.out.println(tabela2[i]);
 		}
 		
 		System.out.println("--------------------------------------------");

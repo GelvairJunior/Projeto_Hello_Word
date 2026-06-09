@@ -1,4 +1,4 @@
-package edu.Algoritmos.livro;
+package edu.Algoritmos.livro.types;
 
 import edu.Algoritmos.livro.ordenacao.Item;
 import edu.Algoritmos.livro.ordenacao.Sequencia;
@@ -15,7 +15,6 @@ public class Exercicios_Cap_1 {
 		
 		
 	}
-	
 	
 	static String conversor(String[] T, String[] A, String[] B) {
 

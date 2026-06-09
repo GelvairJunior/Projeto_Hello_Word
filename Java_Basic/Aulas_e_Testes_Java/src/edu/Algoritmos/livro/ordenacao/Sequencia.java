@@ -6,6 +6,7 @@ public class Sequencia<T extends ComparableKey>{
     boolean eof, eor;
     FileSystem<T> f;
     T first;        // lista dinâmica (sequência de itens)
+
     
     void OpenSeq(){
     	this.f = new FileSystem<T>();

@@ -1,7 +1,7 @@
 package edu.Algoritmos.livro.ordenacao;
 
 public class Ordenacao_Sequencial{
-	int N = 6;
+	int N = 6;// quantidade de sequencias
 	int d[] = new int[N];
 	int a[] = new int[N];
 	int j, z, level;
@@ -211,6 +211,8 @@ public class Ordenacao_Sequencial{
 	}
 
 	public Sequencia<Item> ordPolifase(Sequencia<Item> f0) {
+		//DistributeRuns runs_iniciais = new DistributeRuns(); runs_iniciais.distribute(f0);
+		
 		// bloco 1--------------------------------------------------------------------------------
 		
 		int t[] = new int[N]; int ta[] = new int[N];
@@ -347,5 +349,6 @@ public class Ordenacao_Sequencial{
 		return f[t[1]];
 		
 	}
+	
 	
 }

@@ -1,7 +1,6 @@
 package edu.Algoritmos.livro.ordenacao;
 
 public class FileSystem<T extends ComparableKey> {
-    // Constante máxima (limite teórico de dados)
 	final int MAX_LENGTH = 4096;
 	
 	boolean eof = false;

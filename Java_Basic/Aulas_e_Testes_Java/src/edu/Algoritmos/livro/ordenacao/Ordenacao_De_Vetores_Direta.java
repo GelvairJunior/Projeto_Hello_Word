@@ -1,17 +1,23 @@
 package edu.Algoritmos.livro.ordenacao;
 
 public class Ordenacao_De_Vetores_Direta {
+	
 	Item[] ordInsercao(Item[] a){//insercao
-		int index;
 		int i, j;
+		
+		int comp = 0; int perm = 0;
+		
 		Item x;
 		int n = a.length;
 		for(i = 1; i < n; i++){
-
+			comp++;
+			System.out.println("comparações " + comp);
 	        x = a[i]; // chave inicial
 	        j = i;
-
+	        
 	        while(j >= 0 && a[j-1].key > x.key){
+	        	perm++;
+	        	System.out.println("Permutações " + perm);
 	            a[j] = a[j-1];
 	            j--;
 	        }
@@ -24,20 +30,27 @@ public class Ordenacao_De_Vetores_Direta {
 	
 	Item[] ordInsercaoBinaria(Item[] a){//insercao  modificado
 		int i, m, j, R, L;
+		
+		int comp = 0; int perm = 0;
+		
 		Item x;
 		int n = a.length;
 		
-		for(i = 1; i <n; i++) {
+		for(i = 1; i < n; i++) {
 			x = a[i]; j = i; L = 0; R = i;
 			
-			while (L<R) {
+			while (L < R) {
+				comp++;
+				System.out.println("comparações " + comp);
 				m = (L+R)/2;
 				if (a[m].key <= x.key){
-					L = m +1;
+					L = m + 1;
 				}else {R = m;}
 			}
 			
 			for(j = i; j > R; j--) {
+				perm++;
+	        	System.out.println("Permutações " + perm);
 				a[j] = a[j-1];
 			}
 			
@@ -52,13 +65,19 @@ public class Ordenacao_De_Vetores_Direta {
 		int j, k;
 		Item x;
 		
+		int comp = 0; int perm = 0;
+		
 		for(int i = 0; i < a.length; i++) {
 			k = i; x = a[i];
 			for(j = i + 1; j < a.length; j++) {
+				comp++;
+				System.out.println("comparações " + comp);
 				if(a[j].key < x.key) {
 					k = j; x = a[k];
 				}
 			}
+			perm++;
+        	System.out.println("Permutações " + perm);
 			a[k] = a[i]; a[i] = x;
 		}
 		
@@ -69,9 +88,15 @@ public class Ordenacao_De_Vetores_Direta {
 		int i, j;
 		Item x;
 		
+		int comp = 0; int perm = 0;
+		
 		for(i = 0; i < a.length; i++) {
 			for(j = a.length-1; j > i; j--) {
+				comp++;
+				System.out.println("comparações " + comp);
 				if(a[j-1].key > a[j].key) {
+					perm++;
+		        	System.out.println("Permutações " + perm);
 					x = a[j-1]; a[j-1] = a[j]; a[j] = x;
 				}
 			}
@@ -108,7 +133,7 @@ public class Ordenacao_De_Vetores_Direta {
 	}
 	
 	Item[] ordInsecaoSofisticado(Item[] a) {//inserção sofisticado
-		int i, j, s, k;
+		int i, j;
 		int m;
 		Item x;
 		int t = 4;
@@ -117,8 +142,6 @@ public class Ordenacao_De_Vetores_Direta {
 		h[0] = 9; h[1] = 5; h[2] = 3; h[3] = 1;
 		
 		for(m = 0; m < t; m++) {
-			
-			k = h[m];// s = -k; sentinela
 			
 			for(i = m; i< a.length; i++) {
 				
@@ -191,13 +214,6 @@ public class Ordenacao_De_Vetores_Direta {
 		return a;
 	}
 	
-	private Item mediana(Item[] a) { //Calculo para mediana
-		Item x = a[14];
-		
-		return x;
-		
-	}
-	
 	Item[] ordQuick(Item[] a, int L, int R) {//permutacao sofisticado mlr
 		Item x;
 		Item w;
@@ -222,7 +238,6 @@ public class Ordenacao_De_Vetores_Direta {
 	}
 	
 	record Stack(int L, int R){}
-	
 	Item[] ordNonRecursiveQuick(Item[] a) {//permutacao sofisticado mlr
 		int M = 12;
 		Item x, w;
@@ -240,29 +255,21 @@ public class Ordenacao_De_Vetores_Direta {
 					while(a[i].key < x.key) {i++;}
 					while(x.key < a[j].key) {j--;}
 					if (i <= j) {
-						System.out.println(a[i]+" "+a[j]);
 						w = a[i]; a[i] = a[j]; a[j] = w; i++; j--;
 					}
 				}while(i < j);
-				System.out.println(s);
 				if(j - L < R - i) {
 					if(i < R) {
 						s++; stack[s] = new Stack(i, R);
-						System.out.println("s++");
 					}
 					R = j;
 				}else{
 					if(L < j) {
 						s++; stack[s] = new Stack(L, j);
-						System.out.println("s++");
 					}
 					L = i;
-					System.out.println(s);
 				}
-				System.out.println("utilização do L >= R");
 			}while(L < R);
-			System.out.println("utilização do s == 0");
-			System.out.println(s);
 		}while(s > 0);
 		
 		return a;
@@ -290,62 +297,64 @@ public class Ordenacao_De_Vetores_Direta {
 		return a[k];
 	}
 	
-	Item[] ordenacaoPorFusaoVetores(Item[] b){
-		int n = b.length;
-		Item[] a = new Item[n * 2];
-
-		for (int i = 0; i < n; i++) {
-		    a[i] = b[i];
-		    a[i + n] = b[i];
+	Item[] ordFusaoDireta(Item[] b) {
+		int n = b.length - 1;
+		Item[] a = new Item[n*2+1];
+		
+		for(int i = 0; i <= n; i++) {
+			a[i] = b[i];
+			a[n+i] = b[i];
 		}
 		
-		int i, j, k, l, t, h, m, p, q, r;
-		boolean up;
+		boolean up = true; int p = 1;
+		int t, h, m, i, j, k, l, q, r;
 		
-		
-		up = true; p = 1;
-		
-		
-		do { 
+		do {
+			// bloco 1
 			h = 1; m = n;
 			if(up) {
-				i = 0; j = n - 1; k = n; l = n*2 - 1;
+				i = 0; j = n; k = n+1; l = n*2;
 			}else {
-				k = 0; l = n - 1; i = n; j = n*2 - 1;
+				k = 0; l = n; i = n + 1; j = n*2;
 			}
-			
 			do {
-				if(m >= p) { q = p;} else {q = m;}
+				if(m > p) {q = p;} else {q = m;}
 				m = m-q;
+				if(m > p) {r = p;} else {r = m;}
+				m = m-r;
+			// fim bloco 1	
 				
-				if(m >= p) {r = p; }else {r = m;}
-				
-				while(q != 0 && r != 0) {
-					
-					if (a[i].key < a[j].key) {
+			// bloco 2
+				while((q != 0) & (r !=0)) {
+					if(a[i].key < a[j].key) {
 						a[k] = a[i]; k = k+h; i++; q--;
 					}else {
 						a[k] = a[j]; k = k+h; j--; r--;
 					}
 				}
 				
-				while (r > 0) {
+				while(r > 0) {
 					a[k] = a[j]; k = k+h; j--; r--;
 				}
 				
-				while (q > 0) {
+				while(q > 0) {
 					a[k] = a[i]; k = k+h; i++; q--;
 				}
+			//fim bloco 2
 				
+			// bloco 3
 				h = -h; t = k; k = l; l = t;
-
 			}while(m > 0);
-			
 			up = !up; p = p*2;
-		}while(p <= n);
+		}while(p < n);
+			// fim bloco 3
 		if(!up) {
 			for(i = 0; i < n; i++) {
-				b[i] = a[i+n];
+				b[i] = a[n+1+i];
+			}
+		}else {
+			for(i = 0; i < n; i++) {
+				b[i] = a[i];
 			}
 		}
 		return b;

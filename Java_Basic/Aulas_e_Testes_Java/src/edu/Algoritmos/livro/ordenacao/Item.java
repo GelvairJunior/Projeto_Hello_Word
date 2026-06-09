@@ -17,11 +17,6 @@ public class Item implements ComparableKey{
 		this.key = key;
 	}
 	
-	public void setKey(String nome) {
-		key = nome.codePointAt(key);
-		
-	}
-	
 	public String getNome() {
 		return nome;
 	}
