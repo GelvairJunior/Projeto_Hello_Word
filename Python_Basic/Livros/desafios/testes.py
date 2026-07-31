@@ -172,3 +172,194 @@ def find_first(pattern):
 
 result = find_first("^COLETA|PREFEITURA")
 print(result)
+
+a = "cat"
+b = "cat"
+
+print(b is a)
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(b is a)
+
+a = b
+print(b is a)
+
+numbers = {'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9}
+print(numbers)
+
+word_list = open("texto.txt", "r", encoding="utf-8").read().split()
+
+def reverse_word(word):
+    return "".join(reversed(word))
+
+word_dict = {}
+for word in word_list:
+    word_dict[word] = 1
+
+def too_slow():
+    count = 0
+    count_loop = 0
+    for word in word_list:
+        if reverse_word(word) in word_list:
+            count += 1    
+        count_loop += 1 
+    print("Loop iterations (slow): ", count_loop)
+    return count
+
+def much_fast():
+    count = 0
+    count_loop = 0
+    palindromes = []
+    for word in word_dict:
+        if reverse_word(word) in word_dict:
+            count += 1
+            if len(word) > 3:
+                palindromes.append(word)
+        count_loop += 1
+    print("Loop iterations (fast): ", count_loop)
+    print("Palindromes found: ", palindromes[:10])
+    return count
+
+print(len(word_list))
+print(too_slow())
+print(much_fast())
+
+def value_conts(string):
+    counter = {}
+    for letter in string:
+        if letter not in counter:
+            counter[letter] = 1
+        else:
+            counter[letter] += 1
+    return counter
+
+counter = value_conts("paralelepípedo")
+print(counter)
+
+d = {4 : ['f', 'o', 'u', 'r']}
+print(d)
+
+know = {0:0, 1:1}
+
+def fibonacci_memo(n):
+    if n in know:
+        return know[n]
+    else:
+        result = fibonacci_memo(n-1) + fibonacci_memo(n-2)
+        know[n] = result
+        return result
+
+fibonacci_memo(10)
+
+# tuplas são hashable, listas não são. Tuplas podem ser usadas como chaves de dicionários, listas não podem.
+t = tuple('paralelepípedo')
+print(type(t))
+
+x = sorted(t)
+print(t)
+print(x)
+
+dici = {}
+
+dici[t] = x
+print(dici.keys())
+print(dici[t])
+
+a, b = 1, 2
+print(a, b)
+
+email = "mail@python.org"
+username, domain = email.split("@")
+print(username, domain)
+
+d ={"one":1, "two":2, "three":3}
+
+for key, value in d.items():
+    print(key, "->", value)
+
+quotient, remainder = divmod(7, 3)
+tup = divmod(7, 3)
+print(type(tup))
+print(quotient, remainder)
+
+def min_max(t):
+    return min(t), max(t)
+
+low, hight = min_max([7, 2, 3, 1, 5, 4])
+print("min", low , ": max", hight)
+
+#args são tuplas, kwargs são dicionários
+def mean(*args):
+    return sum(args) / len(args)
+
+print(mean(7, 2, 3, 1, 5, 4))
+
+#divmod(tup) typeerror
+divmod(*tup)
+
+#*args é desempacotamento de tuplas
+def trimmed_mean(*args):
+    low, high = min_max(args)
+    trimmed = list(args)
+    trimmed.remove(low)
+    trimmed.remove(high)
+    return mean(*trimmed)
+
+
+print(trimmed_mean(7, 7, 6, 8, 5, 4, 15, 1))
+
+scores1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+scores2 = [15, 16, 85, 1, 50, 20, 78, 88, 10, 50]
+
+winst1 = 0
+winst2 = 0
+for team1, team2 in zip(scores1, scores2):
+    if team1 > team2:
+        winst1 += 1
+    elif team1 < team2:
+        winst2 += 1
+    else:
+        print("empate")
+
+print("team1 = ", winst1, " vitorias")
+print("team2 = ", winst2, " vitorias")
+
+tlist = list(zip(scores1, scores2))
+
+print(type(tlist))
+print(tlist)
+
+letters = 'abcdefghijklmnopqrstuvwxyz'
+numbers = range(len(letters))
+letter_map = dict(zip(letters, numbers))
+
+print(letter_map["z"], ":",letter_map['a'])
+
+for index, element in enumerate('abcdefg'):
+    print(index, ":", element)
+
+items = counter.items()
+print(items)
+
+print(sorted(items))
+
+def secound_element(t):
+    return t[1]
+
+sorted_items = sorted(items, key=secound_element, reverse=True)
+print(sorted_items)
+
+def invert_dict(d):
+    new={}
+    for key, value in d.items():
+        if value not in new:
+            new[value] = [key]
+        else:  
+            new[value].append(key)
+    return new
+
+invertido_counter = invert_dict(counter)
+
+print(invertido_counter)
