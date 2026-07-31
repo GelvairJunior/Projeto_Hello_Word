@@ -1,10 +1,12 @@
 package edu.Algoritmos.livro.ordenacao;
 
+import edu.Algoritmos.livro.ordenacao.ComparableKey;
+
 public class Item implements ComparableKey{
     public int key;
     String nome;
 
-    Item(int key, String nome){
+    public Item(int key, String nome){
         this.key = key;
         this.nome = nome;
     }

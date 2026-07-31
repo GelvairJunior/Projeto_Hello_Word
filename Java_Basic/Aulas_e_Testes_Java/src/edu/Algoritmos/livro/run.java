@@ -1,4 +1,4 @@
-package edu.Algoritmos.livro.ordenacao;
+package edu.Algoritmos.livro;
 
 public class run {
 	int ini;

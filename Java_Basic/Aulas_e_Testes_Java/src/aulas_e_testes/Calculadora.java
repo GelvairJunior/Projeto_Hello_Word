@@ -29,9 +29,6 @@ public class Calculadora {
 		
 		System.out.println("o resultado é "+ resultado);
 		
-		System.out.println("Vamos fazer algo engraçado, que é utilizar o ++ e --");
-
-		
 	}
 	
 	

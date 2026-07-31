@@ -1,4 +1,7 @@
-package edu.Algoritmos.livro.ordenacao;
+package edu.Algoritmos.livro;
+
+import edu.Algoritmos.livro.ordenacao.Item;
+import edu.Algoritmos.livro.ordenacao.Sequencia;
 
 public class Exercicios_Capa_2 {
 	int comp = 0;
@@ -45,15 +48,6 @@ public class Exercicios_Capa_2 {
 		}
 		c[k].fim = orientacao+n-1;
 		
-		for(int i = 0; i < c.length; i++) {
-			System.out.println("Run = " + (1+i));
-			System.out.println("ini = " + (c[i].ini));
-			System.out.println("fim = " + (c[i].fim));
-			for(int j = c[i].ini; j <= c[i].fim; j++) {
-				System.out.println("a["+j+"] " + a[j]);
-			}
-			System.out.println("Proximo Run");
-		}
 	}
 	
 	Item[] ordFusaoNaturalDireta(Item[] b) {
@@ -85,22 +79,18 @@ public class Exercicios_Capa_2 {
 				while((q != 0) & (r !=0)) {
 					
 					if(a[i].key < a[j].key) {
-						System.out.println("Merge 1 entre: q = " + q + " posição "+ k + " Item: " + a[k] + " = posição:" + i + " item: "+ a[i]);
 						a[k] = a[i]; k = k+h; i++; q--;
 					}else {
-						System.out.println("Merge 2 entre: r = " + r + "  posição "+ k + " Item: " + a[k] + " = posição: " + j + " item: "+ a[j]);
 						a[k] = a[j]; k = k+h; j++; r--;
 					}
 				}
 				
 				while(r > 0) {
-					System.out.println("Merge 3 entre: r = " + r + " posição "+ k + " Item: " + a[k] + " = posição: " + j + " item: "+ a[j]);
 					if(k == a.length) {break;}
 					a[k] = a[j]; k = k+h; j++; r--;
 				}
 				
 				while(q > 0) {
-					System.out.println("Merge 4 entre: posição "+ k + " Item: " + a[k] + " = posição:" + i + " item: "+ a[i]);
 					a[k] = a[i]; k = k+h; i++; q--;
 				}
 			}
@@ -120,17 +110,11 @@ public class Exercicios_Capa_2 {
 			
 		if(!up) {
 			for(i = 0; i <= n; i++) {
-				System.out.println("b["+i+"]"+ " recebe " + "a["+(n+1+i)+"]");
 				b[i] = a[n+1+i];
-				System.out.println("a = "+a[n+1+i]);
-				System.out.println("b = "+b[i]);
 			}
 		}else {
 			for(i = 0; i <= n; i++) {
-				System.out.println("b["+i+"]"+ " recebe " + "a["+i+"]");
 				b[i] = a[i];
-				System.out.println("a = "+a[i]);
-				System.out.println("b = "+b[i]);
 			}
 		}
 		return b;

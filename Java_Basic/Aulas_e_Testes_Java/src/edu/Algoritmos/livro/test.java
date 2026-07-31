@@ -1,4 +1,7 @@
-package edu.Algoritmos.livro.ordenacao;
+package edu.Algoritmos.livro;
+
+import edu.Algoritmos.livro.ordenacao.Item;
+import edu.Algoritmos.livro.ordenacao.Sequencia;
 
 public class test {
 	public static void main(String[] args) {
@@ -26,11 +29,12 @@ public class test {
 		//text.QuickBubbleSort(tabela);
 		//text.QuickSelection(tabela);
 		//text.ordQuickSortMenorMaior(tabela);
-		//text.ordFusaoNaturalDireta(tabela);
-		text.ordCascata(sequencia);
+		text.ordFusaoNaturalDireta(tabela);
+		
+		//text.ordCascata(sequencia);
 		
 		System.out.println("resultado");
-		//for(int i = 0; i < tabela.length; i++) {System.out.println(tabela[i]);}
-		sequencia.listSequencia();
+		for(int i = 0; i < tabela.length; i++) {System.out.println(tabela[i]);}
+		//sequencia.listSequencia();
 	}
 }

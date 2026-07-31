@@ -3,12 +3,13 @@ package edu.Algoritmos.livro.ordenacao;
 import edu.Algoritmos.livro.ordenacao.Sequencia;
 
 public class Sequencia<T extends ComparableKey>{
-    boolean eof, eor;
-    FileSystem<T> f;
-    T first;        // lista dinâmica (sequência de itens)
+    public boolean eof;
+	public boolean eor;
+    public FileSystem<T> f;
+    public T first;        // lista dinâmica (sequência de itens)
 
     
-    void OpenSeq(){
+    public void OpenSeq(){
     	this.f = new FileSystem<T>();
         f.open();
     }
@@ -19,7 +20,7 @@ public class Sequencia<T extends ComparableKey>{
         eof = f.eof;
     }
     
-    void startWrite() {
+    public void startWrite() {
     	 f.pos = 0;
     	 f.length = 0;   // 🔥 ESSENCIAL
     	 f.eof = false;
@@ -29,7 +30,7 @@ public class Sequencia<T extends ComparableKey>{
     	f.close();
     }
     
-    void listSequencia() {
+    public void listSequencia() {
         f.reset();
         Object w;
 
@@ -45,7 +46,7 @@ public class Sequencia<T extends ComparableKey>{
     	f.writeWord((T) x.first);
     }
 
-    void read() {
+    public void read() {
     	T prev;
     	T atual;
     	

@@ -17,7 +17,7 @@ public class FileSystem<T extends ComparableKey> {
     }
 
     // Escreve uma "palavra" (WORD) na sequência
-    void writeWord(T w) {
+    public void writeWord(T w) {
         
         if (pos >= length) {
             data = java.util.Arrays.copyOf(data, data.length + 10);

@@ -1,6 +1,5 @@
-package edu.Algoritmos.livro.types;
+package edu.Algoritmos.livro;
 
-import edu.Algoritmos.livro.ordenacao.Item;
 import edu.Algoritmos.livro.ordenacao.Sequencia;
 
 public class Exercicios_Cap_1 {
