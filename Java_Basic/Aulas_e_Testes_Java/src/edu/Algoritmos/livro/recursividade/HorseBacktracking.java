@@ -25,7 +25,7 @@ public class HorseBacktracking {
 		
 	}
 	
-	public boolean tente(int i, int x, int y, boolean q) {
+	public boolean tente(int i, int x, int y) {
 		int u, v, k;
 		boolean q1;//iniciar seleção de movimentos
 		
@@ -42,7 +42,7 @@ public class HorseBacktracking {
 		
 				if(i < nsqr) {// tabuleiro nao prenchido
 					
-					q1 = tente(i+1, u, v, q1); // tente de novo
+					q1 = tente(i+1, u, v); // tente de novo
 					if(!q1) {// insucesso
 						h[u][v] = 0;// eliminando
 					}
@@ -67,7 +67,7 @@ public class HorseBacktracking {
 		
 		h[i][j] = 1;
 		tabela();
-		q = tente(2, i, j, q);
+		q = tente(2, i, j);
 		
 		if(q) {
 			System.out.println("sucesso");

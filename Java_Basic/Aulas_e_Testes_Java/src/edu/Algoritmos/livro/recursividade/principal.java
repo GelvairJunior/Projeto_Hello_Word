@@ -17,8 +17,8 @@ public class principal {
 		Marrieg mar = new Marrieg(9);
 		mar.teste();
 		System.out.println("-------------------------------------------");
-		System.out.println("O problema da seleção ótima");
-		
+		System.out.println("O problema da seleção ótima, Mala");
+		SelecaoOtima.test(10);
 	}
 	
 	public static int teste(int i) {

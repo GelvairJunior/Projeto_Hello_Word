@@ -1,4 +1,4 @@
-package edu.Algoritmos.livro;
+package edu.Algoritmos.livro.exercicios.cap2;
 
 import edu.Algoritmos.livro.ordenacao.Item;
 import edu.Algoritmos.livro.ordenacao.Sequencia;
@@ -29,9 +29,9 @@ public class test {
 		//text.QuickBubbleSort(tabela);
 		//text.QuickSelection(tabela);
 		//text.ordQuickSortMenorMaior(tabela);
-		text.ordFusaoNaturalDireta(tabela);
+		//text.ordFusaoNaturalDireta(tabela);
 		
-		//text.ordCascata(sequencia);
+		text.ordCascata(sequencia);
 		
 		System.out.println("resultado");
 		for(int i = 0; i < tabela.length; i++) {System.out.println(tabela[i]);}

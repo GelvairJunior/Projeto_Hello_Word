@@ -1,4 +1,4 @@
-package edu.Algoritmos.livro;
+package edu.Algoritmos.livro.exercicios.cap1;
 
 import edu.Algoritmos.livro.ordenacao.Sequencia;
 
