@@ -4,8 +4,8 @@ import java.awt.*;
 
 public class Linhas{
 	private Graphics l;
-	private int x;
-	private int y;
+	public int x;
+	public int y;
 	
 	public Linhas(Graphics g, int x, int y) {
 		l = g;

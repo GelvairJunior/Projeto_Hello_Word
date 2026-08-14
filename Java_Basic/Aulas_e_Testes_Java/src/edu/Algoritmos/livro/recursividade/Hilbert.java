@@ -16,7 +16,7 @@ public class Hilbert extends JPanel{
 	
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		linhas = new Linhas(g, 1000, 0);
+		linhas = new Linhas(g, 500, 200);
 		this.setBackground(Color.white);
 		
 		g.setColor(Color.black);

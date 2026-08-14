@@ -6,6 +6,8 @@ public class principal {
 		System.out.println(teste(5));
 		System.out.println("-------------------------------------------");
 		Tela.hilbert(20, 5);
+		System.out.println("-------------------------------------------");
+		Tela.sierpinski(10, 3);
 		System.out.println("Sequencias de passos de um cavalo em um tabuleiro de xadrez");
 		HorseBacktracking horseTab5 = new HorseBacktracking(6);
 		horseTab5.existe(1,1);
