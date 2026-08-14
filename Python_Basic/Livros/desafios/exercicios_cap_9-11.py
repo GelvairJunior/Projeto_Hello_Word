@@ -1,6 +1,6 @@
 def is_anagrama(s1, s2):
     return sorted(s1) == sorted(s2)
-
+    
 def reverse_word(s):
     return "".join(reversed(s))
 
@@ -93,6 +93,12 @@ def add_counters(string1, string2):
     
     return result
 
+def is_interlocking(word1, word2, interlock_word):
+    oneWord = interlock_word[::2]  
+    twoWord = interlock_word[1::2]
+    return oneWord == word1 and twoWord == word2
+    
+
 def tests_cap_10():
     print("Iniciando os testes do capitulo 10...")
     print("5 testes para value_count_consi")
@@ -119,5 +125,52 @@ def tests_cap_10():
     print(add_counters("python", "java") == {'p': 1, 'y': 1, 't': 1, 'h': 1, 'o': 1, 'n': 1, 'j': 1, 'a': 2, 'v': 1})  # True
     print(add_counters("aabbcc", "abc") == {'a': 3, 'b': 3, 'c': 3})  # True
 
+    print("3 testes para is_interlocking")
+    print(is_interlocking("abc", "def", "adbecf") == True) # True
+    print(is_interlocking("hello", "world", "hweolrllod") == True) # True
+    print(is_interlocking("python", "java", "pjyavthon") == False) # True
+
+def tup_in_list(list1, lst, additional_element):
+    tuple1 = tuple()
+    tuple1 = (list1, lst)
+    list1.append(additional_element)
+    return tuple1
+
+def shift_word(word, num):
+    letters = 'abcdefghijklmnopqrstuvwxyz'
+    numbers = range(len(letters))
+    letter_map = dict(zip(letters, numbers))
+    shifted_word = ""
+    for letter in word:
+        if letter in letter_map:
+            index = (letter_map[letter] + num) % len(letters)
+            shifted_word += letters[index]
+    return shifted_word
+
+def most_freq_letters(string):
+    counter = value_count_consi(string)
+    counter = dict(sorted(counter.items(), key=lambda item: item[1], reverse=True))
+    return counter
+
+def tests_cap_11():
+    print("Iniciando os testes do capitulo 11...")
+    # Adicione aqui os testes para o capítulo 11
+    print("3 testes para tup_in_list, enviando 2 listas e retornando uma tupla com listas modificaveis")
+    print(tup_in_list([1, 2, 3], [4, 5, 6], 80) == ([1, 2, 3, 80], [4, 5, 6]))  # True
+    print(tup_in_list(['a', 'b'], ['c', 'd'], 'e') == (['a', 'b', 'e'], ['c', 'd']))  # True
+    print(tup_in_list([], [], 10) == ([10], []))  # True
+
+    print("3 testes para shift_word, enviando uma palavra e um numero para deslocar a letra")
+    print(shift_word("abc", 1) == "bcd")  # True
+    print(shift_word("xyz", 3) == "abc")  # True
+    print(shift_word("cheer", 7) == "jolly") # True
+
+    print("3 testes para most_freq_letters, enviando uma palavra e retornando um dicionario com as letras mais frequentes")
+    print(most_freq_letters("hello") == {'h': 1, 'e': 1, 'o': 1, 'l': 2})  # True
+    print(most_freq_letters("aabbcc") == {'a': 2, 'b': 2, 'c': 2})  # True
+    print(most_freq_letters("pythonnn") == {'p': 1, 'y': 1, 't': 1, 'h': 1, 'o': 1, 'n': 3})  # True
+
 if __name__ == "__main__":
-    tests_cap_10()
+    tests_cap_9()
+    tests_cap_10()  
+    tests_cap_11()
