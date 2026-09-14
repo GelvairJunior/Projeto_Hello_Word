@@ -1,6 +1,6 @@
 import math
 from time import time
-
+print('\033c')
 segundos = 42
 minutos = 42
 km = 10.0

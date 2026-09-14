@@ -1,0 +1,7 @@
+data_dir: photos_info
+extensions:
+- jpg
+- jpeg
+- png
+- gif
+photos_dir: photos

@@ -3,7 +3,7 @@ from ipaddress import summarize_address_range
 from subprocess import STARTUPINFO
 from doctest import run_docstring_examples
 import re
-
+print('\033c')
 minutos = 60
 
 tempo_filme = 12354897
@@ -363,3 +363,4 @@ def invert_dict(d):
 invertido_counter = invert_dict(counter)
 
 print(invertido_counter)
+

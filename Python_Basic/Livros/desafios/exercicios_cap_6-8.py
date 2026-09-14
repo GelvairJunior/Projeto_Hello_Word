@@ -1,5 +1,5 @@
 import re
-
+print('\033c')
 def hypot(a,b):
     print(a)
     print(b)
