@@ -1,5 +1,10 @@
 import unicodedata
 import random
+import os
+import yaml
+import shelve
+import hashlib
+
 print('\033c')
 #analise e geração textual
 filename = 'Livros/desafios/dr_jekyll.txt'
@@ -129,3 +134,103 @@ for i in range(5):
     successor = successor_map[word]
     word = random.choice(successor)
     print(word, end=" ")
+
+
+print('__________________________________________________________________________', '\n')
+caminho = "c:/Users/gabri/OneDrive/Área de Trabalho/oreilly_getting_started_with_sql-master/Dev/Git/Projeto_Hello_Word/Python_Basic/Livros/desafios"
+caminho_relativo = 'photos'
+caminho_absoluto = os.path.join(caminho, caminho_relativo)
+print(os.listdir(caminho_absoluto))
+
+writer = open(os.path.join(caminho_absoluto, 'photos.txt'), 'w')
+notacao1 = "Você é uma pessoa muito legal"
+notacao2 = "Você é uma pessoa muito simpática"
+writer.write(f'Notacao principal: {notacao1}\nNotacao secundaria: {notacao2}')
+writer.close()
+
+reader = open(os.path.join(caminho_absoluto, 'photos.txt'), 'r')
+for line in reader.readlines():
+    print(line, end='')
+print()
+reader.close()
+config = {
+    'photos_dir': 'photos',
+    'data_dir': 'photos_info',
+    'extensions': ['jpg', 'jpeg', 'png', 'gif'],
+}
+
+config_filename = 'config.yaml'
+writer = open(os.path.join(caminho_absoluto, config_filename), 'w')
+yaml.dump(config, writer)
+writer.close()
+print()
+reader = open(os.path.join(caminho_absoluto, config_filename), 'r')
+config_loaded = yaml.safe_load(reader)
+print(config_loaded, '\n')
+
+os.makedirs(os.path.join(caminho_absoluto, config_loaded['data_dir']), exist_ok=True)
+
+db_file = os.path.join(caminho_absoluto, config['data_dir'], 'captions')
+
+db = shelve.open(db_file, 'c')
+
+key ='photos_tiradas/photo_1.png'
+db[key] = 'Dark Souls'
+
+value = db[key]
+print(list(db.keys()), list(db.values()))
+
+for key in db:
+    print(key, ":", db[key])
+print()
+db.close()
+
+db = shelve.open(os.path.join(caminho_absoluto, 'anagram_map'), 'n')
+
+word = 'listen'
+key = ''.join(sorted(word))
+db[key] = word
+print(list(db.keys()), ":", db[key])
+
+word = 'silent'
+key = ''.join(sorted('silent'))
+db[key] = word
+print(list(db.keys()), ":", db[key])
+
+anagram_list = [db[key]]
+anagram_list.append('listen')
+anagram_list.append('eilnst')
+db[key] = anagram_list
+print(list(db.keys()), ":", db[key], '\n')
+db.close()
+
+
+path1 = os.path.join(caminho_absoluto, config['data_dir'], 'photos_tiradas', 'photo_1.png')
+
+
+path2 = os.path.join(caminho_absoluto, config['data_dir'], 'photos_tiradas', 'photo_2.png')
+
+
+def same_contents2(path1, path2): #ineficiente
+    data1 = open(path1, 'rb').read()
+    data2 = open(path2, 'rb').read()
+    return data1 == data2
+
+md5_hash = hashlib.md5()
+
+def md5_digest(filename):
+    data = open(filename, 'rb').read
+    md5_hash = hashlib.md5()
+    md5_hash.update(data)
+    digest = md5_hash.hexdigest()
+    return digest
+
+def walk(dirname, visit_function=print):
+    for name in os.listdir(dirname):
+        path = os.path.join(dirname, name)
+        if os.path.isfile(path):
+            visit_function(path)
+        else:
+            walk(path, visit_function)
+
+walk(caminho_absoluto)
