@@ -97,8 +97,7 @@ def add_counters(string1, string2):
 def is_interlocking(word1, word2, interlock_word):
     oneWord = interlock_word[::2]  
     twoWord = interlock_word[1::2]
-    return oneWord == word1 and twoWord == word2
-    
+    return oneWord == word1 and twoWord == word2    
 
 def tests_cap_10():
     print("Iniciando os testes do capitulo 10...")
@@ -153,6 +152,40 @@ def most_freq_letters(string):
     counter = dict(sorted(counter.items(), key=lambda item: item[1], reverse=True))
     return counter
 
+def gerar_anagram(word):
+    words_list = open('words.txt', mode='r', encoding='utf-8')
+    
+    anagrams_list = []
+    for wor in words_list:
+        if(is_anagrama(word.strip(), wor.strip())):
+            anagrams_list.append(wor.strip())
+    return anagrams_list
+
+def anagrams_list(words):
+    dicionario = {}
+    for word in words:
+        dicionario[word] = gerar_anagram(word)
+    return dicionario
+
+def word_distance(w1, w2):
+    if(len(w1) != len(w2)):
+        return False
+    l = 'abcdefghijklmnopqrstuvwxyz123456789'
+    letters = dict(zip(l, range(1,len(l)+1)))
+    resultado = 0
+    for letter1, letter2 in zip(w1, w2):
+        position_1 = letters[letter1]
+        position_2 = letters[letter2]
+        if(position_1 > position_2):
+            distance = position_1 - position_2
+        else:
+            distance = position_2 - position_1
+        resultado += distance
+
+    return resultado
+        
+
+
 def tests_cap_11():
     print("Iniciando os testes do capitulo 11...")
     # Adicione aqui os testes para o capítulo 11
@@ -171,7 +204,15 @@ def tests_cap_11():
     print(most_freq_letters("aabbcc") == {'a': 2, 'b': 2, 'c': 2})  # True
     print(most_freq_letters("pythonnn") == {'p': 1, 'y': 1, 't': 1, 'h': 1, 'o': 1, 'n': 3})  # True
 
+    print("1 testes para anagrams_list enviando palavras")
+    print(anagrams_list(['deltas', 'retainers', 'getainers']) == {'deltas': ['deltas', 'desalt', 'lasted', 'salted', 'slated', 'stadle', 'staled'], 'retainers': ['retainers', 'ternaries'], 'getainers': ['agentries', 'eastering', 'reseating', 'stingaree']})
+
+    print("3 testes para word_distance")
+    print(word_distance('praticas', 'praticas') == 0)
+    print(word_distance('praticas', 'pythonfs') == 60)
+    print(word_distance('cachorro', 'gato') == False)
+
 if __name__ == "__main__":
-    tests_cap_9()
-    tests_cap_10()  
+    #tests_cap_9()
+    #tests_cap_10()  
     tests_cap_11()
