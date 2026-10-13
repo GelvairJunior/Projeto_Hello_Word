@@ -10,14 +10,10 @@ public class Ordenacao_De_Vetores_Direta {
 		Item x;
 		int n = a.length;
 		for(i = 1; i < n; i++){
-			comp++;
-			System.out.println("comparações " + comp);
 	        x = a[i]; // chave inicial
 	        j = i;
 	        
 	        while(j >= 0 && a[j-1].key > x.key){
-	        	perm++;
-	        	System.out.println("Permutações " + perm);
 	            a[j] = a[j-1];
 	            j--;
 	        }
@@ -88,16 +84,13 @@ public class Ordenacao_De_Vetores_Direta {
 		int i, j;
 		Item x;
 		
-		int comp = 0; int perm = 0;
-		
 		for(i = 0; i < a.length; i++) {
+			
 			for(j = a.length-1; j > i; j--) {
-				comp++;
-				System.out.println("comparações " + comp);
 				if(a[j-1].key > a[j].key) {
-					perm++;
-		        	System.out.println("Permutações " + perm);
+					
 					x = a[j-1]; a[j-1] = a[j]; a[j] = x;
+					
 				}
 			}
 		}

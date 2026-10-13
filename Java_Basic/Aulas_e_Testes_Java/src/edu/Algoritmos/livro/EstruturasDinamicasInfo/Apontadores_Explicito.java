@@ -10,8 +10,8 @@ public class Apontadores_Explicito {
 	public Apontadores_Explicito(String name) {
 		Scanner scanner = new Scanner(System.in);
 		this.name = name;
-		pai = new Apontadores();
-		mae = new Apontadores();
+		pai = new Apontadores<Apontadores_Explicito>();
+		mae = new Apontadores<Apontadores_Explicito>();
 	}
 	
 	public void add(String name, boolean isFather) {

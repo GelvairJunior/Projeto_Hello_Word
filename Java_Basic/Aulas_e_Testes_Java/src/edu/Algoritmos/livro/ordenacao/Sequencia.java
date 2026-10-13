@@ -1,6 +1,5 @@
 package edu.Algoritmos.livro.ordenacao;
 
-import edu.Algoritmos.livro.ordenacao.Sequencia;
 
 public class Sequencia<T extends ComparableKey>{
     public boolean eof;
@@ -14,7 +13,7 @@ public class Sequencia<T extends ComparableKey>{
         f.open();
     }
     
-    void startRead() {
+    public void startRead() {
         f.reset();
         first = f.readWord();
         eof = f.eof;
@@ -50,7 +49,7 @@ public class Sequencia<T extends ComparableKey>{
     	T prev;
     	T atual;
     	
-    	// pensar como arrimar essa gambiarra
+    	// pensar como arrumar essa gambiarra
         prev = first;
 
         first = f.readWord();
