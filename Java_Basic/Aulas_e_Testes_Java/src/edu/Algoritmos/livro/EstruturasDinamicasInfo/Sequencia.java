@@ -51,7 +51,7 @@ public class Sequencia<T>{
         prev = first;
         
         first = f.readWord();
-        
-        return first;
+        if(first == null) {eof = true;}
+        return prev;
     }
 }

@@ -1,9 +1,1570 @@
-Curiosidade para o dia 14 de setembro: em 1956, era lançado o IBM 350, primeira unidade de armazenamento por discos magnéticos – do tamanho de duas geladeiras e pesando uma tonelada, armazenava até 5 megabytes. E após as notícias de hoje: a TechFX, onde profissionais de tecnologia que trabalham para empresas do exterior recebem com taxa de 0,5% e IOF zero para PJ, e quem vem da News paga só 0,1% nos 3 primeiros saques.
-Matt Mullenweg retorna ao cargo de CEO da Automattic, dona do WordPress: na semana passada, o conselho da empresa votou pela colocação de Mullenweg em licença remunerada, medida que o executivo classificou como uma “conspiração”. Segundo fontes internas, após retornar ao cargo, Mullenweg removeu outros administradores do Slack da empresa e informou aos funcionários que a situação havia sido resolvida, sem fornecer detalhes. As informações são do site TechCrunch.
-LG nega que suas smart TVs espionem usuários: segundo pesquisadores, os aparelhos gravam áudio ambiente mesmo em estado de hibernação, com o microfone desligado ou desconectados da internet. Em resposta, a empresa afirma que o processamento de fala só ocorre quando o usuário inicia uma interação por voz diretamente com a TV, sem gravação contínua. Críticos, entretanto, afirmam que a resposta não aborda a quantidade de dados que a LG realmente coleta, com quem eles são compartilhados e o potencial de exploração. As informações são do site Slashdot.
-Sam Altman, CEO da OpenAI, afirma que seria “imprudente” abrir o capital da empresa em 2026: a declaração foi dada em meio aos desdobramentos de recentes invasões cibernéticas envolvendo agentes de IA da empresa, incluindo o caso da Hugging Face. Altman afirma que a companhia não tem pressa para entrar na bolsa e que isso acontecerá quando estiverem prontos. A estimativa era que o IPO da OpenAI ocorresse no terceiro ou quarto trimestre deste ano. As informações são do site TechCrunch.
-Chefe do Instagram afirma que desativar algoritmo de recomendação faria engajamento e tempo de uso da rede social caírem até 50%: para Adam Mosseri, um feed cronológico acabaria sendo dominado por conteúdo de empresas, fazendo com que os usuários percam conteúdo de amigos. A declaração ocorreu na Austrália, onde o projeto de lei Digital Duty of Care quer obrigar plataformas a oferecer a opção de desativar o algoritmo de recomendação. As informações são do site The Next Web.
-Meta estaria testando robôs para realizar tarefas de manutenção em seus data centers nos EUA: um funcionário estima que uma das máquinas, treinada para trocar cabos de rede, pode assumir até 80% da carga de trabalho de algumas pessoas. Outros sistemas incluem um braço robótico usado para reiniciar ou cortar a energia, e um robô de quatro rodas com uma plataforma elevatória e um braço de seis eixos utilizado para reinstalar peças. As informações são do G1.
-Agentes de IA da OpenAI foram responsáveis por ataque ao RubyGems ocorrido em maio: segundo pesquisadores, os modelos publicaram mais de 2 mil pacotes maliciosos, explorando uma falha do RubyDoc que permitia a execução remota de código nos servidores. Centenas deles tinham “oai” no nome, quinze listavam “oai” como autor e um utilizava um endereço de e-mail contendo “openai”. A OpenAI está investigando o caso. As informações são do site The Hacker News.
-Associação Brasileira de Telesserviços pede que Anatel mude regras de ferramentas antispam das operadoras: a entidade, que representa empresas de telemarketing, critica o uso do CNAE (código que classifica o ramo de atividade das companhias) para bloquear chamadas, alegando que isso pode prejudicar setores que atuam legalmente. Também questiona a ativação automática do recurso e o prazo de até dez dias para analisar pedidos de desbloqueio. O pedido ocorre após a Anatel liberar o Vivo Anti Spam, que bloqueia chamadas em massa antes de o celular tocar. As informações são do Tecnoblog.
-"Eu precisava segurar a moeda estrangeira por mais tempo, para aproveitar os picos e sacar valores melhores.": foi esse o fator que fez Vitor Caires, engenheiro de computação que trabalha para uma empresa americana, passar a receber do exterior pela TechFX. Assim como ele, milhares de profissionais de tecnologia já migraram. Câmbio com controle de quando converter, taxa de 0,5%, IOF zero para PJ e seu dinheiro chegando no mesmo dia. Quem vem da News recebe a 0,1% nos 3 primeiros saques: Link Patrocinado
+Curiosidade para o dia 14 de setembro: em 1956, era lançado o IBM 350, primeira unidade de armazenamento por discos magnéticos – do tamanho de duas geladeiras e pesando uma tonelada, armazenava até 5 megabytes. E após as notícias de hoje: a TechFX, onde profissionais de tecnologia que trabalham para empresas do exterior recebem com taxa de 0,5% e IOF zero para PJ, e quem vem da News paga só 0,1% nos 3 primeiros saques. Matt Mullenweg retorna ao cargo de CEO da Automattic, dona do WordPress: na semana passada, o conselho da empresa votou pela colocação de Mullenweg em licença remunerada, medida que o executivo classificou como uma “conspiração”. Segundo fontes internas, após retornar ao cargo, Mullenweg removeu outros administradores do Slack da empresa e informou aos funcionários que a situação havia sido resolvida, sem fornecer detalhes. As informações são do site TechCrunch. LG nega que suas smart TVs espionem usuários: segundo pesquisadores, os aparelhos gravam áudio ambiente mesmo em estado de hibernação, com o microfone desligado ou desconectados da internet. Em resposta, a empresa afirma que o processamento de fala só ocorre quando o usuário inicia uma interação por voz diretamente com a TV, sem gravação contínua. Críticos, entretanto, afirmam que a resposta não aborda a quantidade de dados que a LG realmente coleta, com quem eles são compartilhados e o potencial de exploração. As informações são do site Slashdot. Sam Altman, CEO da OpenAI, afirma que seria “imprudente” abrir o capital da empresa em 2026: a declaração foi dada em meio aos desdobramentos de recentes invasões cibernéticas envolvendo agentes de IA da empresa, incluindo o caso da Hugging Face. Altman afirma que a companhia não tem pressa para entrar na bolsa e que isso acontecerá quando estiverem prontos. A estimativa era que o IPO da OpenAI ocorresse no terceiro ou quarto trimestre deste ano. As informações são do site TechCrunch. 
+Chefe do Instagram afirma que desativar algoritmo de recomendação faria engajamento e tempo de uso da rede social caírem até 50%: para Adam Mosseri, um feed cronológico acabaria sendo dominado por conteúdo de empresas, fazendo com que os usuários percam conteúdo de amigos. A declaração ocorreu na Austrália, onde o projeto de lei Digital Duty of Care quer obrigar plataformas a oferecer a opção de desativar o algoritmo de recomendação. As informações são do site The Next Web. Meta estaria testando robôs para realizar tarefas de manutenção em seus data centers nos EUA: um funcionário estima que uma das máquinas, treinada para trocar cabos de rede, pode assumir até 80% da carga de trabalho de algumas pessoas. Outros sistemas incluem um braço robótico usado para reiniciar ou cortar a energia, e um robô de quatro rodas com uma plataforma elevatória e um braço de seis eixos utilizado para reinstalar peças. As informações são do G1. Agentes de IA da OpenAI foram responsáveis por ataque ao RubyGems ocorrido em maio: segundo pesquisadores, os modelos publicaram mais de 2 mil pacotes maliciosos, explorando uma falha do RubyDoc que permitia a execução remota de código nos servidores. Centenas deles tinham “oai” no nome, quinze listavam “oai” como autor e um utilizava um endereço de e-mail contendo “openai”. A OpenAI está investigando o caso. As informações são do site The Hacker News. Associação Brasileira de Telesserviços pede que Anatel mude regras de ferramentas antispam das operadoras: a entidade, que representa empresas de telemarketing, critica o uso do CNAE (código que classifica o ramo de atividade das companhias) para bloquear chamadas, alegando que isso pode prejudicar setores que atuam legalmente. Também questiona a ativação automática do recurso e o prazo de até dez dias para analisar pedidos de desbloqueio. O pedido ocorre após a Anatel liberar o Vivo Anti Spam, 
+que bloqueia chamadas em massa antes de o celular tocar. As informações são do Tecnoblog. "Eu precisava segurar a moeda estrangeira por mais tempo, para aproveitar os picos e sacar valores melhores.": foi esse o fator que fez Vitor Caires, engenheiro de computação que trabalha para uma empresa americana, passar a receber do exterior pela TechFX. Assim como ele, milhares de profissionais de tecnologia já migraram. Câmbio com controle de quando converter, taxa de 0,5%, IOF zero para PJ e seu dinheiro chegando no mesmo dia. Quem vem da News recebe a 0,1% nos 3 primeiros saques: Link Patrocinado Sumário 1 Aplicações progressivas 1.1 Requisitos de uma aplicação progressiva 2 1.2 Criando nosso backlog 19 1.3 Conclusão 31 2 Fundamentos sobre frameworks e ferramentas 2.1 Fundamentos sobre o React 33 2.2 As principais engrenagens do React 45 2.3 IDE de desenvolvimento 61 2.4 Fundamentos	sobre o Pure.css 62
+2.5	Fundamentos	sobre	o	Nginx 67
+2.6	Conclusão 71
+3	Configurando	o	ambiente	de	desenvolvimento
+3.1	React	no	Browser 74
+3.2	Arquitetura	React	com	Node.js 85
+3.3	Node.js	e	NPM 87
+3.4	Configuração	manual	do	projeto 93
+3.5	Criando	o	projeto	com	create-react-app 145
+Casa	do	Código Sumário
+150
+198
+259
+343
+3.6	Conclusão 148
+4	Primeiros	passos	do	desenvolvimento
+4.1	Definição	dos	componentes 151
+4.2	Construindo	o	componente	App 159
+4.3	Criando	o	componente	cabeçalho 167
+4.4	Criando	o	componente	do	novo	usuário 176
+4.5	Criando	o	componente	Label 185
+4.6	Reajustando	o	componente	NovoUsuario 195
+4.7	Conclusão 196
+5	Componentes	com	estado	e	fluxo	de	eventos
+5.1	Estados	dos	componentes 199
+5.2	Criando	o	componente	Input 206
+5.3	Criando	o	componente	de	seleção	de	gênero 222
+5.4	Conclusão 257
+6	Componentes	complexos	e	domínio	da	aplicação
+6.1	O	domínio	da	aplicação 260
+6.2	Criando	o	componente	Button 264
+6.3	Ajustando	o	componente	NovoUsuario 276
+6.4	Criando	o	componente	ImageScroller 285
+6.5	Ajustando	os	componentes	App	e	NovoUsuario 331
+6.6	Conclusão 341
+7	Codificando	os	requisitos	progressivos
+7.1	Salvando	os	dados	no	navegador 344
+7.2	Salvando	arquivos	no	navegador 359
+7.3	Requisitos	com	verificação	manual 380
+Sumário Casa	do	Código
+402
+439
+7.4	Requisitos	com	verificação	automática 387
+7.5	Conclusão 400
+8	Publicando	a	aplicação	em	produção
+8.1	Ambiente	de	produção 402
+8.2	Relatório	do	Lighthouse 432
+8.3	Conclusão 437
+9	Referências	bibliográficas
+Casa	do	Código Sumário
+CAPÍTULO	1
+PWA	 é	 um	 acrônimo	 para	 Progressive	 Web	 Apps,	 ou
+Aplicações	Web	 Progressivas.	A	 palavra	progressiva	 vem	 da	ideia
+de	 Progressive	 Enhancement,	 ou	 melhoria	 progressiva.	 Neste
+contexto,	a	ideia	por	trás	da	palavra	progressiva	é	condicionar	uma
+aplicação	a	atender	o	maior	número	de	pessoas	possível,	sob	todos
+os	aspectos.
+Não	 é	 um	 estudo	 direcionado	 aos	 tipos	 de	 dispositivos,
+navegadores,	 versões	 das	 linguagens	 HTML,	 CSS	 ou	 JavaScript.
+Trata-se	da	criação	de	uma	experiência	cujos	usuários	terão	acesso
+contínuo	sem	nenhum	tipo	de	restrição	tecnológica.
+Podemos	colocar	da	seguinte	forma:	desenvolver	com	melhoria
+progressiva	 é	 um	 paradigma	 em	 que	 a	 aplicação	 deverá	 estar
+disponível	 para	 todos,	 sejam	 usuários	 de	 microcomputadores	 ou
+smartphones,	 com	 browsers	 atualizados	 ou	 obsoletos,	 com
+conexão	à	internet	ou	não.
+Sem	 internet?	 Isso	 mesmo.	 Uma	 aplicação	 progressiva	 deve
+estar	disponível	até	mesmo	quando	o	usuário	estiver	offline.	Pode
+parecer	 um	 absurdo,	 mas	 a	 ideia	 de	 construir	 progressivamente
+APLICAÇÕES
+PROGRESSIVAS
+1	APLICAÇÕES	PROGRESSIVAS 1
+traz	 novos	 desafios	 ao	 desenvolvimento.	 Não	 podemos
+simplesmente	 ter	 um	 site	 mobile-first	 com	 design	 moderno.	 Ele
+precisa	funcionar	em	qualquer	dispositivo,	sem	conexão,	para	todo
+tipo	 de	 usuário,	 e	 continuar	 melhorando	 progressivamente	 até	 o
+infinito	e	além!
+O	QUE É MOBILE-FIRST?
+O	 termo	 mobile-first	 é	 um	 conceito	 de	 desenvolvimento	 de
+software	no	qual	o	foco	são	os	dispositivos	mobile.	Ou	seja,	ao
+se	elaborar	um	site,	cria-se	toda	a	organização	das	páginas	e	a
+exibição	 dos	 dados	 com	 foco	 nos	 usuários	 de	 dispositivos
+mobile,	 mas	 sem	 se	 esquecer	 dos	 usuários	 de
+microcomputador.	 Como	 veremos	 em	 breve,	 atualmente
+existem	 muitos	 frameworks	 CSS	 para	 este	 tipo	 de
+desenvolvimento.
+Tudo	 isso	 parece	 confuso	 no	 início,	 mas	 na	 verdade	 é	 bem
+simples.	No	próximo	 tópico,	vamos	levantar	quais	requisitos	uma
+aplicação	 precisa	 respeitar	 para	 ser	 considerada	 uma	 verdadeira
+PWA.
+Faremos	 aqui	 um	 apanhado	 geral	 de	 todas	 as	 características
+que	 uma	 aplicação	 progressiva	 precisa	 atender.	 Existe	 uma
+ferramenta	chamada	Lighthouse	que	é	capaz	de	gerar	um	relatório
+1.1	 REQUISITOS	 DE	 UMA	 APLICAÇÃO
+PROGRESSIVA
+2 1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA
+completo	 das	 características	 de	 uma	 aplicação.	 Por	 enquanto,
+vamos	entender	cada	item	deste	relatório	com	uma	breve	descrição
+de	como	atacá-lo.	A	programação	envolvida	na	resolução	dos	itens
+será	aprimorada	nos	próximos	capítulos.
+LIGHTHOUSE
+Organizado	 e	 mantido	 pela	 equipe	 de	 desenvolvimento	 do
+Google,	o	Lighthouse	é	uma	ferramenta	de	código	aberto	que
+permite	qualificar	aplicações	web	em	relação	aos	requisitos	de
+melhoria	progressiva.
+Figura	1.1:	Lighthouse
+Seu	 principal	 objetivo	 é	 gerar	 um	 relatório	 avaliando
+requisitos	de	performance,	acessibilidade	e	o	quão	progressiva
+é	 uma	 aplicação.	 Mais	 adiante	 veremos	 como	 utilizá-la
+(extensão	 do	 Google	 Chrome)	 para	 medir	 a	 qualidade	 da
+aplicação	construída	neste	livro.
+Veremos	 agora,	 em	 tópicos,	 quais	 são	 os	 requisitos	 de	 uma
+aplicação	progressiva.
+Deve	registrar	um	Service	Worker
+1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA 3
+Service	Worker	é	uma	especificação	W3C	que	permite	executar
+um	 trecho	 de	 código	 JavaScript	 continuamente	 no	 nível	 do
+navegador.	 Por	 meio	 dele	 (não	 exclusivamente),	 é	 possível
+implementar	 recursos	 offline	 e	 organizar	 o	 cache	 dos	 arquivos
+estáticos	da	página	web.
+Um	dos	itens	do	relatório	do	Lighthouse	é	exatamente	este:	uso
+do	 Service	Worker.	 Entretanto,	 podemos	 centrar-nos	 na	ideia	 de
+que	nossa	aplicação	deve	funcionar	offline,	de	preferência	com	os
+recursos	 oferecidos	 pelo	 Service	 Worker.	 No	 futuro,	 veremos	 as
+minúcias	 do	 uso	 e	 da	 implementação	 do	 Service	 Worker	 em
+detalhes.
+Uma	página	web	funciona	 sobre	 o	protocolo	HTTP,	 que,	por
+sua	 vez,	 trabalha	 com	 vários	 status	 de	 retorno	 às	 solicitações	 dos
+browsers.	O	retorno	de	código	200	significa	sucesso	na	solicitação.
+Uma	aplicação	progressiva	deve	simular	tal	status	mesmo	estando
+offline.	Mas	como	isso	é	possível?	Guardando	os	dados	localmente.
+Isso	 pode	 ser	 realizado	 via	Local	 Storage	 (dados),	Application
+Cache	(arquivos),	IndexedDB	(dados),	e	o	próprio	Service	Worker,
+que,	 além	 de	 nos	 ajudar	 com	 as	 respostas	 status	200,	 orquestra	 o
+cache	 dos	 arquivos.	 Mais	 uma	 vez,	 não	 se	 preocupe,	 veremos	 as
+vantagens	e	desvantagens	de	cada	um	em	detalhes.
+Permita-me	 contar	 uma	 rápida	 história:	 a	 muito	 tempo	 atrás
+(2008),	 trabalhei	 em	 um	 site	 de	 inscrições	 para	 um	 processo
+Resposta	com	status	200	mesmo	estando	offline
+Deve	 exibir	 conteúdo	 quando	 o	 JavaScript	 estiver
+desabilitado
+4 1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA
+seletivo.	 Nele,	 a	 principal	 informação	 do	 usuário	 era	 o	 CPF.	 Na
+página,	 havia	 um	 código	 JavaScript	 que	 acrescentava	 pontos	 no
+CPF.
+Por	 uma	 falha	 no	 desenvolvimento,	 essa	 regra	 não	 estava
+replicada	 no	 back-end	 (PHP).	 Tudo	 corria	 bem	 até	 que	 um	 dos
+usuários,	 após	 ter	 se	 cadastrado	 com	 seu	 CPF	 devidamente
+pontuado,	 desabilitou	 o	 JavaScript	 e	fez	 um	 segundo	 cadastro	 do
+mesmo	CPF	sem	os	pontos.	Resultado:	dentre	todos	os	candidatos,
+esse	camarada	foi	o	único	a	ter	o	currículo	avaliado	duas	vezes	no
+processo.	 No	 final,	 descobrimos	 a	 farsa	 e	 o	 usuário	 foi
+desclassificado.
+Qual	 o	 motivo	 dessa	 história?	 Uma	 PWA	 deve	 ter	 uma
+resposta	programada	para	casos	em	que	o	JavaScript	é	desabilitado
+ou	não	suportado,	mesmo	que	esta	seja	uma	 tela	informando	que
+não	 é	 possível	 usar	 a	 aplicação.	 Este	 requisito	 é	 bem	 simples	 de
+resolver,	mas	quase	sempre	é	ignorado	pelos	desenvolvedores.
+Uma	 aplicação	 progressiva	 não	 pode	 ter	 seus	 dados
+transmitidos	 em	 claro.	 O	 protocolo	 HTTPS	 é	 obrigatório.	 No
+nosso	caso,	não	haverá	transmissão	de	dados	entre	o	front-end	e	o
+back-end.	 A	 única	 responsabilidade	 do	 back-end	 será	 prover
+arquivos	 estáticos	 que	 serão	 armazenados	 localmente	 no
+navegador.	Após	isso,	não	haverá	acesso	remoto.
+Isso	 nos	 permite	 descartar	 essa	 regra?	 Não!	 Acompanhe	 o
+raciocínio:	 não	 haverá	 tráfego	 de	 dados	 entre	 o	 navegador	 e	 o
+back-end	 após	 o	 primeiro	 carregamento	 da	 página	 pelo	 usuário.
+Como	 os	 arquivos	 estáticos	 ficarão	 armazenados	 localmente,	 a
+Usar	HTTPS
+1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA 5
+partir	 do	 segundo	 acesso	 não	 haverá	 download	 de	 arquivos.	 Ok,
+mas	 e	 se	 no	 primeiro	 acesso	 houver	 um	 man-in-the-middle
+(literalmente,	 um	 homem	 no	 meio	 da	 comunicação)	 provendo
+arquivos	falsos	para,	por	exemplo,	capturar	seus	dados	e	enviá-los
+para	um	servidor	na	nuvem?
+Figura	1.2:	Man	in	the	Middle
+É	nítido	 que	 estamos	 passíveis	 a	 tal	 problema.	 Não	fomos	 os
+únicos	a	perceber	isso.	A	própria	especificação	do	Service	Worker
+prega	o	uso	obrigatório	do	HTTPS.	No	caso	do	Service	Worker,	é
+até	 mais	 grave,	 pois	 estaremos	 publicando	 um	 JavaScript	 de
+execução	permanente	no	browser	do	usuário	final.
+Isso	 é	 muito	 simples.	 Por	 padrão,	 o	 navegador	 do	 usuário
+(mobile	ou	desktop)	acessa	o	 servidor	web	pelo	protocolo	HTTP,
+que	 trabalha	 sob	 a	 porta	 80.	 Ou	 seja,	 todos	 os	 arquivos
+disponibilizados	na	porta	80	do	servidor	serão	providos	via	HTTP.
+O	acesso	a	um	servidor	sem	criptografia	é	o	caso	mais	comum,	que
+ocorre	quando	um	usuário	apenas	digita	o	endereço	sem	explicitar
+o protocolo.
+Todo	 conteúdo	 HTTP	 deve	 ser	 redirecionado	 para
+HTTPS
+6 1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA
+Figura	1.3:	Acesso	via	HTTP
+Outra	 possibilidade	 é	 acessar	 o	 servidor	 web	 pelo	 protocolo
+HTTPS,	 que	 nada	 mais	 é	 do	 que	 o	 próprio	 HTTP	 sobre	 o
+protocolo	 TLS	 (Transport	 Layer	 Security).	 Este	 é	 fornecido	 na
+porta	 443	 e	 basicamente	 estabelece	 um	 canal	 de	 comunicação
+criptografado	entre	o	navegador	e	o	servidor	web.	Por	padrão,	para
+acessar	 um	 servidor	 com	 esse	 recurso,	 o	 usuário	 precisará
+explicitar	 o	 uso	 do	 https	 antes	 do	 endereço	 do	 site	 (https://siteseguro.com).
+Figura	1.4:	Acesso	via	HTTPS
+Outra	 opção	 é	 configurar	 o	 servidor	 web	 para	 sempre
+redirecionar	as	solicitações	recebidas	na	porta	80	para	a	porta	443,
+neste	 caso,	 obrigando	 o	 navegador	 a	 estabelecer	 um	 canal	 de
+comunicação	 seguro	 através	 do	 protocolo	 HTTPS.	 Se	 todas	 as
+mensagens	 em	 claro	 (sem	 segurança,	 via	 HTTP)	 forem
+redirecionadas	 para	 um	 canal	 criptografado	 (HTTPS),	 o	 usuário
+nunca	 poderá	 acessar	 a	 página	 de	 forma	 insegura.	 Vide	 uma
+1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA 7
+representação	na	figura	adiante.
+Figura	1.5:	Conversão	do	HTTP	para	HTTPS
+Vamos	 publicar	 nossa	 aplicação	 progressiva	 por	 meio	 de	 um
+servidor	 web	 chamado	 Nginx	 (cuja	 pronúncia	 é	 enginex).	 Ele
+possui	 vários	 recursos,	 inclusive	 o	 de	 redirecionar	 as	 mensagens
+HTTP	da	porta	80	para	a	443,	decorando-as	com	Transport	Layer
+Security	(TLS).
+CONVERSANDO SOBRE SEGURANÇA	(TLS)
+Você	 já	 ouviu	 a	 expressão	 "esta	 é	 uma	 terra	 de	 ninguém"?
+Dizer	que	a	internet	encaixa-se	nela	não	é	uma	blasfêmia!	O
+tráfego	 de	 dados	 em	 claro	 (sem	 criptografia)	 nas	 redes
+contemporâneas	 é	 extremamente	 perigoso	 e	 deve	 ser
+desencorajado,	 principalmente	 quando	 se	 trata	 de	 dados
+confidenciais.
+Foi	 pensando	 nisso	 que,	 no	 século	 passado,	 a	 equipe	 da
+Netscape	 inventou	 o	 protocolo	 Secure	 Sockets	 Layer	 (SSL),
+8 1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA
+cuja	 tradução	 pouco	 usual	 seria	 Camada	 de	 Soquetes	 de
+Segurança.	O	SSL	é	um	protocolo	de	segurança	que	pode	ser
+integrado	a	outros	protocolos	de	comunicação,	como	se	fosse
+uma	camada	extra	aplicada	para	proteger	um	canal	inseguro.
+As	 primeiras	 versões	 do	 SSL	 já	 nasceram	 obsoletas,	 com
+vulnerabilidades	 de	 segurança	 que	 o	 impediram	 de	 ser
+utilizado.	 A	 partir	 de	 sua	 terceira	 versão,	 mundialmente
+conhecida	 como	 SSL	 3.0,	 ele	 passou	 a	 ser	 usado	 como	 um
+recurso	 de	 segurança	 e	 foi	 padronizado	 pela	 entidade	 de
+padronização	IETF	através	do	documento	RFC	6101.
+Alguns	 anos	 depois,	 foi	 descoberta	 uma	 vulnerabilidade	 no
+SSL	3.0,	na	qual	um	man-in-the-middle	poderia	descobrir	um
+byte	 criptografado	 monitorando	 algumas	 centenas	 de
+requisições.	 Isso	 tornou-o	 obsoleto,	 culminando	 em	 sua
+depreciação	em	2015.
+Em	 paralelo	 à	 descontinuidade	 do	 SSL	 3.0,	 em	 1999,	 a
+especificação	 RFC	 2246	 introduziu	 o	 algoritmo	 Transport
+Layer	 Security	 1.0	 (TLS),	 ou	 Camada	 de	 Transporte	 Segura,
+que	se	 trata	de	uma	evolução	do	próprio	SSL.	Atualmente,	o
+padrão	 de	 mercado	 é	 o	 TLS	 1.2,	 sendo	 que	 a	 versão	 1.3
+encontra-se	em	finalização.
+Só	 como	 adendo,	 como	 o	 TLS	foi	 baseado	 no	 SSL,	 é	 muito
+comum	 se	 referir	 à	 camada	 de	 segurança	 aplicada	 aos
+protocolos	 como	 TLS/SSL	 ou	 somente	 SSL,	 apesar	 de	 na
+prática	o	protocolo	usado	ser	o	TLS.
+Com	isso,	resolveremos	esta	característica	das	PWAs.	Veremos
+1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA 9
+com	detalhes	os	benefícios	e	a	configuração	do	Nginx	no	decorrer
+dos	próximos	capítulos.
+Apesar	 do	 título	 estranho	 do	 Lighthouse	 –	 que	 estou
+transcrevendo	ipsis	litteris	–,	significa	basicamente	que	a	aplicação
+deve	 estar	 disponível	 para	 interação	 do	 usuário	 em	 um	 tempo
+inferior	 a	 10	 segundos.	 Seremos	mais	 agressivos!	Há	 estudos	 que
+indicam	que	uma	aplicação	que	demora	mais	do	que	3	segundos	já
+é	 considerada	 lenta	 pelos	 usuários.	 Vamos	 estabelecer	 a	 seguinte
+meta:	three	seconds	and	go	(três	segundos	e	vai)!
+As	 atuais	 especificações	 da	 W3C	 favorecem	 muito	 tal
+possibilidade,	principalmente	quando	se	 trata	de	usuários	mobile.
+Veremos	 que,	 para	 isso	 funcionar,	 além	 das	 configurações	 de
+instalação	 por	 dispositivo,	 teremos	 de	 organizar	 ícones	 em
+tamanhos	específicos	para	cada	caso.	Quando	estiver	funcionando,
+haverá	 um	 ícone	 na	 área	 de	 trabalho	 para	 acessar	 a	 página,	 e	 o
+usuário	poderá	utilizá-la	como	se	fosse	uma	app	nativa.
+O	 termo	 splash	 screen	 (tela	 de	 abertura)	 tem	 origem	 nos
+aplicativos	desktop,	em	que	uma	pequena	tela	de	inicialização	com
+o logotipo	é	exibida	enquanto	o	software	é	carregado.	Veja	adiante
+um	exemplo	da	splash	screen	do	GIMP,	um	software	de	edição	de
+Deve	carregar	rapidamente	no	3G
+O	 usuário	 deve	 ser	 questionado	 se	 deseja	 instalar	 a
+aplicação
+Deve	 ser	 configurada	 com	 uma	 splash	 screen
+personalizada
+10 1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA
+imagens.
+Figura	1.6:	Software	de	manipulação	de	imagens
+Isso	também	existe	no	mundo	mobile.	A	ideia	é	simplesmente
+exibir	uma	página	intermediária	enquanto	a	aplicação	é	carregada.
+Este	 é	 um	item	 de	menor	 relevância,	mas	 estou	 destacando-o
+por	 ser	 uma	 das	 verificações	 realizadas	 pelo	 Lighthouse.
+Basicamente,	 deve-se	 colorir	 a	 barra	 de	 endereço	 com	 cor
+semelhante	à	do	site.	Resolveremos	isso	com	uma	estilização	básica
+da	página,	no	futuro.
+A	tag		<meta>	de	nome		viewport	melhora	a	visualização	da
+página	 nos	 dispositivos	 mobile.	 Viewport	 é	 a	 área	 visível	 do
+Colorir	 a	 barra	 de	 endereço	 do	 navegador	 com	 as
+cores	do	site
+Implementar	a	metatag	viewport
+1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA 11
+usuário	 em	 página	 da	 web.	 Quanto	 menor	 a	 tela	 do	 dispositivo,
+menor	será	a	viewport.
+Obviamente	ela	será	menor	em	um	telefone	celular	do	que	no
+browser	 de	 um	microcomputador.	Veremos	 no	 decorrer	 do	livro
+as	melhores	 práticas	 para	 se	 construir	 telas	 responsivas	 e	 com	 os
+recursos	adequados	aos	dispositivos	mobile.
+Para	 este	 item	 em	 especial,	 simplesmente	 devemos	 colocar	 o
+trecho	de	código	a	seguir	no	cabeçalho	da	página.
+<meta	name="viewport" content="width=device-width,	initial-scale=
+1">
+Isso	será	feito	na	elaboração	da	tela	do	sistema,	no	Capítulo	4.
+Há	duas	formas	de	se	construir	uma	aplicação	compatível	com
+diferentes	 tamanhos	 de	 viewport:	 layouts	 estáticos	 (organizados
+especificamente	para	os	dispositivos),	ou	layouts	responsivos.
+A	 organização	 estática,	 no	 geral,	 oferece	 resultados	 de	 alta
+qualidade,	 mas	 possui	 baixa	 manutenibilidade.	 A	 ideia	 para	 se
+construir	layouts	estáticos	passa	primeiramente	pela	descoberta	do
+dispositivo	utilizado	pelo	usuário.
+O	 protocolo	 HTTP	 possui	 um	 cabeçalho	 com	 várias
+informações.	 Uma	 delas	 é	 a	 	 User-Agent	 ,	 que	 contém
+características	do	navegador	e	do	 sistema	operacional	do	usuário,
+entre	outras	minúcias.
+Por	meio	 dessa	 propriedade,	 podemos	 descobrir	 se	 o	 usuário
+está	 utilizando	 um	 celular,	 um	 tablet	 ou	 um	 computador	 e,	 em
+Redimensionar	o	conteúdo	da	página	corretamente
+12 1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA
+seguida,	 direcioná-lo	 para	 uma	URL	 apropriada	 ao	 dispositivo.	 É
+muito	 comum	 o	 desenvolvimento	 de	 páginas	 próprias	 para
+smartphones	em	URLs	com	o	prefixo	mobile	ou	m.
+Por	 exemplo,	 o	 site	 fictício	 http://sitequalquer.com	 pode	 ter
+uma	 versão	 mobile	 disponível	 em	 http://m.sitequalquer.com.
+Obviamente,	isso	significa	que	precisaríamos	realizar	manutenção
+em	 dois	 sites,	 fato	 que	 muitas	 vezes	 inviabiliza	 esse	 tipo	 de
+proposta.
+Mas	 cuidado:	 no	 caso	 de	 criarmos	 um	 layout	 estático	 sem	 a
+lógica	 do	 redirecionamento	 (pelo	 	 User-Agent	 ),	 o	 usuário
+enfrentará	sérios	problemas	de	usabilidade	ao	abrir	uma	página	em
+um	 dispositivo	 inadequado.	 Não	 podemos	 nos	 esquecer	 que
+haverá	microcomputadores	bisbilhotando	a	web	vez	ou	outra.
+Então,	vamos	construir	páginas	por	dispositivo	e	sofrer	com	a
+manutenção?	 Não.	 Por	 sorte,	 temos	 a	 outra	 alternativa:	 páginas
+com	layout	 responsivo.	 E	 é	justamente	 assim	 que	 vamos	 resolver
+este	requisito.
+As	boas	práticas	apontam	para	a	construção	de	páginas	que	se
+auto-organizam	 de	 acordo	 com	 o	 tamanho	 da	 viewport,
+escondendo	 elementos	inapropriados,	 substituindo	 componentes,
+e	 ajustando	 o	 tamanho	 de	 imagens	 e	fontes.	 Isso	 tudo	 é	 possível
+com	a	disposição	correta	das	tags	HTML,	uma	boa	organização	das
+classes	CSS	e	do	uso	de	@media	queries.
+Uma	@media	queries	é	um	trecho	do	CSS	que	permite	alterar	o
+estilo	 de	 acordo	 com	 o	 tamanho	 da	 viewport.	 Por	 exemplo,	 um
+menu	 com	 várias	 opções	 no	 cabeçalho	 da	 página	 poderia	 ser
+substituído	por	um	hamburger	se	visualizado	em	um	smartphone.
+1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA 13
+Figura	1.7:	Hamburger	menu	do	Materialize.css
+Veja	 anteriormente	 um	 suposto	 exemplo	 do	 uso	 da	 @media
+queries.	 Os	 componentes	 apresentados	 foram	 extraídos	 do
+Materialize.css,	 um	framework	 CSS	 aderente	 ao	Material	 Design,
+especificação	 de	 design	 criada	 pelo	 Google.	 Citei-o	 apenas	 para
+exemplificar	um	caso	real	de	@media	queries.
+Nesta	obra,	vamos	utilizar	o	Pure.css	em	vez	do	Materialize.css.
+Aliás,	 reforçando:	 Pure.css	 serve	 especificamente	 para	 auxiliar	 na
+estilização	 (CSS)	 da	 nossa	 aplicação	 progressiva	 com	 recursos	 de
+layout	responsivo,	obviamente.
+Então,	concluindo:	layout	responsivo	na	cabeça!
+Para	 atender	 o	maior	 número	 de	 usuários	 possíveis,	 devemos
+nos	 esforçar	 para	 tornar	 nosso	 código	 compatível	 com	 vários
+navegadores.	Por	sorte	nossa,	a	maioria	dos	frameworks	CSS	atuais
+já	 resolvem	esse	problema.	Entretanto,	 se	utilizarmos	um	 recurso
+restrito	 para	 os	 browsers	 mais	 modernos,	 podemos	 criar	 uma
+página	do	 tipo	“Desculpe-nos,	mas	 seu	browser	não	é	compatível
+O	site	deve	ser	cross-browser
+14 1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA
+com	nosso	 site!”.	O	Pure.css	possui	versões	distintas	para	uso	em
+browsers	antigos.
+Apesar	 de	 este	 requisito	 estar	 explícito	 no	 relatório	 do
+Lighthouse,	não	 há	 um	mecanismo	automático	 de	validação	 para
+ele.	 Para	 contornar	 esta	 situação,	 a	 documentação	 oficial	 de
+aplicações	 progressivas	 mantida	 pelo	 Google
+(https://developers.google.com/web/progressive-webapps/checklist#site-works-cross-browser),	 que	 está
+intrinsecamente	 associada	 ao	 Lighthouse,	 mantém	 regras	 de
+avaliação	 manual	 para	 avaliarmos	 casos	 como	 este.	 No	 futuro,
+usaremos	tais	regras	para	validar	esse	requisito.
+Esta	é	uma	boa	oportunidade	para	introduzirmos	os	conceitos
+associados	 à	 disposição	 das	 tags	 no	 navegador.	 Os	 elementos
+HTML	 são	 organizados	através	 do	DOM,	 cujo	acrônimo	 original
+em	 inglês	 é	 Document	 Object	 Model	 (Modelo	 de	 Objeto	 de
+Documento).	Basicamente,	o	DOM	é	uma	estrutura	de	dados	que
+organiza	 os	 elementos	 HTML	 em	 uma	 árvore.	 Cada	 nó	 desta
+árvore,	 além	 de	 manter	 informações	 sobre	 sua	 posição	 na
+estrutura,	contém	atributos	e	métodos	para	usufruto	do	navegador
+e	de	códigos	JavaScript	agregados	à	aplicação.
+As	transições	entre	páginas	não	devem	ser	sensíveis	à
+velocidade	de	conexão
+1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA 15
+Figura	1.8:	Representação	do	DOM
+Mas	 nem	 só	 do	 DOM	 viverá	 o	 navegador.	 Para	 as	 coisas
+funcionarem,	ele	precisará	baixar	 todos	os	arquivos	associados	ao
+HTML:	arquivos	de	estilo	(CSS),	arquivos	JavaScript,	imagens	etc.
+É	sabido	que,	para	fazer	tudo	isso,	o	navegador	precisará	de	tempo,
+tanto	no	primeiro	acesso	quanto	na	transição	entre	as	páginas.	Este
+requisito	 das	 PWAs	 preocupa-se	 justamente	 em	 monitorar	 o
+período	de	transição.
+Caso	haja	uma	transição	total,	o	que	é	desaconselhado,	teremos
+de	 nos	 preocupar	 em	 torná-la	 rápida	 o	 suficiente	 para	 que	 o
+usuário	não	fique	irritado.	Neste	contexto,	transição	total	significa
+16 1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA
+que	o	navegador	precisará	baixar	 tudo	 (o	HTML,	o	 JavaScript,	as
+imagens,	o	CSS)	e	ainda	renderizar	o	DOM,	sempre	que	o	usuário
+acessar	uma	das	páginas	do	sistema.
+Figura	1.9:	Transição	total	entre	as	páginas
+Mesmo	 sem	 nos	 aprofundarmos,	 já	 é	 possível	 perceber	 o
+quanto	 essa	 abordagem	 é	 frágil.	 Veremos	 mais	 detalhes	 no
+próximo	 capítulo,	 mas	 só	 a	 renderização	 do	 DOM	 já	 é	 uma
+atividade	 que	 pode	 comprometer	 a	 performance	 no	 lado	 cliente
+(navegador).	 Além	 disso,	 se	 para	 cada	 página	 da	 PWA	 ainda
+precisássemos	 baixar	 todos	 os	 arquivos,	 certamente	 teríamos
+problemas	de	lentidão.
+Para	 resolver,	 podemos	 simplesmente	 evitar	 transições
+completas	por	meio	da	construção	de	uma	Single-Page	Application
+(SPA),	ou	aplicação	de	única	página.	Nas	SPAs,	as	transações	entre
+as	 páginas	 são	fluentes,	 sem	a	necessidade	 de	 refazer	 o	 download
+dos	arquivos	e	renderizar	totalmente	do	DOM.
+1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA 17
+Mas	afinal,	o	que	é	uma	SPA?	Uma	aplicação	de	única	página
+não	significa	literalmente	 que	 ela	deve	 ter	 uma	 única	 página.	 Ela
+pode	 ter	 quantas	 páginas	 precisarmos.	 A	 diferença	 está	 no	 que
+ocorre	na	transição:	as	páginas	não	precisam	ser	recarregadas.	Veja
+o fluxo	a	seguir.
+Figura	1.10:	Single	Page	Application
+Na	representação	 do	 dispositivo	 à	 esquerda,	 note	 que	 temos
+duas	 tags	 	<div>	:	 a	 	<div>		 1	 sendo	 exibida	 e	 a	 	<div>		 2,
+escondida.	Suponha	que	cada		<div>		 seja	 uma	 página	 completa,
+com	 vários	 componentes.	 O	 elemento	 botão	 seria	 o	 gatilho	 de
+transição	 entre	 elas.	 Ao	 ser	 clicado,	 além	 de	 obter	 os	 dados	 do
+servidor	 (ou	 do	 cache	 local),	 ele	 vai	 esconder	 a	 	<div>		 1	 e
+apresentar	a		<div>		2.
+Este	 foi	 um	 exemplo	 muito	 simplório	 do	 comportamento
+padrão	de	uma	SPA,	contudo,	servirá	como	base	para	entendermos
+a	ideia	principal:	a	transição	entre	as	páginas	deve	ser	transparente
+aos	usuários,	sem	o		reload		ou		redirect		completo	da	página.
+Como	 isso	 também	 implica	 em	 não	 baixar	 todos	 os	 arquivos
+novamente,	 teremos	maior	 perspectiva	 de	 performance	 em	 nossa
+aplicação.
+18 1.1	REQUISITOS	DE	UMA	APLICAÇÃO	PROGRESSIVA
+O	 Lighthouse	 não	 possui	mecanismo	 automático	 para	 avaliar
+este	 requisito.	 Sua	 validação	 também	 se	 dará	 a	 partir	 de
+verificações	manuais	que	faremos	no	Capítulo	7.
+O	 termo	 técnico	para	essa	característica	é	bookmarkable	 (sem
+tradução	 literal).	 Na	 prática,	 uma	 página	 bookmarkable	 é	 aquela
+que	 pode	 ser	 acessada	 por	 uma	 URL	 única	 -	 ou	 seja,	 pode	 ser
+adicionada	 aos	 favoritos	 do	 navegador.	 Além	 de	 ter	 uma	 URL
+específica,	 é	 importante	 defini-la	 com	 um	 nome	 amigável	 ao
+usuário	final.
+Por	exemplo,	um	blog	sobre	10	curiosidades	de	cães	africanos
+poderia	ter	a	seguinte	URL:	https://africageographic.com/blog/10-
+interesting-facts-african-wild-dogs/
+Em	aplicações	não-SPA,	cujas	 transições	de	páginas	 são	feitas
+inteiramente,	esse	fator	vem	praticamente	de	graça	–	é	necessário
+apenas	definir	boas	URLs.	Em	uma	SPA,	todavia,	como	o	usuário
+fará	a	 transição	entre	as	views	(páginas)	sem	recarregar,	há	maior
+complexidade	em	resolver	este	requisito.
+Veremos	 algumas	 práticas	 para	 tratá-lo	 com	 o	 React	 Router,
+um	framework	complementar	ao	React	para	organizar	as	rotas	da
+aplicação.	 Este	 requisito	 também	 precisará	 de	 uma	 validação
+manual	–	que	será	realizada	mais	adiante.
+A	 seção	 anterior	 apresentou	 os	 principais	 itens	 de	 avaliação
+fornecidos	 pelo	 Lighthouse.	 Estes	 não	 são	 os	 únicos.	Há	 também
+Cada	página	deve	ter	uma	URL
+1.2	CRIANDO	NOSSO	BACKLOG
+1.2	CRIANDO	NOSSO	BACKLOG 19
+outras	características	de	performance,	boas	práticas,	acessibilidade
+e	usabilidade.	Não	é	escopo	deste	livro	conceituar	todas.	Daremos
+foco	nos	que	são	associados	às	PWAs.
+Todavia,	há	uma	 série	de	 outros	 requisitos	inerentes	à	página
+da	aplicação	que	vamos	construir.	Vamos	entendê-los	e	agrupá-los
+por	afinidade	a	 seguir.	Para	materializar	uma	ideia	mais	próxima
+do	 resultado	final	 deste	 livro,	 vamos	 também	 organizar	 tudo	 em
+épicos,	acompanhados	de	um	protótipo	de	baixa	fidelidade	quando
+necessário.
+20 1.2	CRIANDO	NOSSO	BACKLOG
+O	QUE SÃO ÉPICOS E HISTÓRIAS?
+Essa	 terminologia	 (épicos,	 histórias	 etc.)	 advém	 das
+metodologias	ágeis	e	é	fortemente	adotada	pelo	Scrum.	Uma
+história	pode	ser	considerada	como	um	requisito	e	um	épico
+como	um	grupo	de	requisitos.
+Scrum	 é	 um	 framework	 de	 gerenciamento	 de	 projetos
+organizados	 em	 períodos	 fixos	 (Sprints)	 com	 um	 objetivo
+claro	 para	 toda	 equipe	 participante.	Ele	foca	 em	 reuniões	 de
+planejamento,	nas	quais	itens	do	Backlog	 (lista	de	 requisitos)
+são	priorizados	pelo	dono	do	projeto	e	incluídos	na	Sprint.	O
+Scrum	 não	 formaliza	 uma	 notação	 específica,	 porém,	 em
+grande	 parte	 dos	 projetos,	 é	 comum	 o	 uso	 de	 Histórias	 e
+Épicos.
+Apesar	 de	 a	 grande	 vantagem	 do	 Scrum	 estar	 associada	 a
+projetos	 que	 beiram	 o	 limite	 do	 caos	 (requisitos	 e
+complexidades	 incertos),	 podemos	 usá-lo	 plenamente	 em
+projetos	com	escopo	conhecido.	Neste	livro,	organizaremos	as
+entregas	 em	 Épicos	 e	 Histórias,	 que	 serão	 resolvidos
+pontualmente	nos	capítulos	relacionados.
+Quer	 conhecer	 mais	 sobre	 o	 assunto?	 Leia	 o	 livro	 Scrum:
+Gestão	 ágil	 para	 projetos	 de	 sucesso,	 de	 Rafael	 Sabbagh
+(https://www.casadocodigo.com.br/products/livro-scrum).
+Começaremos	 pela	 PWA.	 Como	 são	 requisitos	 técnicos
+Histórias	da	PWA
+1.2	CRIANDO	NOSSO	BACKLOG 21
+associados	ao	sistema	como	um	todo,	não	haverá	protótipo.
+Figura	1.11:	Requisitos	de	uma	PWA
+Apenas	 transcrevemos	 o	 estudo	 da	 seção	 anterior	 em	 um
+quadro	 de	 histórias.	 Isso	 nos	 dá	 uma	 ideia	 da	 dimensão	 que
+precisaremos	atacar	nos	próximos	capítulos.
+Nossa	 aplicação	 será	 chamada	 de	 Be	 happy	 with	 me
+(https://behappywith.me)	e	terá	como	principal	objetivo	organizar
+e	agendar	gentilezas	do	usuário.
+Figura	1.12:	Logotipo
+Vamos	 entendê-la:	 um	 usuário	 faz	 uma	 gentileza	 com	 uma
+outra	 pessoa.	 Que	 tipo	 de	 gentileza?	 Um	 abraço,	 um	 aperto	 de
+Visão	geral	da	aplicação
+22 1.2	CRIANDO	NOSSO	BACKLOG
+mãos,	um	bom-dia,	enfim,	qualquer	tipo	de	gentileza.	Em	seguida,
+com	 poucos	 cliques	 em	 seu	 smartphone,	 ele	 poderá	 registrar	 a
+gentileza	na	aplicação.	Ao	registrá-la,	ele	automaticamente	ganhará
+uma	 quantidade	 específica	 de	 experiência	 (XP)	 de	 acordo	 com	 o
+tipo	da	gentileza.
+A	aplicação	deve	eventualmente	gerar	uma	gentileza	aleatória.
+Essa	 gentileza	 ficará	 como	 pendente	 até	 o	 usuário	 realizá-la	 ou
+descartá-la.	 A	 ideia	 por	 trás	 dessa	 regra	 é	 fomentar	 novas
+gentilezas	 para	 que	 o	 usuário	 torne-se	 uma	 pessoa	 mais	 gentil.
+Todas	 as	 gentilezas,	 realizadas	 ou	 agendadas,	 serão	 exibidas	 na
+página	principal	da	aplicação.
+Essa	 foi	 uma	 descrição	 bem	 abrangente.	 Não	 precisamos	 (e
+nem	queremos)	perder	muito	 tempo	com	isso.	Veja	graficamente
+um	resumo	de	todas	as	funcionalidades	disponíveis	na	aplicação.
+Figura	1.13:	Ações	da	aplicação
+Como	 você	 verá	 no	 decorrer	 dos	 próximos	 capítulos,	 os
+componentes	 criados	 pelo	 React	 são	 altamente	 reaproveitáveis.
+Tudo	 o	 que	 será	 criado	 nos	 requisitos	 associados	 à	 tela	 de	Novo
+Usuário	 (primeira	 seção	 da	 imagem	 anterior)	 será	 reutilizado,	 o
+que	torna	o	trabalho	de	desenvolvimento	das	telas	Nova	Gentileza,
+1.2	CRIANDO	NOSSO	BACKLOG 23
+Listar	Gentilezas	e	Perfil	do	Usuário	demasiadamente	repetitivo.
+O	 objetivo	 aqui	 é	 fazê-lo	 compreender	 toda	 a	 tecnologia
+necessária	 para	 construir	 aplicações	 progressivas	 com	 auxílio	 do
+framework	 React.	 Com	 o	 desenvolvimento	 de	 Novo	 Usuário
+concluído,	 além	 de	 estar	 apto	 à	 construção	 das	 demais	 as	 telas,
+você	poderá	construir	sua	própria	aplicação	progressiva.
+Dito	 isso,	 fica	 claro	 que	 só	 será	 necessário	 descrever	 em
+detalhes	o	funcionamento	da	 tela	Novo	 Usuário.	As	 demais	 serão
+apenas	 citadas	 brevemente	 para	 que	 você	 entenda	 a	 aplicação
+como	um	 todo,	mas	 sem	ênfase	nos	detalhes	 técnicos	necessários
+para	o	desenvolvimento.
+Vejamos	agora	o	protótipo	de	Novo	Usuário.	Fique	atento	aos
+números	 apresentados	 na	 imagem	 anterior;	 eles	 serão
+referenciados	adiante.
+Na	primeira	vez	que	um	usuário	acessar	a	aplicação,	 todos	os
+arquivos	estáticos	serão	baixados	do	servidor	HTTPS	(Nginx)	para
+o dispositivo.	 Isso	 está	 representado	 no	 número	 1	 da	 figura	 a
+seguir.
+Novo	usuário
+24 1.2	CRIANDO	NOSSO	BACKLOG
+Figura	1.14:	Carregar	página
+Todos	 os	 dados	 do	 usuário	 e	 das	 gentilezas	 serão	 salvos
+localmente,	 no	 cache	 do	 navegador.	 Veremos	 a	 parte	 técnica
+envolvida	 em	 detalhes	 no	 futuro.	 Por	 enquanto,	 só	 precisamos
+fixar	a	lógica:	se	a	aplicação	não	encontrar	os	dados	do	usuário,	a
+tela	 de	 cadastro	 será	 apresentada.	 Ao	 terminar	 o	 cadastro,	 a
+aplicação	 salvará	 os	 dados	 no	 cache	 do	 navegador,	 fato	 que
+permitirá	o	uso	das	demais	telas.
+O	 item	 2	 da	 imagem	 a	 seguir	 representa	 ambos	 os	 passos:
+salvar	e	obter	os	dados	do	usuário	do	cache	do	navegador.
+1.2	CRIANDO	NOSSO	BACKLOG 25
+Figura	1.15:	Salvar	e	consultar	dados	no	cache	local
+Veja	na	figura	a	 seguir	o	protótipo	de	baixa	fidelidade	da	 tela
+de	novo	usuário.
+26 1.2	CRIANDO	NOSSO	BACKLOG
+Figura	1.16:	Protótipo	da	tela	de	novo	usuário
+Os	 componentes	 presentes	 nesta	 tela	formarão	 nossa	suíte	 de
+componentes	 para	 toda	 a	 aplicação.	 Nos	 próximos	 capítulos,
+veremos	em	detalhes	a	construção	de	cada	um	deles,	obedecendo
+as	 melhoras	 práticas	 de	 aplicações	 progressivas	 e	 do	 framework
+React.	Tudo	isso	será	realizado	a	partir	do	protótipo.
+Essa	 tela	 será	 considerada	 um	 épico.	 Não	 vamos	 desdobrá-lo
+em	históricas	agora,	pois	isso	será	feito	nos	capítulos	associados	à
+sua	construção.
+Apenas	 reforçando,	 as	 demais	funcionalidades	 reutilizarão	 os
+componentes	 criados	 na	 tela	 de	 Novo	 Usuário,	 não	 sendo
+Demais	funcionalidades
+1.2	CRIANDO	NOSSO	BACKLOG 27
+necessário	 para	 nós,	 sob	 o	 ponto	 de	 vista	 de	 aprendizado,
+reproduzir	uma	codificação	que	não	acrescentará	novos	conceitos.
+Sob	o	ponto	de	vista	do	entendimento	do	projeto	Be	happy	with
+me	 como	 um	 todo,	 entretanto,	 é	 interessante	 que	 você
+compreenda	 seu	 funcionamento.	 Só	 como	 adendo,	 o	 código
+completo	do	projeto	está	disponível	no	repositório	Git,	cujo	link	é
+https://github.com/lgapontes/behappywith.me.	 Opcionalmente,
+você	poderá	estudá-las	por	lá,	se	quiser.
+Veja	 na	 imagem	 a	 seguir	 os	 requisitos	 da	 tela	 de	 Nova
+Gentileza.
+Figura	1.17:	Nova	Gentileza
+Após	 salvar	 os	 dados	 do	 usuário,	 a	 aplicação	 criará
+automaticamente	 a	 primeira	 gentileza	 agendada.	 Isso	 está
+representado	no	número	3.	Chamamos	de	agendada	pois	o	usuário
+terá	24	horas	para	realizá-la	ou	descartá-la.
+Diariamente,	a	aplicação	criará	gentilezas	agendadas	 (número
+28 1.2	CRIANDO	NOSSO	BACKLOG
+4).	 Por	 exemplo,	 em	 determinado	 dia	 pode	 surgir	 uma	 gentileza
+Dar	um	doce	a	um	amigo.	Neste	exemplo,	amigo	é	o	destinatário
+da	gentileza.	Toda	gentileza	terá	um	destinatário,	que	nada	mais	é
+do	que	o	seu	receptor.	Teremos	seis	tipos	de	destinatários.
+Figura	1.18:	Destinatários
+Mas	afinal,	o	que	seria	uma	gentileza?	Trata-se	de	um	registro
+no	tempo	de	uma	ação	realizada	com	alguém.	Na	terminologia	da
+aplicação,	a	ação	será	conhecida	como	tipo	de	gentileza.	O	sistema
+terá	 sete	 tipos	 de	 gentileza,	 e	 haverá	 uma	 imagem	 representativa
+para	cada	uma	delas,	conforme	a	figura	a	seguir.
+1.2	CRIANDO	NOSSO	BACKLOG 29
+Figura	1.19:	Tipos	de	gentileza
+O	 último	 requisito	 relacionado	 à	 criação	 das	 gentilezas	 é	 o
+fluxo	manual,	indicado	 pelo	número	5.	Por	ele,	 o	usuário	 poderá
+registrar	uma	gentileza	realizada.	Este	tipo	já	nasce	resolvida.
+Dando	sequência,	veremos	agora	os	passos	6	e	7,	relacionados	à
+tela	Listar	Gentilezas.
+Figura	1.20:	Listar	gentilezas
+30 1.2	CRIANDO	NOSSO	BACKLOG
+A	 lista	 de	 gentilezas	 exibirá	 as	 gentilezas,	 agendadas	 ou
+realizadas,	ordenadas	da	mais	recente	para	a	mais	antiga.	Isso	está
+representado	 no	 número	 6.	 Gentilezas	 criadas	 pelo	 usuário	 já
+estarão	automaticamente	resolvidas.	As	demais	vão	oferecer	botões
+de	 confirmação	 ou	 descarte	 na	 lista	 de	 gentilezas,	 ambos
+representados	pelo	número	7.
+A	última	tela	trata	da	exibição	consolidada	do	perfil	do	usuário
+da	aplicação,	representada	pelo	número	8	da	imagem	a	seguir.
+Figura	1.21:	Perfil	do	usuário
+Esta	 tela	 exibe	 o	 nome,	 o	 avatar	 e	 a	 experiência	 do	 usuário.
+Como	 resultado	consolidado,	 são	exibidos	o	 total	de	gentilezas,	o
+total	 de	 atrasos,	 o	 total	 de	 gentilezas	 descartadas,	 e	 a	 média	 de
+gentilezas	por	dia.
+Neste	 capítulo,	 introduzimos	 os	 fundamentos	 das	 aplicações
+progressivas.	 Alinhamos	 também	 a	 expectativa	 sobre	 quais
+requisitos	 técnicos	 uma	 PWA	 deve	 atender,	 e	 o	 porquê	 de
+implementá-los.	 Ratificamos	 a	 proposta	 do	 livro,	 que	 é	 construir
+1.3	CONCLUSÃO
+1.3	CONCLUSÃO 31
+parte	 de	 uma	 aplicação	 progressiva	 usando	 como	 arcabouço	 o
+framework	de	front-end	React.	Organizamos	os	requisitos	da	nossa
+aplicação	em	épicos	e,	no	caso	especial	das	características	de	uma
+PWA,	em	histórias.
+Nos	 próximos	 capítulos,	 avançaremos	 passo	 a	 passo	 na
+resolução	 do	 backlog,	 sempre	 oferecendo	 uma	 fundamentação
+necessária	para	o	uso	e	a	escolha	das	ferramentas	e	frameworks.	É
+sabido	 também	que,	eventualmente,	algumas	 tecnologias	(como	o
+ECMAScript	 6,	 por	 exemplo)	 terão	 de	 ser	 introduzidas	 como
+alicerce.	Isso	será	feito	gradativamente,	sempre	que	necessário.
+32 1.3	CONCLUSÃO
+CAPÍTULO	2
+Prepare-se:	este	é	um	capítulo	teórico	em	que	fundamentamos
+a	 escolha	 do	 React,	 suas	 principais	 características,	 vantagens	 e
+desvantagens.	 Destacamos	 também	 a	 escolha	 da	 IDE,	 do
+framework	de	estilização	Pure.css	e	do	servidor	web	Nginx.
+Isso	 pode	 parecer	 desnecessário,	 mas	 a	 verdade	 é	 que	 o
+ecossistema	de	ferramentas	para	suportar	aplicações	progressivas	é
+imenso.	 É	 muitíssimo	 importante	 conhecermos	 as	 ferramentas
+envolvidas	 em	 nosso	 projeto	 para	 criarmos	 uma	 base	 de
+conhecimento	sólida	para	os	próximos	capítulos.
+Você	 já	 sabe	 que	 a	 escolha	 de	 nosso	 framework	 da	 camada
+cliente	é	o	React.	Vamos	entender	a	partir	de	agora	o	motivo	desta
+decisão.	Não	 se	engane,	escolher	um	framework	front-end	é	uma
+tarefa	árdua!	Existem	ótimas	opções	no	mercado	e	todas	merecem
+respeito,	cada	uma	com	 seu	approach	 específico	 e	 suas	 vantagens
+bem	ressaltadas.	No	final,	tudo	depende	do	tipo	de	projeto.
+FUNDAMENTOS	SOBRE
+FRAMEWORKS	E
+FERRAMENTAS
+2.1	FUNDAMENTOS	SOBRE	O	REACT
+2	FUNDAMENTOS	SOBRE	FRAMEWORKS	E	FERRAMENTAS 33
+Ok,	se	depende	do	projeto,	então	vamos	destacar	alguns	pontos
+importantes	sobre	o	nosso	escopo	para	embasar	a	decisão:
+1. Trata-se	 de	 uma	 aplicação	 web	 progressiva:	 fato	 bastante
+discutido	no	Capítulo	1.
+2. Trata-se	 de	 uma	 Single	 Page	 Application	 (SPA):	 a
+usabilidade	 e	 a	 performance	 esperadas	 de	 uma	 PWA
+praticamente	 exigem	 SPAs.	 Digo	 usabilidade	 porque	 o	 uso
+fica	 mais	 agradável,	 e	 performance	 porque	 o	 tráfego	 do
+HTML,	imagens,	CSS,	JavaScript	e	a	montagem	da	estrutura
+da	 página	 são	 substituídos	 pelo	 envio	 e	 recebimento
+assíncrono	dos	JSONs.
+3. O	 design	 deve	 ser	mobile-first,	mas	 com	 compatibilidade
+no	 mínimo	 aceitável	 em	 computadores:	 aplicações
+progressivas	devem	atender	a	todos	os	usuários,	mesmo	que
+a	essência	gire	em	torno	do	público	móvel.
+4. Deve	 ter	 um	 ciclo	 de	 vida	 pequeno	 mas	 com	 boa
+manutenibilidade:	 o	 ciclo	 de	 construção	 de	 software
+geralmente	 é	 longo,	 caro	 e	 demasiadamente	 desgastante	 à
+equipe	 e	 ao	 owner	 (dono)	 do	 projeto.	 Estabelecer	 objetivos
+claros	 e	 metas	 intermediárias	 nos	 permite	 trabalhar	 com
+ciclos	menores	 e	 entrega	 de	 valor	 a	 curto	 prazo.	Considero
+isso	como	um	mantra	pessoal,	mas	caso	queira	se	aprofundar
+no	assunto,	 dê	 uma	 olhada	na	 obra	Guia	 da	Startup:	Como
+startups	 e	 empresas	 estabelecidas	 podem	 criar	 produtos	 de
+software	rentáveis,	de	Joaquim	Torres,	publicado	na	Casa	do
+Código	 (https://www.casadocodigo.com.br/pages/sumariostartup-guia).
+5. Forks	 serão	 bem-vindos	 no	 GitHub:	 projetos	 como	 esse
+podem	 se	 tornar	fabulosos	 com	 auxílio	 da	 comunidade.	Os
+colaboradores,	 porém,	 precisam	 estar	 confortáveis	 com	 a
+34 2.1	FUNDAMENTOS	SOBRE	O	REACT
+tecnologia	utilizada.	Apontar	para	a	direção	contrária	do	que
+se	usa	no	mercado	certamente	 será	prejudicial.	Aliás,	esta	é
+uma	realidade	em	qualquer	tipo	de	projeto.
+Você	 pode	 achar	 que	 um	 ou	 outro	 item	 transcende	 nosso
+escopo,	 mas	 na	 verdade	 os	 três	 primeiros	 são	 necessários	 às
+aplicações	progressivas,	enquanto	os	dois	últimos	são	boas	práticas
+para	 todo	 projeto	 e	 podem	 gerar	 continuidade	 a	 um	 trabalho	 de
+caráter	open-source.
+Vamos	 agora	 analisar	 as	 características	 do	 framework,
+destacando	os	pontos	positivos	e	negativos	sempre	que	necessário.
+Obviamente,	no	momento	em	que	você	estiver	lendo	este	livro,
+os	números	serão	outros,	mas	já	podemos	notar	uma	tendência.
+Figura	2.1:	Estrelas	no	GitHub
+Escolher	 um	 framework	 da	 moda	 tem	 vantagens	 e
+desvantagens.	 A	 falsa	 maturidade	 que	 um	 framework	 pode
+apresentar	às	vezes	é	ofuscada	pelo	modismo.	Por	outro	lado,	em
+projetos	de	ciclo	de	vida	pequeno,	o	fato	de	mais	pessoas	curtirem
+a	 tecnologia	 geralmente	 representa	 maior	 número	 de
+desenvolvedores,	 mais	 fóruns,	 mais	 bugs	 corrigidos,	 mais
+componentes	prontos	etc.	E	como	uma	suposta	continuidade	com
+ajuda	da	comunidade	é	sempre	bem-vinda,	não	nos	resta	dúvidas
+aqui.
+Estrelas	no	GitHub
+2.1	FUNDAMENTOS	SOBRE	O	REACT 35
+Pode	parecer	ridículo	preocupar-nos	com	meros	kbytes,	mas	a
+verdade	 é	 que	 isso	 faz	 toda	 a	 diferença	 no	 carregamento	 das
+páginas.	Imagens	relativamente	grandes	(por	volta	dos	300kb)	são
+aceitáveis,	mas	arquivos	JavaScript	de	900kb	são	imperdoáveis.
+Figura	2.2:	Tamanho	dos	arquivos
+Adianto	 que,	 por	 estarmos	 criando	 uma	 PWA,	 o	 JavaScript
+baixado	ficará	 no	Application	Cache	 do	 navegador.	 Isso	 significa
+que	apenas	o	primeiro	acesso	será	influenciado	pelo	tamanho.	Ok,
+mas	você	se	lembra	da	meta	three	seconds	and	go?	Desejamos	que	a
+página	esteja	disponível	em,	no	máximo,	3	segundos,	e	isso	inclui	o
+primeiro	acesso.
+Só	 uma	 observação:	 há	 meios	 de	 reduzir	 drasticamente	 o
+tamanho	dos	arquivos	React.	Em	outras	palavras,	 se	fizermos	um
+tuning	(ajuste	fino),	os	arquivos	do	React	serão	menores.
+Por	linguagem,	entenda	como	a	principal	sintaxe	utilizada	para
+criar	os	componentes.
+Figura	2.3:	Linguagem	JSX
+Como	 veremos	 ao	 longo	 do	 livro,	 o	 React	fornece	 boas	APIs
+para	quaisquer	versões	do	 JavaScript.	Versões	do	 JavaScript?	Sim,
+Tamanho	dos	arquivos
+Linguagem
+36 2.1	FUNDAMENTOS	SOBRE	O	REACT
+existem	algumas,	e	acho	que	é	um	bom	momento	para	alinharmos
+o assunto.
+O	JavaScript	surgiu	nos	primórdios	da	internet,	a	partir	de	uma
+linguagem	chamada	LiveScript	criada	pela	Netscape	(empresa).	Ela
+começou	a	ganhar	força	após	sua	submissão	à	Ecma	International,
+uma	 organização	 de	 padrões	 para	 sistemas	 de	 comunicação	 e
+informação,	que	passou	a	chamá-la	de	ECMAScript.
+O	 avanço	 entre	 as	 versões	 ECMAScript	 5,	 que	 atualmente	 é
+compatível	 com	 a	 grande	 maioria	 dos	 navegadores,	 e	 6	 (ou
+ECMAScript	2015)	 é	 o	foco	 da	 nossa	 atenção	 aqui.	Quando	 digo
+que	o	React	fornece	APIs	para	todas	as	versões,	na	verdade,	refirome	às	versões	ECMAScript	5	e	6.	Além	do	ECMAScript	6,	o	React
+também	oferece	a	poderosa	sintaxe	JSX.
+Segundo	a	definição	oficial,	JSX	é	uma	extensão	do	XML	para	o
+ECMAScript,	 cujo	 acrônimo	 significa	 JavaScript	 XML.	 Por
+enquanto,	 não	 há	 intenção	 de	 ele	 se	 tornar	 compatível	 com	 os
+navegadores	ou	ser	incorporado	à	especificação	ECMAScript.	Seu
+uso	fica	 condicionado	a	 compiladores	 que	 transformam	 o	 código
+JSX	 em	 ECMAScript	 compatível	 com	 os	 browsers.	 Um	 pouco
+adiante,	ainda	neste	capítulo,	faremos	uma	introdução	à	sintaxe.
+No	capítulo	anterior,	fizemos	uma	introdução	sobre	o	que	é	o
+DOM.	 A	 renderização	 dos	 componentes	 React	 é	 realizada	 por
+meio	 de	 um	 recurso	 conhecido	 como	 Virtual	 DOM,	 de
+performance	 muito	 superior	 à	 manipulação	 do	 DOM
+convencional	 dos	 navegadores.	 Há	 um	 estudo	 profundo	 sobre	 as
+vantagens	 do	 Virtual	 DOM	 ainda	 neste	 capítulo,	 em	 uma	 seção
+Manipulação	do	DOM
+2.1	FUNDAMENTOS	SOBRE	O	REACT 37
+mais	à	frente.
+Mas	 por	 que	 exatamente	 é	 ruim	 usar	 o	DOM	 nativo?	Porque
+manipular	o	DOM	não	é	performático.	Tratando-se	de	uma	PWA
+cuja	execução	é	totalmente	influenciada	pela	velocidade	com	que	o
+framework	 é	 executado	 no	 navegador,	 considerar	 o	 tempo	 de
+renderização	é	muito	importante.
+Figura	2.4:	Tempo	de	renderização	dos	frameworks
+A	 imagem	 anterior	 apresenta	 uma	 comparação	 entre	 os
+principais	frameworks	JavaScript	do	mercado.	O	gráfico	de	barras
+representa	 quantos	milissegundos	 são	 necessários	 para	 o	 browser
+redesenhar	as	páginas.	O	React	se	destaca	nitidamente.
+Essa	 pesquisa	 foi	 realizada	 pelo	 site	 auth0.com	 (PEYROTT,
+2016).	Optei	em	divulgar	apenas	o	 tempo	de	 renderização,	mas	o
+site	faz	várias	 comparações	 de	 performance	 entre	 os	frameworks,
+caso	queira	mais	detalhes.
+Tempo	de	aprendizado
+38 2.1	FUNDAMENTOS	SOBRE	O	REACT
+Dizer	que	uma	tecnologia	é	mais	fácil	de	aprender	que	a	outra
+não	 é	 tão	 simples.	 Faça	 o	 seguinte:	 veja	 no	 YouTube	 qualquer
+curso	para	iniciantes	React.	Você	encontrará	vídeos	de	1	a	3	horas,
+em	 média.	 Realmente	 acho	 pouco	 tempo	 para	 iniciar	 com	 o
+desenvolvimento	 de	 um	 framework.	 Certamente,	 cursos	 mais
+avançados	demandarão	muitas	horas,	o	que	é	comum	em	qualquer
+framework	de	mercado.
+O	 termo	 two-way	 binding	 (ligação	 bidirecional)	 muito
+difundido	no	framework	Angular	significa	que	há	uma	ligação	de
+duas	 vias	 entre	 o	 DOM	 e	 os	 objetos	 no	 JavaScript.	 O	 React	 não
+oferece	 esse	 recurso.	 Ele	 até	 possui	 formas	 para	 contornar	 a
+situação,	mas	na	prática	é	one-way	binding.
+Figura	2.5:	Transição	dos	dados
+Mas	o	que	realmente	representa	o	termo	binding?	Existem	dois
+lados	da	força:	um	deles	é	o	DOM	(tags	HTML	da	página);	o	outro
+é	 composto	 pelos	 objetos	 JavaScript.	 Quando	 a	 ligação	 acontece
+em	ambos,	sempre	que	um	dos	lados	for	alterado,	o	outro	receberá
+instantaneamente	a	atualização.
+Ou	seja,	se	o	usuário	alterar	um	elemento		<input>		na	página,
+o objeto	 JavaScript	 vinculado	 será	 atualizado.	 De	 forma
+semelhante,	 se	 o	 objeto	 for	 atualizado,	 o	 valor	 do	 	 <input>
+também	será.
+Transição	dos	dados	entre	o	DOM	e	os	componentes
+2.1	FUNDAMENTOS	SOBRE	O	REACT 39
+O	two-way	 binding,	 apesar	 de	 ser	 muito	 prático,	 possui	 duas
+desvantagens:
+1. Performance;
+2. Sintaxe	HTML	poluída	com	os	mecanismos	de	binding.
+O	 React	 só	 oferece	 uma	 direção	 do	 binding.	 O	 estado	 e	 as
+propriedades	do	componente	(objeto	JavaScript)	são	copiados	para
+o DOM	pelo	método		render()	.	O	retorno	do	dado,	entretanto,	é
+realizado	por	meio	da	captura	de	eventos	(como	o		onChange	,	por
+exemplo).	Com	base	nisso,	é	correto	dizer	que	o	retorno	dos	dados
+do	DOM	para	o	JavaScript	é	indireto.
+Conforme	 veremos	 no	 decorrer	 dos	 próximos	 capítulos,	 isso
+não	é	exatamente	uma	desvantagem.	Muito	pelo	contrário:	torna	o
+desenvolvimento	 muito	 mais	 simples	 e	 baseado	 fortemente	 em
+funções.	 Só	 como	 um	 adendo,	 a	 comunidade	 entende	 que	 o
+binding	de	duas	vias	é	mais	 sofisticado.	Espero	ajudá-lo	a	formar
+uma	opinião	adequada	sobre	o	assunto	até	o	final	desta	obra.
+Já	 conversamos	 um	 pouco	 sobre	 o	 assunto	 na	 seção	 de
+manipulação	do	DOM.	Grande	parte	da	superioridade	de	execução
+do	 React	 se	 dá	 pelo	 Virtual	 DOM.	 Além	 disso,	 a	 suposta
+desvantagem	 do	 one-way	 binding	 traz	 um	 benefício	 de
+performance	 que	 nos	 faz	 refletir	 melhor	 sobre	 qual	 proposta	 de
+fluxo	é	superior.
+Em	 outras	 palavras,	 a	 performance	 obtida	 pelo	fluxo	 de	 uma
+via	 é	 incontestável	 (lembre-se	 do	 gráfico	 apresentado	 na	 seção
+Manipulação	 do	 DOM).	 Vamos	 agora	 construir	 um	 raciocínio
+Performance
+40 2.1	FUNDAMENTOS	SOBRE	O	REACT
+simples	 para	 tentar	 explicar	 o	 quão	 eficiente	 é	 o	 binding	 de	 uma
+via.
+Pense	comigo:	em	frameworks	que	 trabalham	com	o	two-way
+binding,	 como	 o	Angular,	 os	 atributos	 dos	 objetos	 JavaScript	 que
+estiverem	 ligados	 ao	 DOM	 vão	 refletir	 suas	 alterações
+instantaneamente.	Isso	é	ótimo!	Há	poucos	anos,	desenvolvedores
+do	jQuery	precisavam	atualizar	os	valores	do	DOM	manualmente.
+Por	 outro	 lado,	 quando	 um	 desses	 elementos	 do	 DOM
+(devidamente	configurado	para	trabalhar	com	o	two-way	binding)
+sofrer	 uma	 alteração,	 o	 atributo	 do	 JavaScript	 também	 será
+atualizado.
+Minha	 pergunta	 é:	 isso	 é	 realmente	 necessário?	 Se	 você
+trabalha	 com	 Angular,	 deve	 estar	 injuriado	 pensando	"Mas	 nem
+sempre	 é	 necessário!	 Há	 alternativas,	 como	 event	 binding".	 Para
+quem	 não	 conhece,	 o	 event	 binding	 (ligação	 por	 evento)	 do
+Angular	 é	 uma	 das	formas	 de	 binding	 que	 permite	 passar	 dados
+dos	templates	(DOM)	para	o	JavaScript.
+É	 verdade,	 o	 Angular	 oferece	 binding	 mais	 comportados.
+Porém,	na	prática,	quando	construímos	os	componentes,	são	raros
+os	momentos	em	que	exploramos	apenas	um	dos	quatro	 tipos	de
+binding.	No	geral,	usamos	todos	misturados	–	e	se	você	desenvolve
+com	Angular,	sabe	que	estou	falando	a	verdade.
+Vou	 aprimorar	 a	 pergunta:	 será	 que,	 em	 um	 formulário
+HTML,	é	realmente	necessário	atualizar	os	atributos	no	JavaScript
+para	todas	as	tags	alteradas?	Não	seria	melhor	atualizá-lo	somente
+quando	 o	 usuário	 clicasse	 no	 	<submit>	?	 Do	 ponto	 de	 vista	 de
+performance,	 sim.	 O	 melhor	 é	 atualizar	 quando	 for	 necessário
+atualizar.
+2.1	FUNDAMENTOS	SOBRE	O	REACT 41
+O	React	ganha	nesse	 sentido	porque	ele	enfatiza	fortemente	a
+atualização	 do	 estado	 dos	 objetos	via	 eventos	 (algo	 como	 o	 event
+binding	 do	 Angular).	 Ele	 condena	 o	 acesso	 aos	 componentes
+explicitamente,	 e	 isso	 torna-o	 simples,	 rápido	 e	 de	 fácil
+entendimento.
+Não	 se	 preocupe	 com	 os	 detalhes	 técnicos	 agora.	 Vamos
+evoluí-los	massivamente	neste	e	nos	próximos	capítulos.
+O	 React	 renderiza	 seus	 componentes	 através	 do	 método
+render()	 ,	 que	 fica	 dentro	 da	 classe	 do	 componente.
+Basicamente,	 isso	 significa	 que	 as	 classes	 ficam	 com	 muitas
+responsabilidades	–	que	é	uma	má	prática,	apesar	de	facilitar	muito
+a	manutenibilidade.
+Só	 vou	 deixar	 uma	 pergunta	 no	 ar:	 será	 que	 a	 proposta	 do
+React,	na	qual	as	tags	HTML	ficam	dentro	do	código,	é	realmente
+muito	pior	do	que	as	condicionais	e	os	laços	iterativos	que	outros
+frameworks	JavaScript	colocam	dentro	do	HTML	(templates)?
+MVC	 é	 um	 padrão	 arquitetural	 de	 projetos	 que	 segrega	 as
+responsabilidades	 principais	 de	 uma	 aplicação	 em	 três	 camadas,
+por	 assim	 dizer.	 O	 Model	 (referente	 ao	 M	 do	 acrónimo)	 é
+responsável	 por	 manter	 os	 dados	 e	 a	 lógica	 de	 negócios	 da
+aplicação.	A	View	(V)	é	a	camada	de	apresentação,	e	a	Controller,
+como	 o	 próprio	 nome	já	 diz,	 é	 responsável	 por	 controlar	 o	fluxo
+das	ações	realizadas	pelo	usuário	na	View.
+Componentes
+Arquitetura	MVC
+42 2.1	FUNDAMENTOS	SOBRE	O	REACT
+Figura	2.6:	Arquitetura	MVC
+Há	 representações	 mais	 conservadoras	 que	 indicam	 a
+comunicação	 do	 usuário	 direto	 com	 a	 Controller.	 Na	 prática,	 o
+usuário	é	uma	entidade	externa	que	realiza	sua	requisição	a	partir
+de	um	evento	disponibilizado	na	View,	que,	por	sua	vez,	repassa	a
+requisição	para	a	Controller.
+Toda	 lógica	 e	 organização	 das	 ações	 são	 tratadas	 pela
+Controller.	 Pode-se	 entender	 que	 a	 conclusão	 do	 trabalho	 desta
+camada	 geralmente	 resulta	 em	 uma	 espécie	 de	 manutenção	 dos
+dados	 de	 negócio	 da	 aplicação,	 refletidos	 diretamente	 no	modelo
+da	aplicação	(ou	Model).
+O	 modelo	 da	 aplicação	 nada	 mais	 é	 do	 que	 um	 conjunto	 de
+entidades	 de	 domínio	 que	 representam	 os	 dados	 do	 sistema	 em
+uma	 estrutura	 de	 classes	 e	atributos.	A	 palavra	domínio	 denota	 o
+escopo	que	a	aplicação	pretende	resolver.	Ou	seja,	em	um	site	de	ecommerce	 (vendas),	 a	 classe	 	Produto		 seria	 uma	 entidade	 do
+domínio.	Como	 os	 dados	 são	 preservados	 nessa	 camada,	 é	muito
+comum	 estreitá-la	 com	 os	 objetos	 de	 um	 banco	 de	 dados,
+persistindo	 entidades	 do	 modelo	 em	 tabelas	 ou	 documentos
+(JSON).
+2.1	FUNDAMENTOS	SOBRE	O	REACT 43
+Após	 a	 manipulação	 do	 Model,	 a	 View	 é	 notificada	 e
+automaticamente	 exibe	 as	 alterações	 para	 o	 usuário.	 É	 muito
+comum	 que	 esta	 notificação	 seja	 realizada	 por	 um	 padrão	 de
+projeto	chamado	Observer,	 que,	 em	 poucas	 palavras,	 permite	 que
+um	 objeto	 (da	View)	 perceba	 a	 alteração	 no	 estado	 de	 outro	 (do
+Model)	sem	criar	um	acoplamento	forte	entre	eles.	Por	fim,	depois
+de	o	usuário	perceber	os	ajustes	na	View,	ele	geralmente	faz	outra
+requisição,	e	o	fluxo	se	repete.
+Há	 uma	 infinidade	 literária	 sobre	 o	 assunto.	 Caso	 queira	 se
+aprofundar	no	MVC,	leia	o	post	de	Pablo	Pastor	 (2010)	chamado
+MVC	for	Noobs.	Caso	queira	 se	aprofundar	no	padrão	de	projeto
+Observer,	leia	 o	 post	Observer	 Design	 Pattern	 (em	 inglês)	 do	 site
+BlackWasp	(CARR,	2009).
+Por	 que	 toda	 essa	 história?	Muito	 se	fala	 que	 o	 React	 não	 se
+adequa	bem	ao	padrão	MVC,	fato	em	parte	verdadeiro.	Só	preciso
+ressaltar	que	na	verdade	o	React	não	aspira	se	adequar	ao	MVC.	A
+equipe	 mantenedora	 do	 React	 tem	 um	 vídeo
+(https://facebook.github.io/flux/docs/videos.html)	 explicando	 as
+desvantagens	do	MVC.
+Há	muita	 discussão,	 e	não	 pretendo	me	 prolongar	 preterindo
+um	 ou	 outro	 padrão	 arquitetural.	 O	 que	 é	 importante	 você
+perceber	 nesta	 seção	 é	 que	 o	 React	 não	 provê	 uma	 estrutura
+natural	 para	 se	 encaixar	 ao	 MVC.	 Se	 você	 quiser	 trabalhar	 com
+esse	padrão,	terá	de	criar	seus	próprios	mecanismos	para	isso.
+Neste	 livro,	 vamos	 adotar	 uma	 camada	 de	 modelo	 (também
+chamada	 de	domínio),	 que	 será	 bastante	 discutida	 no	Capítulo	 6.
+Lá	 você	 verá	 que	 a	 classe	 JavaScript	 será	 criada	 sem	 utilizar
+qualquer	recurso	do	React.	Será	um	simples	código	ECMAScript	6,
+44 2.1	FUNDAMENTOS	SOBRE	O	REACT
+construído	 para	 ser	 consumido	 pelos	 componentes	 React	 e
+organizar	os	dados	de	negócio	da	nossa	aplicação.
+React	 é	 um	 framework	 de	 camada	 de	 apresentação,
+fundamentado	em	componentes.	Certo,	já	 sabemos	disso!	Vamos
+desconstruir	 essa	 assertiva	 e	 focar	 no	componente,	 o	 alicerce	 das
+aplicações	 React.	 Um	 componente	 é	 um	 objeto	 JavaScript	 que
+contém	 propriedades,	 estado	 e	 um	 ciclo	 de	 vida	 gerenciado	 pelo
+framework	para	possibilitar	a	atualização	do	DOM	de	forma	fácil	e
+organizada.
+Figura	2.7:	Componente	do	React
+2.2	 AS	 PRINCIPAIS	 ENGRENAGENS	 DO
+REACT
+2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT 45
+A	 figura	 anterior	 mostra	 superficialmente	 como	 os
+componentes	 se	 encaixam	 na	 arquitetura	 front-end	 de	 uma
+aplicação	 web.	 Um	 componente	 pode	 receber	 parâmetros	 para
+customizar	 sua	 renderização	 no	DOM,	 que,	 no	mundo	 do	React,
+são	chamados	de		props		(propriedades).
+A	 forma	 como	 o	 componente	 será	 renderizado	 é	 organizada
+pela	sintaxe	JSX.	Ela	estrutura	tags	semelhantes	ao	HTML	e	facilita
+muito	 a	 compreensão	 das	 coisas.	 Veja	 no	 código	 a	 seguir	 um
+pequeno	 trecho	 destacado	 no	 	return		 do	 método	 	render()	.
+Isso	é	HTML?	Não.	Isso	é	um	código	JSX.
+render()	{
+return (
+<h1>Eu	sou	um	código	JSX!</h1>
+	);
+}
+Um	componente	possui	vários	métodos	para	controle	do	ciclo
+de	vida.	O	único	de	uso	obrigatório	é	o		render()	.	Toda	vez	que
+render()		 for	 executado,	 ele	 desencadeará	 uma	 atualização	 do
+DOM.	Isso	 acontece	 quando	 o	 componente	 é	 criado,	 ou	 quando
+seu	 estado	 (	this.state	)	 é	 atualizado.	 Por	 estado,	 entenda	 um
+conjunto	de	dados	inerentes	ao	funcionamento	do	componente.
+No	 geral,	 a	 leitura	 dos	 dados	 do	 estado	 é	 feita	 pela	 sintaxe
+this.state	,	 enquanto	 a	 escrita	 será	 realizada	 pelo	 método
+setState()	.	 Há	 exceções	 que	 veremos	 em	 detalhes	 durante	 o
+livro.
+O	 fluxo	 de	 dados	 (propriedades	 e	 estados)	 do	 React	 é
+unidirecional.	 Um	 componente	 pai	 passa	 dados	 para	 seus
+componentes	 filhos,	 que,	 por	 sua	 vez,	 passa	 dados	 aos
+componentes	netos,	e	assim	por	diante.
+46 2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT
+Figura	2.8:	Direção	do	fluxo	de	dados	do	React
+Já	vimos	alguns	conceitos,	mas	sinto	falta	de	alguma	coisa...
+Se	 você	 for	 um	 desenvolvedor	 raiz,	 já	 deve	 estar	 pensando:
+"Pare	 com	 essas	 figurinhas	 bonitinhas	 e	 mostre	 logo	 o	 código".
+Certo,	vamos	lá.
+Nosso	 primeiro	 contato	 será	 conduzido	 com	 uma	 conversão
+das	figuras	expostas	há	pouco	em	código	 real.	O	exemplo	 tratado
+aqui	 contém	 código	 de	 complexidade	 média,	 fato	 este	 que	 nos
+levará	a	segregar	seu	total	entendimento	pelos	próximos	capítulos.
+Ou	 seja,	 agora	 vamos	 mostrar	 a	 sintaxe	 superficialmente.	 Nas
+seções	 seguintes	deste	e	dos	próximos	capítulos,	vamos	esclarecer
+em	detalhes	todos	os	recursos	até	culminarmos	em	sua	reprodução
+completa	no	Capítulo	5.
+Vamos	lá!	Por	questões	didáticas,	por	enquanto	vamos	omitir	o
+código	HTML	e	as	importações	 JavaScript	necessárias	para	que	o
+exemplo	funcione.	Caso	você	queira	vê-lo	na	íntegra,	o	código	está
+disponível	 no	 repositório	 GitHub	 do	 projeto
+Cadê	o	código?
+2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT 47
+(https://github.com/lgapontes/behappywith.me).	 O	 link	 para
+acesso	 direito	 ao	 arquivo	 é:
+https://raw.githubusercontent.com/lgapontes/behappywith.me/ma
+ster/docs/cap2/exemplo.html.
+Uma	das	formas	de	 se	criar	componentes	é	através	da	 sintaxe
+class	,	do	ECMAScript	6.	No	mundo	da	programação	orientada
+a	objetos	(POO),	uma	classe	é	uma	espécie	de	template	a	partir	do
+qual	criamos	novos	objetos.
+Basicamente,	 uma	 classe	 é	 composta	 por	 características	 e
+comportamentos.	 Isso	 significa	 que	 todos	 os	 objetos	 criados	 a
+partir	dela	serão	formados	por	esses	elementos.
+Como	 trata-se	 de	 um	 código	 de	 exemplo,	 nada	mais	justo	 do
+que	nomear	a	classe	como		Exemplo	.
+class	Exemplo	extends	React.Component	{
+}
+Se	você	está	habituado	à	sintaxe	Java,	já	sabe	que		extends		 é
+utilizado	para	indicar	que	a	classe		Exemplo		herda	os	atributos	e
+métodos	 da	 classe	 	 React.Component	 .	 Sob	 o	 prisma	 da
+Orientação	a	Objetos,	é	muito	comum	reaproveitar	características
+e	comportamentos	dos	objetos	por	meio	de	um	recurso	conhecido
+como	herança	(ou		extends	).	Com	ela,	podemos	especificar	uma
+classe	 filha	 (ou	 subclasse)	 a	 partir	 de	 uma	 classe	 mãe	 (ou
+superclasse).
+No	 nosso	 caso,	 tudo	 que	 existe	 na	 superclasse
+React.Component		será	repassado	para	a	subclasse		Exemplo	.	Se
+quisermos	 definir	 um	 estado	 inicial	 para	 os	 componentes,
+podemos	 defini-lo	 dentro	 do		constructor	 da	 classe,	 conforme
+48 2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT
+adiante.
+class	Exemplo	extends	React.Component	{
+	constructor(props)	{
+	super(props);		
+this.state	=	{
+	cor:	'red',
+	contador:	0
+	};
+	}	
+}
+Além	 de	 outras	 minúcias	 que	 serão	 discutidas	 no	 futuro,
+estamos	 definindo	 um	 estado	 inicial	 com	 uma	 	cor	 	 igual	 a
+vermelho	 e	 um	 	contador		 igual	 a	 zero.	 Isso	 é	 realizado	 pelo
+atributo		this.state	.	 Note	 também	 que	 o	 	constructor		 (um
+método	que	sempre	é	chamado	durante	a	criação	do	objeto)	recebe
+as	 propriedades	 através	 do	 parâmetro	 	props		 e,	 em	 seguida,
+repassa-o	 para	 a	 superclasse	 	 React.Component	 	 pela	 sintaxe
+super()	.	 Esta	 é	 bastante	 difundida	 em	linguagens	 orientadas	 a
+objetos	 para	 representar	 a	 convocação	 do	 	 constructor	 	 da
+superclasse.
+Você	 lembra	 de	 que	 conversamos	 brevemente	 sobre	 a
+necessidade	 de	 um	 método	 para	 renderizar	 os	 componentes	 no
+DOM?	Mais	uma	vez,	este	método	é	o		render()	.	Neste	exemplo,
+render()		 conterá	 uma	 pequena	 estilização	 para	 a	 tag		<h1>		 e
+um	 retorno	 de	 alguns	 elementos	 JSX.	 Desta	 vez,	 o	 código	 do
+constructor		foi	omitido.
+class	Exemplo	extends	React.Component	{
+//	constructor	
+	render()	{
+const	estilo	=	{
+	padding:	10,
+	background:	this.state.cor
+	}
+2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT 49
+return (
+<h1
+style={estilo}
+onClick={this.trocarCor.bind(this)}
+	>
+			{this.props.texto}
+</h1>
+	)
+	}
+}
+Aproveito	 para	introduzir	 o	 comando		bind()	,	 uma	 sintaxe
+bastante	difundida	no	JavaScript.	O	termo	oficial	para	ele	é	bound
+function,	ou	função	vinculada.	Este	é	um	recurso	implementado	no
+ECMAScript	 5	 para	 permitir	 repassar	 o	 objeto	 corrente	 (	this	)
+para	a	função	chamada	(	trocarCor()	,	no	nosso	caso).
+Em	 outras	 palavras,	 o	 uso	 do	 	 this	 	 dentro	 do	 método
+trocarCor()	 	 só	 será	 possível	 porque	 utilizamos	 a	 sintaxe
+bind()		 para	 repassá-lo	 implicitamente	 para	 a	 função.	 Ratifico
+que	a	passagem	é	implícita!	Ou	 seja,	não	precisamos	declarar	um
+parâmetro	chamado		this		na	assinatura	da	função.	O		bind()		já
+gerencia	isso	para	nós.
+Além	do		bind()	,	há	muito	a	ser	estudado	sobre	essa	sintaxe.
+Abordaremos	 tudo	 com	 muita	 calma	 ao	 longo	 do	 livro.	 Por
+enquanto,	reforço	apenas	que	essas	tags	não	são	HTML,	e	sim	JSX.
+Note	 também	 que	 estamos	 invocando	 um	 método	 chamado
+trocaCor()		no	evento		onClick		da	tag		<h1>	.
+Mas	onde	está	o	código	de		trocaCor()	?	Vamos	implementálo	agora.	Neste	método,	obtém-se	o	valor	de		count		do	estado	do
+componente	para	realizar	uma	condição	ternária	e	definir	as	cores
+vermelha	ou	azul.
+50 2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT
+Uma	condição	ternária	é	aquela	cujo		if		é	omitido	em	prol	de
+uma	sintaxe	simplificada,	tal	como		condicao	?	casoVerdadeiro
+:	casoFalso	.	As	cores	vão	variar	de	acordo	com	o		mod		(resto	da
+divisão)	do	incremento	de		count	.	O	mais	importante	aqui	é	o	uso
+do	método	 	setState()	,	 responsável	 por	 atualizar	 o	 estado	 do
+componente.
+class	Exemplo	extends	React.Component	{
+//	constructor
+	trocarCor(e)	{
+let contador	=	this.state.contador;
+let cor	=	(	++contador	%	2	)	==	0	?	'red'	:	'blue';
+this.setState({
+	cor:	cor,
+	contador:	contador
+	});
+	}
+//	render()
+}
+Este	 exemplo	 nos	 mostrou	 um	 típico	 componente	 React
+stateful	 (com	 estado).	 Para	 renderizá-lo	 no	 DOM,	 precisamos
+utilizar	uma	função		ReactDOM.render()		interna	do	React.	Nela,
+basicamente	informamos	o	componente	que	 será	 renderizado	e	o
+elemento	HTML	no	qual	o	código	será	injetado.
+ReactDOM.render(
+<Exemplo texto="Olá	Mundo!"	/>,
+	document.querySelector("#exemplo")
+)
+Não	 deixe	 de	 notar	 que	 estamos	 passando	 um	 valor	 	“Olá
+Mundo!”		como	parâmetro	na	chamada	do	componente.	Este	é	um
+exemplo	do	envio	de	propriedades.
+Nosso	exemplo	está	concluído.	Se	executado,	ele	produzirá	um
+2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT 51
+simples		<h1>		que	altera	seu		background		entre	vermelho	e	azul	a
+cada	 clique	 recebido	 (sobre	 ele).	 Veja	 a	 renderização	 na	 figura
+adiante.
+Figura	2.9:	Execução	do	componente	Exemplo
+Não	se	 preocupe	 se	 você	 achou	 tudo	 muito	 estranho	 (ou	 até
+mesmo	 bizarro).	 Esse	 é	 um	 código	 completo	 no	 qual	 você	 estará
+apto	 a	 construir	 em	 breve.	 Vamos	 entender	 cada	 sintaxe
+apresentada	aos	poucos,	começando	a	partir	da	próxima	seção.
+O	 objetivo	 do	 JSX	 é	 facilitar	 a	 implementação	 dos
+componentes.	 É	 importante	 ratificar,	 entretanto,	 que	 você	 não	 é
+obrigado	a	utilizá-lo.	O	React	oferece	APIs	nativas	do	ECMAScript
+5,	 fato	 que	 torna	 tanto	 o	 JSX	 quanto	 o	 ECMAScript	 6	 não
+obrigatórios.
+Então,	por	que	usá-lo?	Porque	ele	realmente	torna	a	confecção
+do	 código	 mais	 elegante	 e	 manutenível.	 Veja	 adiante	 uma
+comparação	entre	a	sintaxe	nativa	do	React	e	do	JSX.
+//	Codigo	nativo	do	React
+Desmistificando	o	JSX
+52 2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT
+var	ExemploNativo	=	React.createClass({
+	render:	function() {
+return React.DOM.div(null,
+	React.DOM.h3(null,	'Ex	h3'),
+	React.DOM.span(null,	'Ex	span')
+	);
+	}
+});
+//	Componente	com	JSX
+class	ExemploJSX	extends	React.Component	{
+	render()	{
+return (
+<div>
+<h3>Ex	h3</h3>
+			<span>Ex	span</span>
+</div>
+	)
+	}
+}
+A	 notação	 antiga	 é	 notoriamente	 antiquada	 e	 deve	 ser
+desencorajada.	 Veja	 que	 a	 sintaxe	 JSX	 de	 	ExemploJSX	 ,	 que
+reproduz	 os	 mesmos	 elementos	 do	 	ExemploNativo	,	 continua
+com	uma	notável	semelhança	ao	HTML.	Veremos	suas	diferenças
+ao	longo	do	livro.
+À	 primeira	 vista,	 há	 certo	 preconceito	 em	 ter	 um	 suposto
+código	HTML	dentro	do	JavaScript.	É	o	que	todos	dizem,	inclusive
+eu.	 Para	 enfatizar	 que	 isso	 não	 é	 tão	 ruim	 assim,	 vou	 refazer	 a
+pergunta	que	deixei	em	aberto	no	tópico	Componentes	da	primeira
+seção	deste	capítulo:	será	que	ter	código	HTML	(na	verdade,	JSX)
+dentro	 do	 JavaScript	 é	 realmente	 muito	 pior	 do	 que	 ter	 lógicas
+condicionais	 dentro	 do	 HTML?	 Vejamos	 algo	 concreto	 para
+melhorar	nossa	análise.
+No	 React,	 como	 as	 tags	 são	 expostas	 dentro	 do	 JavaScript,	 é
+muito	 comum	 criar	funções	 que	 retornem	 um	 trecho	 a	 partir	 de
+2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT 53
+uma	 condição	 específica.	 Imagine,	 por	 exemplo,	 um	 atributo
+booleano	chamado		this.valor		que,	ao	assumir	o	valor		true	,
+provocará	a	exibição	de	um	parágrafo		<p>		com	o	texto	"Condição
+verdadeira".	Por	outro	lado,	se	ele	for		false	,	a	tela	deve	exibir	o
+texto	"Condição	falsa".
+Essa	 lógica	 pode	 ser	 implementada	 com	 uma	 simples	função
+que	 condiciona	 os	 dois	 possíveis	 retornos	 através	 de	 um	 	if
+associado	ao	atributo		this.valor	.	Veja	o	código	adiante.
+//	Exemplo	React
+umaCondicao()	{
+if (this.valor)	{
+			return <p>Condição	verdadeira</p>;
+	}	else	{
+return <p>Condição	falsa</p>;
+	}
+}
+render()	{
+return	umaCondicao();
+}
+Para	 ajudar	 em	 nossa	 análise,	 vou	 citar	 brevemente	 uma
+sintaxe	do	framework	Angular	(da	versão	2,	adiante).	No	Angular,
+como	 o	 código	HTML	 (template)	fica	 exposto	 separadamente	 da
+classe	 de	 gerenciamento	 da	 lógica	 da	 tela,	 em	 vez	 da	 sintaxe
+JavaScript	 nativa,	 podemos	 criar	 regras	 condicionais	 a	 partir	 de
+uma	tag	própria	chamada		ngIf	.
+Vamos	 reproduzir	 a	mesma	lógica	 dos	 parágrafos		<p>		 com
+texto	"Condição	verdadeira"	e	"Condição	falsa"	 condicionado	 pelo
+valor	 do	 atributo	 	this.valor	.	 Só	 como	 observação,	 o	 uso	 de
+lógica	 no	 HTML	 é	 muito	 comum	 em	 outras	 linguagens	 Web
+(antigas),	tais	como	PHP,	JSF	ou	ASP.
+54 2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT
+<!--	Exemplo	Angular	-->
+<p	*ngIf="valor">
+			Condição	verdadeira
+</p>
+<p	*ngIf="!valor">
+			Condição	falsa
+</p>
+O	 código	 Angular	 mostra	 uma	 das	 formas	 de	 se	 codificar
+condições	 nos	 templates.	 Também	 há	 outros	 formatos.	 Será	 que
+usar	diretivas		*ngIf		no	meio	de	código	HTML	é	realmente	uma
+boa	 prática?	 Só	 estou	 colocando	 essa	 comparação	 para	 você
+meditar	 sobre	 o	 assunto,	 e	 não	 absorver	 todas	 as	 polêmicas	 em
+volta	do	JSX	que	pipocam	na	internet.
+Neste	livro,	sempre	adotaremos	o	ECMAScript	6	revestido	das
+tags	 JSX,	 só	 utilizando	 ECMAScript	 5	 ou	 a	 API	 nativa	 do	 React
+quando	for	estritamente	necessário.
+É	sabido	que	o	Virtual	DOM	é	vencedor	no	que	diz	respeito	à
+performance	de	renderização.	A	partir	de	agora,	vamos	analisar	de
+perto	como	o	React	realiza	essa	tarefa.
+Muito	 se	 fala	 que	 manipular	 elementos	 do	 DOM	 não	 é
+performático.	 O	 porquê	 de	 não	 ser	 performático	 é	 que	 muitas
+vezes	não	fica	 tão	claro	aos	desenvolvedores.	Na	verdade,	há	uma
+certa	 confusão	 nessa	 definição	 de	 lento	 ou	 pouco	 performático.
+Vamos	esclarecer	exatamente	onde	o	calo	aperta.
+Remover	 ou	 adicionar	 objetos	 no	 DOM	 não	 é	 uma	 operação
+lenta.	Lentas	são	as	operações	síncronas	que	o	browser	precisa	fazer
+para	ajustar	o	layout	e	o	CSS	toda	vez	que	o	DOM	muda.	E	como
+Virtual	DOM
+2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT 55
+ele	 muda	 sempre,	 essa	 operação	 tida	 como	 lenta	 precisa	 ser
+realizada	várias	vezes	durante	o	uso	da	página.
+Reforcei	a	palavra	síncrona	propositalmente	porque,	diferente
+do	 comportamento	 assíncrono	 e	 de	 I/O	 não	 bloqueante	 do
+JavaScript,	 o	 browser	 fica	travado,	 por	 assim	 dizer,	 ao	 realizar	 a
+atualização	do	DOM.
+Figura	2.10:	Atualização	do	DOM
+Dito	isso,	adivinhe:	é	neste	ponto	que	o	Virtual	DOM	atua!	O
+Virtual	DOM,	assim	como	o	DOM	real,	é	uma	árvore	que	organiza
+o conteúdo	 e	 os	 atributos	 dos	 elementos	 em	 forma	 de	 objetos.
+Cada	vez	que	os	dados	dos	componentes	são	alterados,	o	React	cria
+uma	 nova	 árvore	 com	 seus	 componentes.	 Isso	 é	 realizado	 com	 o
+método		render()	.
+A	 partir	 dessa	 árvore,	 o	 React	 renderiza	 uma	 nova
+representação	 da	 interface	 baseada	 no	 Virtual	 DOM.	 Digo	 nova
+porque	ele	não	descarta	a	antiga	representação;	ela	ainda	será	útil
+em	breve.	Note	que	até	o	momento,	o	DOM	real	não	foi	afetado.	O
+React	apenas	criou	uma	renderização	para	o	DOM	virtual.
+56 2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT
+De	posse	da	antiga	e	da	nova	representação,	o	React	calcula	a
+diferença	entre	elas.	A	partir	daí,	ele	descobre	 tudo	o	que	de	fato
+foi	 alterado.	 Por	fim,	 ele	 somente	 aplica	 ao	 DOM	 do	 browser	 as
+alterações	contidas	na	diferença	entre	as	representações.
+Achou	confuso?	Os	passos	são:
+1. No	primeiro	acesso	à	página,	o	React	cria	os	componentes;
+2. Os	componentes	são	renderizados	no	Virtual	DOM	(antigo);
+3. Como	 se	 trata	 da	 primeira	 renderização,	 o	 DOM	 real	 é
+atualizado	na	íntegra;
+4. Os	dados	(	this.state	)	dos	componentes	são	alterados;
+5. Os	componentes	são	renderizados	no	Virtual	DOM	(novo);
+6. O	React	calcula	a	diferença	entre	o	Virtual	DOM	antigo	e	o
+novo;
+7. Por	 fim,	 o	 React	 atualiza	 o	 DOM	 real	 apenas	 com	 as
+diferenças.
+Veja	uma	representação	adiante:
+2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT 57
+Figura	2.11:	Atualização	do	Virtual	DOM
+Esse	algoritmo	é	muito	próximo	à	 técnica	de	patch	 usada	 nos
+gerenciadores	de	versão,	como	o	Git,	por	exemplo.
+58 2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT
+Algoritmo	patch
+Suponha	um	repositório	X.	Um	usuário	qualquer	cria	um	fork
+(uma	bifurcação	de	um	projeto	já	existente)	de	X	e	nomeia-o
+como	Y.	O	repositório	Y	evolui	com	várias	alterações.	Depois
+de	algum	tempo,	o	usuário	deseja	saber	quais	alterações	foram
+realizadas	 em	 Y	 em	 relação	 ao	 repositório	 original	 X.	 Essa
+coleção	de	alterações	realizadas	é	chamada	de	patch.
+Fecharemos	 este	 estudo	 com	 um	 contra-argumento
+importante:	apesar	da	eficácia	do	Virtual	DOM,	 sua	performance
+fica	 aquém	 da	 manipulação	 do	 DOM	 via	 JavaScript	 puro.	 Um
+estudo	 foi	 realizado	 pelo	 site	 Object	 Partners
+(https://objectpartners.com/),	 chamado	 Comparing	 React.js
+performance	 vs.	 native	 DOM,	 que,	 entre	 outras	 conclusões,
+apresentou	a	seguinte	comparação	(OBJECT	PARTNERS,	2015):
+2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT 59
+Figura	2.12:	Renderização	React	vs.	DOM
+Este	 gráfico	 mostra	 o	 tempo	 de	 renderização	 do	 React	 e	 do
+DOM	nativo,	sendo	ambos	executados	no	Chrome	do	tablet	Nexus
+7. No	 eixo	 das	 abscissas,	 note	 que	 o	 desempenho	 do	 React	 vai
+piorando	com	o	aumento	do	número	de	rows	(a	simulação	insere
+linhas	em	uma	tabela	dinamicamente).
+Apesar	 desta	 desvantagem,	 o	 autor	 do	 artigo	 também	 reforça
+que	 o	 desenvolvimento	 através	 de	 um	 framework	 como	 o	 React
+amplifica	 questões	 como	 sustentabilidade	 e	 manutenibilidade	 do
+código.	 Em	 outras	 palavras,	 você	 perde	 alguns	 pontinhos	 na
+performance,	mas	compensa	no	andamento	do	projeto.
+Fechamos	 aqui	 o	 ciclo	 introdutório	 sobre	 os	 conceitos
+envolvidos	com	a	codificação	React.	Logo	no	início	do	Capítulo	3,
+construiremos	 outro	 exemplo.	 Nesta	 ocasião,	 contudo,	 vamos
+destrinchar	todos	os	recursos	agregados	de	forma	completa.
+60 2.2	AS	PRINCIPAIS	ENGRENAGENS	DO	REACT
+As	 próximas	 seções	 deste	 capítulo	 vão	 apresentar	 os
+fundamentos	 associados	 à	 IDE,	 ao	 framework	 Pure.css,	 e	 ao
+servidor	web	Nginx.
+IDE	é	um	acrônimo	para	Integrated	Development	Environment,
+ou	 Ambiente	 de	 Desenvolvimento	 Integrado.	 Você	 pode	 usar	 a
+IDE	 que	 lhe	 for	 mais	 confortável.	 Caso	 não	 tenha	 nenhuma
+preferência,	 permita-me	 sugerir	 uma	 das	 três	 possibilidades	 que
+mais	gosto.
+Um	 excelente	 editor	 de	 texto.	 Ele	 pode	 ser	 baixado
+gratuitamente,	porém	possui	uma	licença	para	uso	contínuo.	Caso
+você	não	a	coloque,	ele	continua	funcionando	sem	problemas.	Ele
+é	 o	 mais	 leve	 entre	 as	 três	 opções	 apresentadas.	 O	 link	 para
+download	é	https://www.sublimetext.com/.
+Outro	excelente	editor.	Este	é	open-source,	funciona	em	todas
+plataformas	 e	 é	 mantido	 por	 uma	 comunidade	 ativa	 no	 GitHub.
+Entre	 no	 site	 https://atom.io/	 para	 mais	 informações.	 Possui	 um
+visual	mais	cool	se	comparado	ao	Sublime.
+Não	se	assuste!	O	VSCode	nada	tem	a	ver	com	o	Visual	Studio
+convencional,	 gigante	 e	 pesado.	 Este	 é	 gratuito,	 leve,	 e	 tão	 bom
+2.3	IDE	DE	DESENVOLVIMENTO
+Sublime	3
+Atom
+Visual	Studio	Code
+2.3	IDE	DE	DESENVOLVIMENTO 61
+quanto	seus	concorrentes.	Reza	a	lenda	que	ele	é	um	fork	do	Atom,
+mas	vamos	deixar	esse	assunto	para	outra	hora.	Você	pode	baixálo	em	https://code.visualstudio.com/.
+Particularmente,	estou	usando	o	VSCode,	mas	fique	à	vontade
+para	 escolher	 sua	 IDE.	 Além	 das	 apresentadas,	 há	 também	 o
+TextMate,	o	Coda,	o	Notepad++	e	o	Vim.	Escolha	uma	e	instale-a
+no	sistema	operacional	de	sua	preferência.
+Existem	 dezenas	 de	 frameworks	 CSS.	 Qual	 deles	 escolher?
+Pode	 parecer	 uma	 tarefa	 simples,	 mas	 é	 muito	 importante
+considerar	as	características	do	projeto	para	não	arriscar	em	uma
+escolha	frustrada.	Sabemos	que	nossa	aplicação	é	progressiva,	deve
+ser	 uma	 Single-Page	 Application,	 modelada	 primeiramente	 para
+ser	compatível	com	dispositivos	mobile,	ter	um	curto	ciclo	de	vida
+e	utilizar	frameworks	aceitos	pela	comunidade.
+Pelo	 que	 já	 vimos	 neste	 capítulo,	 podemos	 acrescentar	 uma
+nova	 característica	 que	 pode	 nos	 ajudar:	 o	 framework	 front-end
+será	o	React.	Mas	isso	faz	alguma	diferença?	Sim!	E	para	que	você
+entenda	 o	 motivo,	 precisaremos	 nos	 aprofundar	 um	 pouco	 em
+como	o	React	injeta	estilo	nos	componentes.
+Como	 vimos,	 o	 React	 organiza	 a	 aplicação	 em	 componentes,
+que	 são	 peças	 independentes	 mantenedoras	 de	 propriedades,	 de
+Outros	editores
+2.4	FUNDAMENTOS	SOBRE	O	PURE.CSS
+Estilizando	os	componentes
+62 2.4	FUNDAMENTOS	SOBRE	O	PURE.CSS
+um	estado	que	pode	ser	manipulado	ao	longo	do	tempo,	métodos
+de	 ciclo	 de	 vida	 e	 código	 JSX.	 Além	 disso,	 podemos	 também
+considerar	 que	 um	 componente	 é	 responsável	 por	 seu	 próprio
+CSS.
+Figura	2.13:	Componente	do	React
+Por	 baixo	 dos	 panos,	 um	 componente	 é	 semelhante	 a	 uma
+função	 JavaScript.	 Ele	 recebe	 propriedades	 (	 props	 )	 como
+parâmetro	 e	 possui	 mecanismos	 para	 renderizar	 elementos	 no
+DOM	 do	navegador.	Tais	 propriedades	 podem	 ser	valores	 (como
+um	 texto	 para	 ser	 exibido)	 ou	 uma	 função	 (para	 viabilizar	 a
+captação	de	eventos	oriundos	da	interface).
+Dito	 isso,	 é	 importante	 ratificar	 que	 o	 CSS	 fica	 dentro	 do
+componente.	O	React	aconselha-nos	a	usar	a	estilização	inline	por
+componente.	 Isso	 significa	 que	 cada	 componente	 deve	 ter	 os
+elementos	CSS	necessários	para	sua	exibição	correta	na	página.
+Isso	 pode	 parecer	 estranho	 aos	 olhos	 dos	 designs	 (e	 até	 dos
+programadores),	 mas	 há	 uma	 justificativa	 razoável:	 quando
+desenvolvemos	projetos	com	base	em	componentes,	há	expectativa
+de	que	cada	componente	seja	um	artefato	reusável	dentro	ou	fora
+do	projeto.	Se	um	componente	 tiver	seu	layout	quebrado	quando
+for	 utilizado	 em	 outro	 trecho	 do	 sistema,	 esse	 propósito	 se
+2.4	FUNDAMENTOS	SOBRE	O	PURE.CSS 63
+perderia.	 Manter	 as	 classes	 CSS	 inline	 no	 componente	 ajuda	 a
+prevenir	esse	problema.
+Esse	 entendimento	 é	 importante	 para	 que	 você	 compreenda
+que,	 além	 dos	 frameworks	 queridinhos	 (como	 Bootstrap,
+Materialize	 e	 Pure.css),	 há	 também	 aqueles	 construídos
+especificamente	para	atender	a	estilização	inline	do	React.	Isso	nos
+leva	a	crer	que	os	escolher	seria	o	caso	mais	óbvio.	Todavia,	como
+você	 verá	 a	 seguir,	 existem	 vários	 problemas	 de	 compatibilidade
+que	influenciariam	negativamente	no	projeto.
+Escolher	um	framework	criado	para	o	React	seria	a	opção	mais
+lógica,	se	olharmos	o	contexto	rapidamente.	Uma	análise	mais	de
+perto,	todavia,	nos	mostrará	várias	desvantagens.	O	objetivo	desta
+seção	é	fazê-lo	perceber	que	nem	sempre	o	óbvio	é	a	melhor	opção.
+Existem	 vários	 frameworks	 React-like.	 Aqui,	 porém,	 vamos
+conversar	 sobre	 React	 Bootstrap,	 React	 Pure,	 o	 Elemental-UI	 e
+React	Toolbox.
+Para	 quem	 não	 conhece,	 Bootstrap	 (http://getbootstrap.com/)
+é	o	mais	famoso	framework	CSS	do	mercado.	Há	um	projeto	não
+oficial	 (https://react-bootstrap.github.io/)	 que	 encapsulou	 as
+classes	 do	Bootstrap	 em	 componentes	React.	É	muito	 bem	 aceito
+pela	 comunidade,	 mas	 não	 há	 garantia	 de	 que	 haverá
+compatibilidade	 com	 a	 próxima	 versão	 (de	 número	 4)	 do
+Bootstrap,	o	que	pode	ser	um	problema	de	continuidade	em	nosso
+projeto	(e	qualquer	outro).
+Por	que	não	devemos	utilizá-lo?	Os	principais	motivos	são	que
+Por	que	não	utilizar	os	frameworks	CSS	inline?
+64 2.4	FUNDAMENTOS	SOBRE	O	PURE.CSS
+ele	 apresenta	 problemas	 de	 compatibilidade	 com	 as	 versões	mais
+novas	do	Webpack	(uma	biblioteca	necessária	para	projetos	React,
+que	 será	 tratada	no	Capítulo	3)	e,	apesar	de	 ser	muito	aceito	pela
+comunidade,	 não	 possui	 uma	 definição	 clara	 de	 quando	 sofrerá
+manutenção	para	acompanhar	a	evolução	do	Bootstrap	oficial.
+Assim	 como	 o	 Bootstrap,	 o	 Pure.css	 também	 contém	 uma
+versão	específica	para	o	React,	chamada	de	React	Pure.	Trata-se	de
+um	 projeto	 não	 oficial	 (https://github.com/hailocab/react-pure)
+que	encapsulou	a	especificação	do	Pure.css	em	componentes	React.
+Durante	 a	 escrita	 deste	 livro,	 ela	 possuía	 ínfimas	 95	 estrelas	 no
+GitHub,	 o	 que	 pode	 resultar	 em	 uma	 descontinuidade.	 Isso	 já	 é
+suficiente	para	descartá-lo.
+Falta-nos	 discorrer	 sobre	 o	 Elemental-UI	 e	 React	 Toolbox.
+Ambos	foram	 criados	 para	 suportar	 aplicativos	 React.	 Em	 outras
+palavras,	eles	não	existem	para	aplicativos	que	não	o	utilizam.
+No	caso	do	Elemental-UI	(http://elemental-ui.com/),	apesar	de
+ele	 ter	 componentes	 muito	 bonitos,	 com	 visual	 agradável	 e	 com
+um	 ótimo	 template	 para	 botões,	 ele	 possui	 problemas	 de
+compatibilidade	 com	 versões	 antigas	 do	 Firefox,	 fato	 que	 a
+documentação	 não	 trata	 com	 a	 devida	 atenção,	 infelizmente.
+Escolhê-lo	 nos	 levaria	 a	 um	 cenário	 nebuloso	 do	 tipo:	 "Quais
+usuários	do	Firefox	podem	usar	nossa	aplicação?".
+O	React	Toolbox	(http://react-toolbox.com/)	é	mais	sofisticado,
+e	 suas	 6k	 estrelas	 representam	 bem	 este	 fato.	 Podemos	 entender
+que	 ele	 seria	 a	 melhor	 opção	 entre	 os	 frameworks	 React-like
+apresentados,	 exceto	 por	 dois	 graves	 problemas	 de
+compatibilidade:
+2.4	FUNDAMENTOS	SOBRE	O	PURE.CSS 65
+1. Ele	 só	funciona	 com	 Internet	 Explorer	 11+.	 Parece	 não	 ser
+importante,	 mas	 as	 estatísticas	 (http://caniuse.com/usagetable)	 apontam	 cerca	 de	 0,86%	 usuários	 com	 Internet
+Explorer	anteriores	à	versão	11.	 Isso	significa	que	quase	1%
+dos	usuários	não	poderá	usar	nossa	aplicação	progressiva.
+2. Ele	também	apresenta	incompatibilidade	com	o	Webpack	 3,
+pacote	crucial	na	orquestração	da	arquitetura	de	nossa	PWA
+(como	veremos	no	Capítulo	3).
+Não	 fosse	 pelos	 problemas	 de	 incompatibilidade	 ressaltados,
+poderíamos	escolhê-lo.	Mas	acreditem:	problemas	de	configuração
+ou	 compatibilidade	 provocados	 pelos	 frameworks	 CSS	 são	 uma
+das	piores	coisas	que	podemos	vivenciar	em	projetos	de	software.
+Acredite	se	quiser,	mas	os	arquivos	deste	framework	possuem
+só	 17kb.	 Isso	 mesmo,	 são	 apenas	 17	 kbytes	 de	 arquivos!	 É	 uma
+excelente	 opção	 para	 nós,	 que	 precisamos	 otimizar	 o	 primeiro
+carregamento	da	página.
+Ele	possui	uma	boa	compatibilidade	e	pode	ser	executado	sem
+problemas	até	com	o	 IE7+.	O	único	ponto	de	desvantagem	é	que
+sua	 documentação	 é	muito	vaga	 quando	 cita	 a	menor	versão	 dos
+browsers	Chrome,	Safari	e	Firefox.
+Só	como	observação,	do	ponto	de	vista	de	aceitação,	ele	possui
+16	 mil	 curtidas	 no	 GitHub.	 Um	 valor	 bem	 razoável,	 que	 abafa
+qualquer	risco	de	descontinuidade.	Opcionalmente,	se	quiser	mais
+detalhes,	acesse	https://purecss.io/.
+Aos leitores	amantes	dos	frameworks	Bootstrap	e	Materialize,
+Pure.css
+66 2.4	FUNDAMENTOS	SOBRE	O	PURE.CSS
+não	 fiquem	 chateados!	 Nesta	 obra,	 optei	 em	 não	 os	 escolher
+porque	ambos	pecam	no	tamanho,	que	chega	a	ser	quase	dez	vezes
+maior	do	que	o	Pure.css.
+Lembre-se:	a	palavra	progressiva	é	o	nosso	direcionador	para	as
+melhores	 escolhas.	 E	 o	 tamanho	 dos	 arquivos	 é	 um	 fato
+importante.
+Nesta	 seção,	 vamos	 conversar	 um	 pouco	 sobre	 o	 Nginx	 (de
+pronúncia	 enginex),	 um	 dos	 servidores	 web	 mais	 utilizados	 na
+internet	 segundo	as	estatísticas	do	 site	https://w3techs.com.	 Tudo
+bem	 que	 esses	 dados	 mudam	 constantemente,	 e	 é	 bem	 provável
+que,	 quando	você	estiver	lendo	este	parágrafo,	 o	panorama	esteja
+diferente.	De	qualquer	forma,	seguem	os	top	5.
+Figura	2.14:	Uso	de	servidores	web	na	internet
+Nossa	 aplicação	 web	 não	 terá	 back-end	 dinâmico.	 Ela	 será
+construída	apenas	com	código	React,	que,	no	fim	das	contas,	será
+convertido	no	mais	 puro	ECMAScript	5,	 otimizado	 e	minificado.
+Isso	 significa	 que	 qualquer	 servidor	 web	 HTTP	 que	 forneça
+2.5	FUNDAMENTOS	SOBRE	O	NGINX
+2.5	FUNDAMENTOS	SOBRE	O	NGINX 67
+arquivos	estáticos	poderia	entrar	na	briga.
+Além	 de	 servir	 arquivos,	 existem	 outras	 particularidades	 que
+precisamos	 atender.	 Suponho	 que	 você	 se	 lembre	 dos	 requisitos
+das	aplicações	progressivas	estudados	no	Capítulo	1.	Alguns	deles
+serão	exclusivamente	tratados	e/ou	auxiliados	pelo	servidor	web.
+Figura	2.15:	Histórias	associadas	ao	servidor	web
+A	história	1.6	está	relacionada	à	velocidade	de	carregamento	da
+página.	A	velocidade	que	o	servidor	fornece	aos	arquivos	estáticos
+é	muito	importante	para	resolvermos	com	maestria	esse	requisito.
+Prover	arquivos,	 qualquer	 servidor	web	faz.	Prover	arquivos	 com
+performance	excelente,	são	poucos.
+E	 há	 também	 um	 poderosíssimo	 recurso	 de	 compactar	 os
+arquivos	antes	de	enviá-los	para	os	usuários.	Nosso	servidor	(alerta
+de	spoiler)	será	capaz	de	fazer	isso!
+As	 histórias	 1.4	 e	 1.5	 estão	 respectivamente	 relacionadas	 à
+obrigatoriedade	do	tráfego	seguro	(HTTPS)	e	ao	redirecionamento
+do	 HTTP	 para	 o	 HTTPS.	 Conforme	 vimos,	 o	 HTTP	 com
+criptografia	 será	 usado	 para	 proteger	 o	 acesso	 aos	 arquivos
+estáticos	 do	 projeto	 (React	 e	 afins),	 e	 o	 redirecionamento	 é
+necessário	para	evitar	acessos	explicitamente	pelo	HTTP	em	claro.
+68 2.5	FUNDAMENTOS	SOBRE	O	NGINX
+Figura	2.16:	Redirecionamento	HTTP	para	HTTPS
+Em	outras	palavras,	toda	a	conversa	entre	nosso	navegador	e	o
+servidor	web	deve	ocorrer	de	forma	protegida.
+Se	comparado	com	os	grandes	(leia-se	Apache),	o	Nginx	é	um
+servidor	web	 relativamente	 recente,	de	2004.	Ele	foi	desenvolvido
+para	 viabilizar	 o	 provimento	 de	 recursos	 quando	 o	 número	 de
+usuários	concorrentes	é	extremo.
+Isso	é	possível	pelo	fato	de	ele	 trabalhar	com	uma	arquitetura
+assíncrona	 (não	 bloqueante)	 baseada	 em	 eventos.	O	Nginx	 provê
+conteúdo	 estático	 com	 maestria,	 realizando	 suas	 ações	 com	 base
+em	URIs	e	traduzindo	para	a	localização	física	no	disco	quando	for
+necessário.
+Ele	 não	 é	 capaz	 de	 realizar	 processamento	 dinâmico,	 mas
+oferece	 um	 proxy	 reverso	 (um	 tipo	 de	 servidor	 que	 recebe
+solicitações	 dos	 clientes	 e	 repassa	 a	 outros	 servidores)	 para
+conduzir	tais	solicitações.	No	nosso	caso,	isso	não	será	necessário.
+Olhando	o	Nginx	mais	de	perto
+2.5	FUNDAMENTOS	SOBRE	O	NGINX 69
+Se	 olharmos	 pelo	 prisma	 da	 escalabilidade,	 o	 Nginx	 nasceu
+com	foco	na	resolução	de	problemas	onde	os	acessos	crescem	para
+a	casa	das	dezenas	de	milhares.	A	literatura	denomina	esse	tipo	de
+situação	 com	 o	 acrônimo	 C10K,	 cujo	 significado	 original	 é
+concurrently	 handling	 ten	 thousand	 connections	 (manipulação
+simultânea	de	dez	mil	conexões).
+Por	conta	disso,	o	Nginx	é	 tido	como	um	dos	servidores	mais
+performáticos	disponíveis.	Tudo	fica	mais	fácil	de	observar	com	os
+números.	Veja	na	figura	adiante	um	comparativo	publicado	no	site
+DreamHost	 (https://help.dreamhost.com/hc/enus/articles/215945987-Web-server-performance-comparison).
+Figura	2.17:	Apache	vs.	Nginx
+O	Lighttpd	 é	 outro	 servidor	web	 um	 pouco	menos	 difundido
+70 2.5	FUNDAMENTOS	SOBRE	O	NGINX
+mas	bem	aceito	na	comunidade	Linux.	Não	vamos	discursar	sobre
+ele.	Caso	queira	conhecê-lo,	acesse	https://www.lighttpd.net/.
+Caro	 leitor,	 os	 números	 não	 mentem!	 De	 acordo	 com	 o
+comparativo	da	imagem	anterior,	o	Nginx	é	capaz	de	suportar	algo
+em	 torno	 de	 quatro	 vezes	 o	 número	 de	 requisições	 concorrentes
+em	 relação	 aos	 seus	 companheiros.	 Então,	 podemos	 encerrar	 por
+aqui.
+Vamos	 baixá-lo	 (https://nginx.org/en/)	 e	 instalá-lo	 no	futuro,
+com	passos	bem	detalhados.
+Peço	 desculpas	 por	 tê-lo	 afogado	 em	 um	 conteúdo
+efetivamente	 conceitual.	 É	 sabido	 que	 um	 capítulo	 notoriamente
+teórico	 como	 este,	 que	 você	 bravamente	 concluiu,	 é	 enfadonho.
+Tudo	bem,	eu	reconheço.	Mas	eu	não	poderia	deixá-lo	à	mercê	das
+modinhas	 da	 internet	 sem	 abastecê-lo	 dos	 prós	 e	 contras	 das
+tecnologias	utilizadas	em	nossa	PWA.
+Acredite	se	quiser,	mas	escolher	um	bom	framework	para	uma
+determinada	aplicação	é	uma	 tarefa	árdua!	Aconselho	fortemente
+praticar	uma	conceituação	como	esta	em	seus	projetos.	Sai	muito
+mais	 em	 conta	 do	 que	 substituir	 uma	 roda	 com	 o	 carro	 em
+movimento.
+Se	 você	 terminou	 este	 capítulo	 confiante	 (ou	 pelo	 menos
+parcialmente	 convencido)	 de	 que	 estaremos	 empregando	 tudo	 o
+que	 há	 de	melhor	 em	 nossa	 aplicação	 progressiva,	 nosso	 objetivo
+foi	concluído.	Lembre-se	de	que	a	palavra	progressiva	é	justamente
+uma	 condição	 de	 esforço	 continuamente	 empregado	 ao	 produto
+2.6	CONCLUSÃO
+2.6	CONCLUSÃO 71
+entregue	 aos	 usuários.	 Se	 tivéssemos	 escolhido	 as	 ferramentas
+citadas	 sem	 este	 preciosismo,	 estaríamos	indo	 de	 encontro	 a	 esse
+preceito.
+Próxima	 parada:	 um	 pouco	 mais	 de	 código	 React	 e
+configuração	do	ambiente	de	desenvolvimento

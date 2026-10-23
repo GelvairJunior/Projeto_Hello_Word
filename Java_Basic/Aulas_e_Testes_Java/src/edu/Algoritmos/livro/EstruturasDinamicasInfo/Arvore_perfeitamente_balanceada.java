@@ -41,7 +41,7 @@ public class Arvore_perfeitamente_balanceada {
 		return t;
 	}
 	
-	public void comecar(int n, Sequencia<Integer> x) {
+	public void teste(int n, Sequencia<Integer> x) {
 		x.startRead();
 		root = tree(n, x);printtree(root, 0);
 		System.out.print("pre ordem");preorder(root);System.out.println("");
