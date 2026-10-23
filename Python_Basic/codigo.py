@@ -7,8 +7,8 @@ class caminhoes:
         self.Tipo = Tipo
         self.Combustivel = Combustivel
 
-    def exibir(self):
-        print(f"Caminhão com placa {self.Placa}, tipo {self.Tipo}, combustível {self.Combustivel}")
+    def __str__(self):
+        return(f"Caminhão com placa {self.Placa}, tipo {self.Tipo}, combustível {self.Combustivel}")
 
 while res == 'nao':
     Placa = input("Digite a placa do caminhão: ")
@@ -22,4 +22,4 @@ while res == 'nao':
 
 print('Aqui os caminhões que você tem: ')
 for c in lista_caminhoes:
-    c.exibir()
+    print(c)

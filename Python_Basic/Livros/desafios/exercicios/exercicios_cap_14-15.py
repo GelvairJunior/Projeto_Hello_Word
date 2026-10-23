@@ -123,9 +123,6 @@ def desafio_cap_15():
     print('Testando o terceiro desafio')
     print(diferenca.dia == 14 and diferenca.mes == 0 and diferenca.ano == 0, '\n')
 
-def desafio_cap_16():
-    print('Testando os desafios do capitulo 16 \n')
 
 desafio_cap_14()
 desafio_cap_15()
-desafio_cap_16()
